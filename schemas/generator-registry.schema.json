@@ -9,7 +9,14 @@
     "snapshotDate": { "type": "string", "format": "date" },
     "policy": {
       "type": "object",
-      "required": ["freeOnly", "paidPlanContentIncluded", "unknownOutputAction"]
+      "required": ["freeOnly", "paidPlanContentIncluded", "unknownOutputAction"],
+      "properties": {
+        "freeOnly": { "type": "boolean" },
+        "paidPlanContentIncluded": { "type": "boolean" },
+        "openSource3DModelGeneratorsOnly": { "type": "boolean" },
+        "blocked3DAssetSources": { "type": "array", "items": { "type": "string" } },
+        "unknownOutputAction": { "type": "string" }
+      }
     },
     "generators": {
       "type": "array",

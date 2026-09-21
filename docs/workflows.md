@@ -1,5 +1,7 @@
 # Workflow pracy z bazą
 
+To materiał pomocniczy. Jedyną nadrzędną instrukcją tworzenia jest `../CREATION_STANDARD.md`.
+
 ## 1. Wyszukiwanie
 
 1. Określ kategorię z `docs/taxonomy.md`.
@@ -33,4 +35,3 @@ Skopiuj `templates/component-record.json`, uzupełnij dane i dopiero wtedy dodaj
 ## 5. Aktualizacja upstreamów
 
 Uruchom `pwsh ./tools/update-upstreams.ps1`, przejrzyj `git diff --submodule=log`, sprawdź licencje, a następnie zatwierdź nowe wskaźniki commitów.
-

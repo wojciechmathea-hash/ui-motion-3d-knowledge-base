@@ -1,5 +1,7 @@
 # Przewodnik wyboru
 
+Przed użyciem tego katalogu przeczytaj `../CREATION_STANDARD.md`. Jest to jedyna nadrzędna instrukcja; poniższe drzewo pomaga jedynie wybrać narzędzie.
+
 ## Drzewo decyzji
 
 1. Czy efekt ma przekazać zmianę stanu lub poprowadzić uwagę?
@@ -27,15 +29,21 @@
    - Wykres React: Recharts; pełna kontrola: visx; duże lub złożone dane: Apache ECharts.
 6. Czy potrzebujesz gotowego assetu?
    - Ikony: wybierz jedną rodzinę spośród Tabler, Lucide, Heroicons lub Phosphor.
-   - HDRI, tekstura albo model: zacznij od Poly Haven; dla innych kolekcji sprawdź licencję konkretnego pliku.
+   - HDRI albo tekstura: zacznij od Poly Haven i sprawdź licencję konkretnego pliku.
+   - Model 3D: nie pobieraj gotowego low-poly/voxel assetu; wygeneruj lub zbuduj go lokalnie zgodnie z `../knowledge/three-d-model-policy.md`.
 7. Czy potrzebujesz wygenerować materiał?
    - UI i komponenty bez chmury: Penpot, GrapesJS, Puck lub Onlook.
    - Pattern, SVG lub tło: css-doodle, Tabbied, Haikei albo BGJar.
    - Programowe wideo: Manim lub Motion Canvas.
    - Lokalne AI: wybierz interfejs i osobno zatwierdzony model z `generator-registry.json`.
+   - Model 3D: Blender/Sverchok dla art direction, OpenSCAD/CadQuery dla geometrii parametrycznej, TripoSR/InstantMesh/Shap-E/TRELLIS dla lokalnej generacji AI.
    - SaaS: przed każdym użyciem sprawdź aktualny limit, widoczność, watermark i prawa do outputu.
 8. Czy celem jest nauka lub analiza wzorca?
    - Użyj `github-learning-directory.md`, przypnij commit i kopiuj tylko minimalny fragment.
+9. Czy potrzebujesz fontu?
+   - Wybierz katalog z `font-source-directory.md`, a potem sprawdź licencję i polskie znaki konkretnej rodziny.
+10. Czy szukasz inspiracji scrollytelling?
+   - Użyj `scrollytelling-inspiration-directory.md` wyłącznie do analizy mechaniki. Implementację zbuduj z zatwierdzonych komponentów albo lokalnych generatorów open source.
 
 ## Macierz
 

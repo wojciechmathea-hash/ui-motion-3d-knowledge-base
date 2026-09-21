@@ -1,0 +1,208 @@
+{
+  "verifiedAt": "2026-09-21",
+  "policy": {
+    "referenceOnly": true,
+    "copyCodeOrAssets": false,
+    "ranking": "Curated canon and high-quality reference set; not an absolute ranking.",
+    "implementationRule": "Recreate only the underlying pattern with components from approved sources or local open-source generators; never copy branding, text, code or assets from inspiration sites."
+  },
+  "inspirations": [
+    {
+      "id": "nyt-snow-fall",
+      "name": "Snow Fall: The Avalanche at Tunnel Creek",
+      "publisher": "The New York Times",
+      "year": "2012",
+      "url": "https://www.nytimes.com/projects/2012/snow-fall/index.html",
+      "format": "editorial-longform",
+      "patterns": ["chaptered narrative", "full-bleed media", "maps and explanatory motion"],
+      "learningValue": "Kanoniczny przykład połączenia długiego tekstu, filmu, map i animacji w rytmie czytelnika.",
+      "risks": ["heavy media", "archive or paywall friction", "do not imitate its visual identity"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "guardian-firestorm",
+      "name": "Firestorm: The story of the bushfire at Dunalley",
+      "publisher": "The Guardian",
+      "year": "2013",
+      "url": "https://www.theguardian.com/world/interactive/2013/may/26/firestorm-bushfire-dunalley-holmes-family",
+      "format": "multimedia-documentary",
+      "patterns": ["chapter acts", "video as narrative spine", "ambient sound", "reported text"],
+      "learningValue": "Pokazuje, jak rozdzielić długą historię na czytelne akty i przeplatać media z reportażem.",
+      "risks": ["autoplay and sound require control", "large media budget"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "nyt-shark-and-minnow",
+      "name": "A Game of Shark and Minnow",
+      "publisher": "The New York Times",
+      "year": "2013",
+      "url": "https://www.nytimes.com/newsgraphics/2013/10/27/south-china-sea/",
+      "format": "photo-reportage",
+      "patterns": ["cinematic photography", "map context", "paced chapter transitions"],
+      "learningValue": "Wzorzec narracji opartej na fotografii, w której interakcja podporządkowuje się reportażowi.",
+      "risks": ["archive or paywall friction", "photography carries most of the experience"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "sbs-the-boat",
+      "name": "The Boat",
+      "publisher": "SBS",
+      "year": "2015",
+      "url": "https://www.sbs.com.au/theboat/",
+      "format": "interactive-graphic-novel",
+      "patterns": ["illustrated panels", "scroll-synchronised motion", "soundscape", "text-image rhythm"],
+      "learningValue": "Silny przykład spójności ilustracji, typografii, dźwięku i ruchu w jednej opowieści.",
+      "risks": ["sound must be optional", "artwork is copyrighted and reference-only"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "bloomberg-whats-warming",
+      "name": "What's Really Warming the World?",
+      "publisher": "Bloomberg",
+      "year": "2015",
+      "url": "https://www.bloomberg.com/graphics/2015-whats-warming-the-world/",
+      "format": "data-explainer",
+      "patterns": ["one evolving chart", "hypothesis-by-hypothesis sequence", "annotations", "clear conclusion"],
+      "learningValue": "Wzorcowe użycie kolejnych kroków scrolla do testowania hipotez na jednym wykresie.",
+      "risks": ["chart state must remain understandable when steps are skipped"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "guardian-nsa-files-decoded",
+      "name": "NSA Files: Decoded",
+      "publisher": "The Guardian",
+      "year": "2013",
+      "url": "https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded",
+      "format": "investigative-explainer",
+      "patterns": ["modular chapters", "embedded testimony", "interactive analogies", "progress cues"],
+      "learningValue": "Pokazuje, jak rozbić złożony temat na moduły, analogie i kontrolowane przez czytelnika wyjaśnienia.",
+      "risks": ["many media types can dilute hierarchy", "legacy interactions may not age well"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "guardian-seven-digital-deadly-sins",
+      "name": "The Seven Digital Deadly Sins",
+      "publisher": "The Guardian and National Film Board of Canada",
+      "year": "2014",
+      "url": "https://www.theguardian.com/technology/ng-interactive/2014/jun/06/-sp-digital-deadly-sins",
+      "format": "interactive-documentary",
+      "patterns": ["chapter hub", "short video", "reader participation", "strong thematic system"],
+      "learningValue": "Referencja dla serii krótkich rozdziałów połączonych wspólnym językiem wizualnym i decyzjami użytkownika.",
+      "risks": ["interaction must not hide core content", "video requires captions and controls"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "pudding-film-dialogue",
+      "name": "The Largest Ever Analysis of Film Dialogue by Gender",
+      "publisher": "The Pudding",
+      "year": "2017",
+      "url": "https://pudding.cool/2017/03/film-dialogue/",
+      "format": "data-essay",
+      "patterns": ["progressive disclosure", "small multiples", "annotations", "reader-controlled exploration"],
+      "learningValue": "Łączy jasną tezę, sekwencyjne wykresy i możliwość samodzielnego sprawdzania danych.",
+      "risks": ["data methodology and caveats must stay visible"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "pudding-population-mountains",
+      "name": "Population Mountains",
+      "publisher": "The Pudding",
+      "year": "2018",
+      "url": "https://pudding.cool/2018/12/3d-cities-story/",
+      "format": "spatial-data-story",
+      "patterns": ["guided camera states", "city comparison", "annotations", "exploration after narrative"],
+      "learningValue": "Pokazuje przejście od prowadzonej historii do swobodnej eksploracji tego samego modelu danych.",
+      "risks": ["3D is not a default", "requires a non-WebGL fallback", "GPU and mobile cost"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "neal-deep-sea",
+      "name": "The Deep Sea",
+      "publisher": "Neal.fun",
+      "year": "2019",
+      "url": "https://neal.fun/deep-sea/",
+      "format": "scale-journey",
+      "patterns": ["continuous scale", "spatial metaphor", "progressive facts", "simple interaction"],
+      "learningValue": "Minimalny mechanizm przewijania zamienia abstrakcyjną głębokość w odczuwalną podróż.",
+      "risks": ["extreme page length", "decorative objects need accessible alternatives"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "distill-interactive-articles",
+      "name": "Communicating with Interactive Articles",
+      "publisher": "Distill",
+      "year": "2020",
+      "url": "https://distill.pub/2020/communicating-with-interactive-articles/",
+      "format": "explorable-explanation",
+      "patterns": ["narrative plus sandbox", "details on demand", "inline simulation", "explanatory annotation"],
+      "learningValue": "Wzorzec łączenia liniowego wyjaśnienia z kontrolowanym eksperymentem odbiorcy.",
+      "risks": ["sandbox cannot replace the stated takeaway", "complexity and testing cost"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "apple-airpods-pro",
+      "name": "AirPods Pro product story",
+      "publisher": "Apple",
+      "year": "ongoing",
+      "url": "https://www.apple.com/airpods-pro/",
+      "format": "product-story",
+      "patterns": ["feature chapters", "large type", "scroll-driven product states", "controlled disclosure"],
+      "learningValue": "Referencja dla sekwencjonowania cech produktu i utrzymania jednego komunikatu na scenę.",
+      "risks": ["brand assets and code are not reusable", "3D-heavy implementation is not a default", "high device cost"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "campo-santo-firewatch",
+      "name": "Firewatch",
+      "publisher": "Campo Santo",
+      "year": "2014",
+      "url": "https://www.firewatchgame.com/",
+      "format": "layered-parallax-landing",
+      "patterns": ["layered illustration", "subtle parallax", "strong silhouette", "progressive depth"],
+      "learningValue": "Prosty, czytelny przykład budowania głębi z warstw 2D bez dominacji interakcji nad treścią.",
+      "risks": ["must disable parallax for reduced motion", "illustrations are copyrighted"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "every-last-drop",
+      "name": "Every Last Drop",
+      "publisher": "Nice and Serious",
+      "year": "2013",
+      "url": "https://everylastdrop.co.uk/",
+      "format": "illustrated-awareness-story",
+      "patterns": ["single visual world", "scroll progression", "quantified everyday actions", "call to action"],
+      "learningValue": "Pokazuje, jak jedna spójna ilustracja może przenosić użytkownika od obserwacji do działania.",
+      "risks": ["long journey must expose progress", "illustrations are reference-only"],
+      "usage": "reference-only"
+    },
+    {
+      "id": "fallen-world-war-ii",
+      "name": "The Fallen of World War II",
+      "publisher": "Neil Halloran",
+      "year": "2015",
+      "url": "http://www.fallen.io/ww2/",
+      "format": "data-driven-documentary",
+      "patterns": ["narrated data", "scale comparison", "timeline", "interactive epilogue"],
+      "learningValue": "Mocny przykład budowania emocjonalnego znaczenia przez skalę, porównanie i kontrolowane tempo danych.",
+      "risks": ["autoplay needs controls", "historical data requires methodology and sources"],
+      "usage": "reference-only"
+    }
+  ],
+  "discoveryIndexes": [
+    {
+      "name": "The Pudding resources and visual essays",
+      "url": "https://pudding.cool/resources/",
+      "usage": "reference-and-learning-only"
+    },
+    {
+      "name": "Awwwards storytelling collection",
+      "url": "https://www.awwwards.com/websites/storytelling/",
+      "usage": "discovery-only; verify every destination independently"
+    },
+    {
+      "name": "Scrollytelling canon",
+      "url": "https://scrollytelling.ai/famous-scrollytelling-examples/",
+      "usage": "secondary index; prefer original project pages"
+    }
+  ]
+}

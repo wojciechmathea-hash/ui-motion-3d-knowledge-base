@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/wojciechmathea-hash/ui-motion-3d-knowledge-base/schemas/scrollytelling-inspiration-registry.schema.json",
+  "title": "Scrollytelling inspiration registry",
+  "type": "object",
+  "required": ["verifiedAt", "policy", "inspirations", "discoveryIndexes"],
+  "properties": {
+    "verifiedAt": { "type": "string", "format": "date" },
+    "policy": {
+      "type": "object",
+      "required": ["referenceOnly", "copyCodeOrAssets", "ranking", "implementationRule"],
+      "properties": {
+        "referenceOnly": { "const": true },
+        "copyCodeOrAssets": { "const": false },
+        "ranking": { "type": "string", "minLength": 1 },
+        "implementationRule": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "inspirations": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "publisher", "year", "url", "format", "patterns", "learningValue", "risks", "usage"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "publisher": { "type": "string", "minLength": 1 },
+          "year": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "format": { "type": "string", "minLength": 1 },
+          "patterns": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "learningValue": { "type": "string", "minLength": 1 },
+          "risks": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "usage": { "const": "reference-only" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "discoveryIndexes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "usage"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "usage": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

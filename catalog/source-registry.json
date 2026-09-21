@@ -608,7 +608,7 @@
       "license": "CC0 for published assets",
       "inclusion": "official-api-or-manual-download-only",
       "redistribution": "private-use-only-in-this-repository",
-      "excluded": ["website scraping", "bulk mirroring", "API client code without its own license review"],
+      "excluded": ["website scraping", "bulk mirroring", "API client code without its own license review", "3D models under the project model-source policy"],
       "domains": ["3d-assets", "hdris", "textures", "models", "cc0"]
     },
     {

@@ -8,12 +8,25 @@ $RepoRoot = Split-Path -Parent $PSScriptRoot
 $RegistryPath = Join-Path $RepoRoot "catalog/source-registry.json"
 $GeneratorRegistryPath = Join-Path $RepoRoot "catalog/generator-registry.json"
 $LearningRegistryPath = Join-Path $RepoRoot "catalog/learning-repository-registry.json"
+$FontRegistryPath = Join-Path $RepoRoot "catalog/font-source-registry.json"
+$ScrollytellingRegistryPath = Join-Path $RepoRoot "catalog/scrollytelling-inspiration-registry.json"
+$CreationStandardPath = Join-Path $RepoRoot "CREATION_STANDARD.md"
 $AssetsPath = Join-Path $RepoRoot "catalog/generated-assets.json"
 $SummaryPath = Join-Path $RepoRoot "catalog/generated-summary.json"
 
 $registry = Get-Content -Raw -LiteralPath $RegistryPath | ConvertFrom-Json
 $generatorRegistry = Get-Content -Raw -LiteralPath $GeneratorRegistryPath | ConvertFrom-Json
 $learningRegistry = Get-Content -Raw -LiteralPath $LearningRegistryPath | ConvertFrom-Json
+$fontRegistry = Get-Content -Raw -LiteralPath $FontRegistryPath | ConvertFrom-Json
+$scrollytellingRegistry = Get-Content -Raw -LiteralPath $ScrollytellingRegistryPath | ConvertFrom-Json
+
+if (-not (Test-Path -LiteralPath $CreationStandardPath -PathType Leaf)) {
+    throw "Missing the single authoritative creation instruction: CREATION_STANDARD.md"
+}
+$agentInstructions = Get-Content -Raw -LiteralPath (Join-Path $RepoRoot "AGENTS.md")
+if ($agentInstructions -notmatch [regex]::Escape("CREATION_STANDARD.md") -or $agentInstructions -notmatch "jedyną nadrzędną instrukcją") {
+    throw "AGENTS.md must route every creation task through the single authoritative CREATION_STANDARD.md file."
+}
 
 if ($registry.repositoryPolicy.visibility -ne "private") {
     throw "Repository policy must remain private."
@@ -121,6 +134,53 @@ foreach ($learningRepository in $learningRegistry.repositories) {
     }
 }
 
+if (-not $fontRegistry.policy.openSourceOnly -or $fontRegistry.policy.paidFontsAllowed -or $fontRegistry.policy.mixedLicenseCatalogsAllowed) {
+    throw "Font registry must remain open-source-only with paid and mixed-license catalogs disabled."
+}
+if (-not $fontRegistry.policy.perFamilyLicenseCheckRequired) {
+    throw "Font registry must require a license check for every selected family."
+}
+if ($fontRegistry.sources.Count -lt 5) {
+    throw "Font registry must contain at least five vetted open-source catalogs."
+}
+$duplicateFontIds = @($fontRegistry.sources | Group-Object id | Where-Object Count -gt 1)
+$duplicateFontUrls = @($fontRegistry.sources | Group-Object url | Where-Object Count -gt 1)
+if ($duplicateFontIds.Count -gt 0 -or $duplicateFontUrls.Count -gt 0) {
+    throw "Duplicate font source ids or URLs detected."
+}
+foreach ($fontSource in $fontRegistry.sources) {
+    foreach ($requiredProperty in @("id", "name", "url", "repository", "licenseScope", "delivery", "bestFor", "requiredChecks", "inclusion")) {
+        if (-not ($fontSource.PSObject.Properties.Name -contains $requiredProperty)) {
+            throw "Missing property '$requiredProperty' for font source $($fontSource.id)."
+        }
+    }
+    if ($fontSource.inclusion -notlike "approved-*") {
+        throw "Font source $($fontSource.id) is not approved by the open-source policy."
+    }
+}
+
+if (-not $scrollytellingRegistry.policy.referenceOnly -or $scrollytellingRegistry.policy.copyCodeOrAssets) {
+    throw "Scrollytelling inspirations must remain reference-only with copying disabled."
+}
+if ($scrollytellingRegistry.inspirations.Count -lt 12) {
+    throw "Scrollytelling registry must contain at least twelve curated inspirations."
+}
+$duplicateInspirationIds = @($scrollytellingRegistry.inspirations | Group-Object id | Where-Object Count -gt 1)
+$duplicateInspirationUrls = @($scrollytellingRegistry.inspirations | Group-Object url | Where-Object Count -gt 1)
+if ($duplicateInspirationIds.Count -gt 0 -or $duplicateInspirationUrls.Count -gt 0) {
+    throw "Duplicate scrollytelling inspiration ids or URLs detected."
+}
+foreach ($inspiration in $scrollytellingRegistry.inspirations) {
+    foreach ($requiredProperty in @("id", "name", "publisher", "year", "url", "format", "patterns", "learningValue", "risks", "usage")) {
+        if (-not ($inspiration.PSObject.Properties.Name -contains $requiredProperty)) {
+            throw "Missing property '$requiredProperty' for scrollytelling inspiration $($inspiration.id)."
+        }
+    }
+    if ($inspiration.usage -ne "reference-only") {
+        throw "Scrollytelling inspiration $($inspiration.id) must remain reference-only."
+    }
+}
+
 foreach ($generatedPath in @($AssetsPath, $SummaryPath)) {
     if (-not (Test-Path -LiteralPath $generatedPath)) {
         throw "Missing generated catalog: $generatedPath. Run tools/build-catalog.ps1."
@@ -140,6 +200,9 @@ if ($summary.sourceCount -ne $registry.sources.Count) {
 if ($summary.generatorCount -ne $generatorRegistry.generators.Count -or $summary.learningRepositoryCount -ne $learningRegistry.repositories.Count) {
     throw "Generated generator or learning repository summary is stale. Run tools/build-catalog.ps1."
 }
+if ($summary.fontSourceCount -ne $fontRegistry.sources.Count -or $summary.scrollytellingInspirationCount -ne $scrollytellingRegistry.inspirations.Count) {
+    throw "Generated font or scrollytelling summary is stale. Run tools/build-catalog.ps1."
+}
 
 $submoduleStatus = @(git -C $RepoRoot submodule status)
 if ($LASTEXITCODE -ne 0) {
@@ -150,4 +213,4 @@ if ($uninitialized.Count -gt 0) {
     throw "Uninitialized submodules detected. Run: git submodule update --init --recursive --depth 1"
 }
 
-Write-Host "Validation passed: private, free-only, no Pro, no redistribution; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators and $($learningRegistry.repositories.Count) learning repositories registered."
+Write-Host "Validation passed: private, free-only, no Pro, no redistribution; one creation standard; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators, $($learningRegistry.repositories.Count) learning repositories, $($fontRegistry.sources.Count) font catalogs and $($scrollytellingRegistry.inspirations.Count) scrollytelling inspirations registered."

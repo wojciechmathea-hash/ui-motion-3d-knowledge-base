@@ -1,0 +1,112 @@
+{
+  "verifiedAt": "2026-09-21",
+  "policy": {
+    "openSourceOnly": true,
+    "paidFontsAllowed": false,
+    "mixedLicenseCatalogsAllowed": false,
+    "selfHostPreferred": true,
+    "perFamilyLicenseCheckRequired": true,
+    "requiredGlyphs": ["ą", "ć", "ę", "ł", "ń", "ó", "ś", "ź", "ż", "Ą", "Ć", "Ę", "Ł", "Ń", "Ó", "Ś", "Ź", "Ż"]
+  },
+  "sources": [
+    {
+      "id": "google-fonts",
+      "name": "Google Fonts",
+      "url": "https://fonts.google.com/",
+      "repository": "https://github.com/google/fonts",
+      "licenseScope": "Open-source families; verify the license file bundled with the selected family.",
+      "delivery": ["download", "self-host", "hosted API"],
+      "bestFor": ["broad language coverage", "variable fonts", "production text and display"],
+      "requiredChecks": ["family license", "Polish glyph coverage", "used weights and subsets", "privacy impact before hosted API"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "fontsource",
+      "name": "Fontsource",
+      "url": "https://fontsource.org/",
+      "repository": "https://github.com/fontsource/font-files",
+      "licenseScope": "Open-source font packages with per-family license metadata.",
+      "delivery": ["npm package", "self-host"],
+      "bestFor": ["framework integration", "versioned self-hosting", "subsets and variable fonts"],
+      "requiredChecks": ["package and font license", "selected subset", "bundle size", "version pin"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "bunny-fonts",
+      "name": "Bunny Fonts",
+      "url": "https://fonts.bunny.net/",
+      "repository": null,
+      "licenseScope": "The service states that its collection is open source; verify each family page and attribution requirements.",
+      "delivery": ["hosted API", "download where provided"],
+      "bestFor": ["privacy-oriented hosted delivery", "Google Fonts-compatible API"],
+      "requiredChecks": ["family license", "attribution", "availability policy", "self-host if project requires zero third-party requests"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "velvetyne",
+      "name": "Velvetyne Type Foundry",
+      "url": "https://velvetyne.fr/",
+      "repository": null,
+      "licenseScope": "Libre typefaces under the license attached to each download, commonly OFL or another libre license.",
+      "delivery": ["download", "source files"],
+      "bestFor": ["experimental display typography", "editorial identity", "art-led projects"],
+      "requiredChecks": ["exact family license", "credit requirement", "Polish glyph coverage", "readability outside display sizes"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "collletttivo",
+      "name": "Collletttivo",
+      "url": "https://www.collletttivo.it/",
+      "repository": null,
+      "licenseScope": "The catalogue is distributed under the SIL Open Font License; keep the bundled license and designer credit.",
+      "delivery": ["download"],
+      "bestFor": ["distinctive display faces", "brand and editorial systems"],
+      "requiredChecks": ["bundled OFL file", "designer credit", "Polish glyph coverage", "webfont formats"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "league-of-moveable-type",
+      "name": "The League of Moveable Type",
+      "url": "https://www.theleagueofmoveabletype.com/",
+      "repository": "https://github.com/theleagueof",
+      "licenseScope": "Curated open-source catalogue; family pages expose source and Open Font License information.",
+      "delivery": ["download", "source files"],
+      "bestFor": ["classic web typography", "display and editorial families", "learning from source"],
+      "requiredChecks": ["family license", "credit guidance", "language coverage", "available styles"],
+      "inclusion": "approved-source"
+    },
+    {
+      "id": "open-foundry",
+      "name": "Open Foundry",
+      "url": "https://open-foundry.com/",
+      "repository": null,
+      "licenseScope": "Curated index of open-source fonts; the original designer or foundry page is authoritative.",
+      "delivery": ["discovery link to original source"],
+      "bestFor": ["visual discovery", "curated open-source alternatives"],
+      "requiredChecks": ["follow original project link", "original license", "author", "download from authoritative source"],
+      "inclusion": "approved-discovery-source"
+    },
+    {
+      "id": "use-and-modify",
+      "name": "Use & Modify",
+      "url": "https://usemodify.com/",
+      "repository": null,
+      "licenseScope": "Curated fonts under libre or open-source licenses; exact license varies by family.",
+      "delivery": ["discovery", "download links"],
+      "bestFor": ["experimental and contemporary type", "search by license and style"],
+      "requiredChecks": ["exact family license", "authoritative download URL", "Polish glyph coverage", "font quality and hinting"],
+      "inclusion": "approved-discovery-source"
+    },
+    {
+      "id": "omnibus-type",
+      "name": "Omnibus-Type",
+      "url": "https://www.omnibus-type.com/",
+      "repository": "https://github.com/Omnibus-Type",
+      "licenseScope": "Use only families whose project or repository includes an explicit open-source license; custom work is outside scope.",
+      "delivery": ["download", "GitHub source", "Google Fonts"],
+      "bestFor": ["text-intensive editorial design", "variable families", "multilingual systems"],
+      "requiredChecks": ["family is the open-source edition", "license file", "version", "Polish glyph coverage"],
+      "inclusion": "approved-source-with-per-family-gate"
+    }
+  ]
+}

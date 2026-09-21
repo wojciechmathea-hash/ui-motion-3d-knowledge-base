@@ -1,5 +1,7 @@
 # Tabele i wizualizacja danych
 
+Status: materiał pomocniczy do `CREATION_STANDARD.md`; nie stanowi osobnej instrukcji.
+
 ## Dobór narzędzia
 
 - TanStack Table: gdy wygląd ma być całkowicie własny, a potrzebny jest solidny model sortowania, filtrowania i paginacji.

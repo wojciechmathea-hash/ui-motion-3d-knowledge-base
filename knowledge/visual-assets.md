@@ -1,15 +1,20 @@
 # Darmowe assety wizualne
 
+Status: materiał pomocniczy do `CREATION_STANDARD.md`; nie stanowi osobnej instrukcji.
+
 ## Hierarchia preferencji
 
 1. Asset własny lub wygenerowany dla projektu z zapisanym provenance.
-2. CC0, gdy nie jest potrzebna atrybucja — np. zweryfikowany asset z Poly Haven.
+2. CC0, gdy nie jest potrzebna atrybucja — np. zweryfikowana tekstura albo HDRI z Poly Haven.
 3. MIT/ISC dla ikon i kodu, z zachowaniem informacji licencyjnej.
 4. CC-BY tylko wtedy, gdy projekt ma trwałe miejsce na poprawną atrybucję.
 5. Kolekcja z licencjami mieszanymi wyłącznie po kontroli konkretnego pliku.
 
 ## Modele, tekstury i HDRI
 
+- Gotowych modeli z Polygen (`polygen.app`) ani generycznych katalogów low-poly/voxel nie używamy.
+- Poly Haven służy w tym workflow wyłącznie do tekstur i HDRI, nie do pobierania modeli.
+- Modele powstają w lokalnych generatorach open source zgodnie z `three-d-model-policy.md`.
 - Zapisz URL strony assetu, autora, nazwę pliku, wersję, licencję i datę pobrania.
 - Sprawdź osobno model, tekstury, animacje, fonty i dźwięk dołączone do paczki.
 - Optymalizuj kopię roboczą: kompresja tekstur, rozsądna liczba polygonów, meshopt/Draco tylko gdy koszt dekodowania jest uzasadniony.
@@ -27,3 +32,4 @@ W jednym produkcie preferuj jedną rodzinę ikon. Ustal wspólną grubość lini
 - podglądów, screenshotów, miniaturek i brandingu serwisów,
 - modeli z ograniczeniem noncommercial do projektu komercyjnego,
 - całych bibliotek assetów, gdy potrzebny jest jeden plik.
+- modeli z Polygen oraz przypadkowych paczek low-poly/voxel używanych bez art direction.

@@ -1,5 +1,7 @@
 # Motion system
 
+Status: materiał pomocniczy do `CREATION_STANDARD.md`; nie stanowi osobnej instrukcji.
+
 ## Intencje ruchu
 
 - `feedback`: reakcja na działanie, zwykle 80–180 ms;
@@ -23,4 +25,3 @@ Przy `prefers-reduced-motion: reduce` usuń parallax, śledzenie kursora, duże 
 ## Wydajność
 
 Preferuj `transform` i `opacity`. Nie animuj layoutu w każdej klatce, ogranicz liczbę targetów, odłącz obserwery po użyciu i pauzuj pętle poza viewportem.
-

@@ -86,7 +86,8 @@ Poniższe otwarte repozytoria są dostępne w `upstream/curated/` jako submoduł
 Pozostałe darmowe źródła są indeksowane jako oficjalne linki. Obejmuje to m.in. Radix Primitives, Base UI, Flowbite, Mantine, React Spring, tsParticles, Three.js, Babylon.js, Recharts, Apache ECharts, visx, Chart.js, Grid.js, Tremor, Lucide, Heroicons, Phosphor Icons oraz biblioteki assetów 3D.
 
 - Theatre.js ma rozdzielone warunki: core jest Apache-2.0, a Studio AGPL-3.0.
-- Poly Haven publikuje assety jako CC0; nie wolno jednak scrapować witryny. Używany ma być oficjalny interfejs lub API.
+- Poly Haven publikuje assety jako CC0; nie wolno jednak scrapować witryny. W tym repozytorium źródło służy wyłącznie do tekstur i HDRI przez oficjalny interfejs lub API, nie do modeli.
+- Polygen (`polygen.app`) jest jawnie wyłączony jako źródło modeli. Nie importujemy również generycznych paczek low-poly/voxel jako finalnej warstwy projektu.
 - Khronos glTF Sample Assets ma licencje mieszane zależne od modelu.
 - Babylon.js Assets jest domyślnie CC-BY-4.0, ale katalogi mogą mieć wyjątki.
 
@@ -106,3 +107,11 @@ Opis zastosowań i ograniczeń znajduje się w `docs/generator-directory.md`.
 ## Repozytoria edukacyjne
 
 Repozytoria UI/UX, efektów webowych, WebGL i parallax są indeksowane jako oficjalne linki w `catalog/learning-repository-registry.json`. Licencja repozytorium obejmuje wskazany kod lub dokumentację, lecz nie musi obejmować assetów demonstracyjnych. Nie są tworzone pełne mirrory tych repozytoriów.
+
+## Fonty open source
+
+`catalog/font-source-registry.json` indeksuje katalogi, nie przenosi automatycznie ich zawartości do repozytorium. Przed użyciem trzeba pobrać font z autorytatywnego źródła, zachować licencję konkretnej rodziny, sprawdzić autora, Reserved Font Names, polskie znaki i wymagania atrybucji. Katalogi z mieszaną warstwą proprietary/freeware nie są zatwierdzane jako całość.
+
+## Inspiracje scrollytelling
+
+Pozycje z `catalog/scrollytelling-inspiration-registry.json` są linkami `reference-only`. Nie kopiujemy z nich kodu, tekstów, danych, filmów, ilustracji, screenshotów, fontów ani identyfikacji marek. Dozwolona jest analiza abstrakcyjnych wzorców narracji i ponowna implementacja wyłącznie z zatwierdzonych źródeł lub lokalnych narzędzi open source.

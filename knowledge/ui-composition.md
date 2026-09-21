@@ -1,5 +1,7 @@
 # Kompozycja UI
 
+Status: materiał pomocniczy do `CREATION_STANDARD.md`; nie stanowi osobnej instrukcji.
+
 ## Hierarchia
 
 Najpierw zdefiniuj główne zadanie ekranu, potem dominantę wizualną, a dopiero na końcu efekty. Komponent nie powinien jednocześnie rywalizować kolorem, skalą, ruchem i głębią.
@@ -23,4 +25,3 @@ Przed integracją obcego komponentu mapuj jego stałe na tokeny: `color`, `surfa
 - komponent zależny wyłącznie od kursora;
 - kilkanaście różnych easingów na jednym ekranie;
 - kopiowanie tekstu i brandingu z demo.
-

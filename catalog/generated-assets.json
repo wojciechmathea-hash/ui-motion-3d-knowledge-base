@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T10:11:07.0149632Z",
+  "generatedAt": "2026-09-21T11:01:17.4744606Z",
   "policy": {
     "private": true,
     "freeOnly": true,
@@ -4349,6 +4349,19 @@
         "inclusion": "catalog-link-only-free-tier"
       },
       {
+        "id": "cadquery",
+        "name": "CadQuery",
+        "mode": "local-open-source",
+        "categories": [
+          "code-to-3d",
+          "parametric-3d",
+          "cad",
+          "3d-model"
+        ],
+        "licenseOrTerms": "Apache-2.0",
+        "inclusion": "catalog-link-only"
+      },
+      {
         "id": "canva-free",
         "name": "Canva Free and Canva AI",
         "mode": "hosted-free-tier",
@@ -4495,6 +4508,18 @@
         "inclusion": "catalog-link-only-free-tier"
       },
       {
+        "id": "instantmesh",
+        "name": "InstantMesh",
+        "mode": "local-open-source",
+        "categories": [
+          "image-to-3d",
+          "3d-model",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Apache-2.0",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
         "id": "invokeai",
         "name": "InvokeAI",
         "mode": "local-open-source",
@@ -4636,6 +4661,19 @@
         "inclusion": "catalog-link-only"
       },
       {
+        "id": "openscad",
+        "name": "OpenSCAD",
+        "mode": "local-open-source",
+        "categories": [
+          "code-to-3d",
+          "parametric-3d",
+          "cad",
+          "3d-model"
+        ],
+        "licenseOrTerms": "GPL-2.0-or-later for the application",
+        "inclusion": "catalog-link-only"
+      },
+      {
         "id": "openui-wandb",
         "name": "OpenUI",
         "mode": "free-software-external-model-required",
@@ -4712,6 +4750,19 @@
         "inclusion": "catalog-link-only-conditional"
       },
       {
+        "id": "shap-e",
+        "name": "Shap-E",
+        "mode": "local-open-source",
+        "categories": [
+          "text-to-3d",
+          "image-to-3d",
+          "3d-model",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
         "id": "stability-core-models",
         "name": "Stability AI Core Models",
         "mode": "local-model-free-license",
@@ -4725,6 +4776,19 @@
         "inclusion": "catalog-link-only-conditional"
       },
       {
+        "id": "sverchok",
+        "name": "Sverchok",
+        "mode": "local-open-source",
+        "categories": [
+          "node-to-3d",
+          "parametric-3d",
+          "generative-art",
+          "3d-model"
+        ],
+        "licenseOrTerms": "GPL-3.0",
+        "inclusion": "catalog-link-only"
+      },
+      {
         "id": "tabbied",
         "name": "Tabbied",
         "mode": "local-open-source",
@@ -4736,6 +4800,19 @@
         ],
         "licenseOrTerms": "MIT",
         "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "trellis",
+        "name": "TRELLIS",
+        "mode": "local-open-source",
+        "categories": [
+          "text-to-3d",
+          "image-to-3d",
+          "3d-model",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "MIT for released models and most code; bundled submodules have separate licenses",
+        "inclusion": "catalog-link-only-conditional"
       },
       {
         "id": "triposr",
@@ -5255,6 +5332,193 @@
           "ssao",
           "transparency"
         ]
+      }
+    ],
+    "fontSources": [
+      {
+        "id": "bunny-fonts",
+        "name": "Bunny Fonts",
+        "url": "https://fonts.bunny.net/",
+        "licenseScope": "The service states that its collection is open source; verify each family page and attribution requirements.",
+        "inclusion": "approved-source"
+      },
+      {
+        "id": "collletttivo",
+        "name": "Collletttivo",
+        "url": "https://www.collletttivo.it/",
+        "licenseScope": "The catalogue is distributed under the SIL Open Font License; keep the bundled license and designer credit.",
+        "inclusion": "approved-source"
+      },
+      {
+        "id": "fontsource",
+        "name": "Fontsource",
+        "url": "https://fontsource.org/",
+        "licenseScope": "Open-source font packages with per-family license metadata.",
+        "inclusion": "approved-source"
+      },
+      {
+        "id": "google-fonts",
+        "name": "Google Fonts",
+        "url": "https://fonts.google.com/",
+        "licenseScope": "Open-source families; verify the license file bundled with the selected family.",
+        "inclusion": "approved-source"
+      },
+      {
+        "id": "league-of-moveable-type",
+        "name": "The League of Moveable Type",
+        "url": "https://www.theleagueofmoveabletype.com/",
+        "licenseScope": "Curated open-source catalogue; family pages expose source and Open Font License information.",
+        "inclusion": "approved-source"
+      },
+      {
+        "id": "omnibus-type",
+        "name": "Omnibus-Type",
+        "url": "https://www.omnibus-type.com/",
+        "licenseScope": "Use only families whose project or repository includes an explicit open-source license; custom work is outside scope.",
+        "inclusion": "approved-source-with-per-family-gate"
+      },
+      {
+        "id": "open-foundry",
+        "name": "Open Foundry",
+        "url": "https://open-foundry.com/",
+        "licenseScope": "Curated index of open-source fonts; the original designer or foundry page is authoritative.",
+        "inclusion": "approved-discovery-source"
+      },
+      {
+        "id": "use-and-modify",
+        "name": "Use & Modify",
+        "url": "https://usemodify.com/",
+        "licenseScope": "Curated fonts under libre or open-source licenses; exact license varies by family.",
+        "inclusion": "approved-discovery-source"
+      },
+      {
+        "id": "velvetyne",
+        "name": "Velvetyne Type Foundry",
+        "url": "https://velvetyne.fr/",
+        "licenseScope": "Libre typefaces under the license attached to each download, commonly OFL or another libre license.",
+        "inclusion": "approved-source"
+      }
+    ],
+    "scrollytellingInspirations": [
+      {
+        "id": "apple-airpods-pro",
+        "name": "AirPods Pro product story",
+        "publisher": "Apple",
+        "url": "https://www.apple.com/airpods-pro/",
+        "format": "product-story",
+        "usage": "reference-only"
+      },
+      {
+        "id": "bloomberg-whats-warming",
+        "name": "What's Really Warming the World?",
+        "publisher": "Bloomberg",
+        "url": "https://www.bloomberg.com/graphics/2015-whats-warming-the-world/",
+        "format": "data-explainer",
+        "usage": "reference-only"
+      },
+      {
+        "id": "campo-santo-firewatch",
+        "name": "Firewatch",
+        "publisher": "Campo Santo",
+        "url": "https://www.firewatchgame.com/",
+        "format": "layered-parallax-landing",
+        "usage": "reference-only"
+      },
+      {
+        "id": "distill-interactive-articles",
+        "name": "Communicating with Interactive Articles",
+        "publisher": "Distill",
+        "url": "https://distill.pub/2020/communicating-with-interactive-articles/",
+        "format": "explorable-explanation",
+        "usage": "reference-only"
+      },
+      {
+        "id": "every-last-drop",
+        "name": "Every Last Drop",
+        "publisher": "Nice and Serious",
+        "url": "https://everylastdrop.co.uk/",
+        "format": "illustrated-awareness-story",
+        "usage": "reference-only"
+      },
+      {
+        "id": "fallen-world-war-ii",
+        "name": "The Fallen of World War II",
+        "publisher": "Neil Halloran",
+        "url": "http://www.fallen.io/ww2/",
+        "format": "data-driven-documentary",
+        "usage": "reference-only"
+      },
+      {
+        "id": "guardian-firestorm",
+        "name": "Firestorm: The story of the bushfire at Dunalley",
+        "publisher": "The Guardian",
+        "url": "https://www.theguardian.com/world/interactive/2013/may/26/firestorm-bushfire-dunalley-holmes-family",
+        "format": "multimedia-documentary",
+        "usage": "reference-only"
+      },
+      {
+        "id": "guardian-nsa-files-decoded",
+        "name": "NSA Files: Decoded",
+        "publisher": "The Guardian",
+        "url": "https://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded",
+        "format": "investigative-explainer",
+        "usage": "reference-only"
+      },
+      {
+        "id": "guardian-seven-digital-deadly-sins",
+        "name": "The Seven Digital Deadly Sins",
+        "publisher": "The Guardian and National Film Board of Canada",
+        "url": "https://www.theguardian.com/technology/ng-interactive/2014/jun/06/-sp-digital-deadly-sins",
+        "format": "interactive-documentary",
+        "usage": "reference-only"
+      },
+      {
+        "id": "neal-deep-sea",
+        "name": "The Deep Sea",
+        "publisher": "Neal.fun",
+        "url": "https://neal.fun/deep-sea/",
+        "format": "scale-journey",
+        "usage": "reference-only"
+      },
+      {
+        "id": "nyt-shark-and-minnow",
+        "name": "A Game of Shark and Minnow",
+        "publisher": "The New York Times",
+        "url": "https://www.nytimes.com/newsgraphics/2013/10/27/south-china-sea/",
+        "format": "photo-reportage",
+        "usage": "reference-only"
+      },
+      {
+        "id": "nyt-snow-fall",
+        "name": "Snow Fall: The Avalanche at Tunnel Creek",
+        "publisher": "The New York Times",
+        "url": "https://www.nytimes.com/projects/2012/snow-fall/index.html",
+        "format": "editorial-longform",
+        "usage": "reference-only"
+      },
+      {
+        "id": "pudding-film-dialogue",
+        "name": "The Largest Ever Analysis of Film Dialogue by Gender",
+        "publisher": "The Pudding",
+        "url": "https://pudding.cool/2017/03/film-dialogue/",
+        "format": "data-essay",
+        "usage": "reference-only"
+      },
+      {
+        "id": "pudding-population-mountains",
+        "name": "Population Mountains",
+        "publisher": "The Pudding",
+        "url": "https://pudding.cool/2018/12/3d-cities-story/",
+        "format": "spatial-data-story",
+        "usage": "reference-only"
+      },
+      {
+        "id": "sbs-the-boat",
+        "name": "The Boat",
+        "publisher": "SBS",
+        "url": "https://www.sbs.com.au/theboat/",
+        "format": "interactive-graphic-novel",
+        "usage": "reference-only"
       }
     ]
   }

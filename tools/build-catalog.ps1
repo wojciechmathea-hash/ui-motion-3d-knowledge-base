@@ -9,9 +9,13 @@ $CatalogDirectory = Join-Path $RepoRoot "catalog"
 $RegistryPath = Join-Path $CatalogDirectory "source-registry.json"
 $GeneratorRegistryPath = Join-Path $CatalogDirectory "generator-registry.json"
 $LearningRegistryPath = Join-Path $CatalogDirectory "learning-repository-registry.json"
+$FontRegistryPath = Join-Path $CatalogDirectory "font-source-registry.json"
+$ScrollytellingRegistryPath = Join-Path $CatalogDirectory "scrollytelling-inspiration-registry.json"
 $registry = Get-Content -Raw -LiteralPath $RegistryPath | ConvertFrom-Json
 $generatorRegistry = Get-Content -Raw -LiteralPath $GeneratorRegistryPath | ConvertFrom-Json
 $learningRegistry = Get-Content -Raw -LiteralPath $LearningRegistryPath | ConvertFrom-Json
+$fontRegistry = Get-Content -Raw -LiteralPath $FontRegistryPath | ConvertFrom-Json
+$scrollytellingRegistry = Get-Content -Raw -LiteralPath $ScrollytellingRegistryPath | ConvertFrom-Json
 
 function Get-CommitSha {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -178,6 +182,35 @@ $learningRepositoryIndex = @(
         }
 )
 
+$fontSourceIndex = @(
+    $fontRegistry.sources |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                url = $_.url
+                licenseScope = $_.licenseScope
+                inclusion = $_.inclusion
+            }
+        }
+)
+
+$scrollytellingInspirationIndex = @(
+    $scrollytellingRegistry.inspirations |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                publisher = $_.publisher
+                url = $_.url
+                format = $_.format
+                usage = $_.usage
+            }
+        }
+)
+
 $assets = [ordered]@{
     schemaVersion = 1
     generatedAt = (Get-Date).ToUniversalTime().ToString("o")
@@ -197,6 +230,8 @@ $assets = [ordered]@{
         curatedUpstreams = $curatedUpstreams
         generators = $generatorIndex
         learningRepositories = $learningRepositoryIndex
+        fontSources = $fontSourceIndex
+        scrollytellingInspirations = $scrollytellingInspirationIndex
     }
 }
 
@@ -265,6 +300,8 @@ $summary = [ordered]@{
     sourceCount = $registry.sources.Count
     generatorCount = $generatorRegistry.generators.Count
     learningRepositoryCount = $learningRegistry.repositories.Count
+    fontSourceCount = $fontRegistry.sources.Count
+    scrollytellingInspirationCount = $scrollytellingRegistry.inspirations.Count
     localUpstreamCount = @($registry.sources | Where-Object { $_.PSObject.Properties.Name -contains "upstreamPath" }).Count
     catalogOnlyCount = @($registry.sources | Where-Object { -not ($_.PSObject.Properties.Name -contains "upstreamPath") }).Count
     generatorModes = @(

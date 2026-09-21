@@ -1,8 +1,9 @@
 {
   "id": "source--component-name",
   "name": "Component name",
+  "originType": "approved-source|open-source-generated",
   "source": {
-    "registryId": "threeui|animejs|magicui-pro-free-surface|magicui-net|21st-dev|react-bits",
+    "registryId": "id-from-source-or-font-registry",
     "url": "https://example.com/component",
     "repository": "https://github.com/owner/repository",
     "author": "Author name",
@@ -15,6 +16,14 @@
     "licenseUrl": "https://example.com/license",
     "assetLicensesVerified": false,
     "redistribution": "private-use-only"
+  },
+  "generation": {
+    "toolRegistryId": "required-when-originType-is-open-source-generated",
+    "toolVersion": "version-or-commit",
+    "modelOrCheckpoint": "name-version-and-license-or-not-applicable",
+    "promptOrParameters": "prompt-seed-or-build-parameters",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "YYYY-MM-DD"
   },
   "classification": {
     "categories": [],
@@ -31,4 +40,3 @@
   },
   "assets": []
 }
-
