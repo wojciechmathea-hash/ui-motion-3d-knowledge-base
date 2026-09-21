@@ -38,16 +38,19 @@ Przed tworzeniem zapisz krótko:
 - jeden główny komunikat i jedną główną akcję;
 - format rezultatu i kontekst użycia;
 - hierarchię treści lub rozdziały narracji;
+- mapę interakcji: komponent, korzyść dla użytkownika, stan bez ruchu i fallback bez JavaScriptu;
 - ograniczenia techniczne, licencyjne, dostępnościowe i wydajnościowe;
 - kryteria ukończenia i sposób weryfikacji.
 
-Jeżeli informacji brakuje, przygotuj neutralny prototyp treściowy. Nie maskuj braków przypadkowymi efektami.
+Jeżeli informacji brakuje, przygotuj kompletną, neutralną treść opartą na zweryfikowanych faktach albo pomiń dany moduł. Nie maskuj braków przypadkowymi efektami i nie zostawiaj placeholderów.
 
 ## 4. Treść i narracja
 
 - Pisz od wniosku do uzasadnienia. Jeden akapit powinien realizować jedną myśl.
 - Używaj konkretnych nagłówków, czasowników i etykiet opisujących rezultat działania.
 - Nie twórz fikcyjnych danych wyglądających jak fakty. Dane demonstracyjne oznacz wprost.
+- Finalny rezultat nie zawiera placeholderów: `Lorem ipsum`, `TODO`, `TBD`, „coming soon”, pustych kart, atrap zdjęć, niedziałających `#`-linków, nieaktywnych CTA, fikcyjnych logo, osób, opinii ani metryk. Placeholder pola formularza nie zastępuje widocznej etykiety; w gotowym projekcie używaj etykiety i opcjonalnego tekstu pomocniczego.
+- Gdy brakuje materiału klienta, napisz pełną roboczą treść zgodną z briefem i oznacz tylko rzeczywiście demonstracyjne dane. Nie zostawiaj użytkownikowi pustych miejsc do późniejszego wypełnienia.
 - Dla historii wizualnej zbuduj storyboard: teza, kontekst, napięcie, dowód, konsekwencja, działanie.
 - Każda scena musi być zrozumiała także jako statyczna treść. Animacja ujawnia relację, lecz nie zastępuje informacji.
 - Cytaty, dane i media zapisują autora, źródło, datę oraz warunki użycia.
@@ -66,6 +69,8 @@ Jeżeli informacji brakuje, przygotuj neutralny prototyp treściowy. Nie maskuj 
 - Jeden dominujący komunikat i jeden dominujący akcent na viewport lub slajd.
 - Najpierw ustal siatkę, rytm odstępów, skalę typografii i szerokości treści; efekty dodawaj na końcu.
 - Używaj wspólnych tokenów koloru, odstępów, promieni, cieni, typografii i czasu animacji.
+- Paletę buduj jako system prymitywów i ról semantycznych (`background`, `surface`, `text`, `muted`, `border`, `brand`, `on-brand`, `focus`, statusy), zgodnie z `knowledge/color-palette-practices.md`. Komponenty nie używają przypadkowych surowych wartości.
+- Pakiety kolorystyczne wybieraj wyłącznie z `catalog/color-palette-registry.json`, instaluj na żądanie i zawsze mapuj na role projektu. Gotowa skala nie zwalnia z testu kontrastu finalnych par.
 - Obraz musi mieć funkcję: wyjaśniać, porównywać, budować kontekst lub kierować uwagę. Dekoracja nie może konkurować z treścią.
 - Nie łącz wielu dominant: intensywnego tła, wielkiego tekstu, kursora, szkła, neonu, parallaxu i animacji ciągłej w jednej scenie.
 - Kolor nie jest jedynym nośnikiem znaczenia. Wykresy mają etykiety, jednostki, źródło i tekstowy wniosek.
@@ -78,6 +83,13 @@ Jeżeli informacji brakuje, przygotuj neutralny prototyp treściowy. Nie maskuj 
 - Każdy komponent obejmuje stany: default, hover, focus, active, disabled, loading, empty, error oraz reduced motion, gdy ma ruch.
 - Komponent ze źródła jest punktem wyjścia; jego demo-style nie przechodzi automatycznie do projektu. Przemapuj go na tokeny i hierarchię projektu.
 - Wybieraj najmniejszą liczbę bibliotek. Nie buduj strony jako katalogu niepowiązanych efektów.
+- Strona lub UI ma być maksymalnie interaktywne w granicach celu: każdy obszar, który może sensownie oferować wybór, porównanie, ujawnienie, filtr, podgląd, zmianę stanu lub bezpośredni feedback, powinien to robić. Nie zamieniaj jednak treści w zestaw zbędnych kontrolek.
+- Interakcje muszą być odkrywalne, działać myszą, dotykiem i klawiaturą, mieć jednoznaczny stan oraz zachować użyteczną wersję bazową bez JavaScriptu.
+- Dla pełnej witryny rozważ obowiązkowo cały ekosystem komponentów: nawigację z aktywnym stanem lub nawigator sekcji, funkcjonalne hero, moduły wyboru i eksploracji treści, FAQ/disclosure, kontekstowe CTA oraz stopkę z prawdziwymi linkami, kontaktem i informacjami wymaganymi przez produkt. Wybierz wszystkie elementy, które mają wartość w konkretnym briefie.
+- Hero może zawierać wideo, animowaną wizualizację, demo produktu lub interaktywny podgląd tylko wtedy, gdy jest to finalny, licencjonowany materiał z zatwierdzonego źródła albo lokalnej generacji open source. Wideo ma poster, napisy gdy występuje mowa, sterowanie/pauzę, `muted` i `playsinline` przy autoplay oraz nieruchomy wariant dla reduced motion i wolnej sieci.
+- Stopka i nawigacja nie są dekoracją. Muszą zawierać prawdziwe, działające cele; niedziałające pozycje, puste grupy i placeholderowe linki są zabronione.
+- „High-end development” oznacza dopracowane stany, spójne tokeny, natychmiastowy feedback, wysoką jakość typografii, płynność, dostępność, brak błędów i rozsądny budżet wydajności — nie natłok gradientów, efektów, bibliotek lub ruchu.
+- Maksymalizuj **wartość i pokrycie interakcji**, nie ich surową liczbę. Jeżeli dwa komponenty rozwiązują to samo albo zwiększają obciążenie poznawcze klienta, zostaw prostszy i lepiej dopracowany wariant.
 - Projektuj mobile-first i testuj przynajmniej szerokości 320/390, 768, 1280 i 1440 CSS px oraz zoom 200%.
 - Podstawowa akcja nie może zależeć wyłącznie od hover, drag, WebGL ani animacji.
 
@@ -88,6 +100,9 @@ Jeżeli informacji brakuje, przygotuj neutralny prototyp treściowy. Nie maskuj 
 - Jedna scena sticky ma jeden cel i stabilne stany wynikające z aktywnego rozdziału.
 - Animuj głównie `transform` i `opacity`; ogranicz pracę wykonywaną w zdarzeniu scroll.
 - Każdy ruch musi komunikować zmianę stanu, hierarchię, kierunek lub relację. Ruch wyłącznie dekoracyjny usuń.
+- Animacje są domyślnie subtelne: dla mikrointerakcji zwykle `120–240 ms`, dla ujawnień i zmian układu `240–450 ms`, z przesunięciem najczęściej `4–16 px`. Dłuższy ruch wymaga funkcji narracyjnej; ciągłe pętle wymagają wyraźnego uzasadnienia.
+- Maksymalizuj responsywność na działanie użytkownika, nie liczbę poruszających się elementów. Hover, press, focus, wybór, rozwinięcie i zmiana danych powinny otrzymywać szybki, spokojny feedback.
+- Ruch całej strony powinien mieć wspólny język: kilka powtarzalnych krzywych easing, czasów i odległości. „Schludnie i profesjonalnie” ma pierwszeństwo przed demonstracją liczby dostępnych efektów.
 - `prefers-reduced-motion: reduce` usuwa parallax, scramble, duże przesunięcia, automatyczne pętle i smooth scroll.
 - Na telefonie upraszczaj scrollytelling do pionowej narracji z czytelnymi stanami statycznymi.
 - Inspiracje analizuj przez: strukturę, rytm, rolę mediów, progresję informacji, zachowanie mobile, dostępność i koszt wydajnościowy. Nie kopiuj ich warstwy wizualnej.
@@ -145,7 +160,7 @@ Brak pełnego provenance oznacza `reference-only` i zakaz integracji.
 3. Znajdź minimalny zestaw elementów w zatwierdzonych rejestrach.
 4. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
 5. Zbuduj semantyczny, responsywny wariant bazowy.
-6. Dodaj interakcje i ruch tylko tam, gdzie poprawiają zrozumienie.
+6. Dodaj możliwie pełny zestaw sensownych interakcji i subtelny feedback ruchowy tam, gdzie poprawiają zrozumienie, kontrolę lub orientację.
 7. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
 8. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
 9. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
@@ -157,6 +172,8 @@ Rezultat jest gotowy dopiero wtedy, gdy:
 - realizuje brief i ma czytelną hierarchię bez efektów;
 - wszystkie komponenty i assety pochodzą z zatwierdzonych źródeł lub lokalnych narzędzi open source;
 - nie zawiera Pro, nieznanej licencji ani materiałów skopiowanych z inspiracji;
+- nie zawiera placeholderów, atrap treści, pustych modułów ani niedziałających akcji;
+- wykorzystuje sensowne możliwości interakcji i odpowiada na działanie użytkownika subtelną animacją lub innym jednoznacznym feedbackiem;
 - działa na klawiaturze, telefonie, przy zoomie 200% i reduced motion;
 - mieści się w uzasadnionym budżecie wydajności;
 - ma kompletne provenance i przechodzi walidację repozytorium.

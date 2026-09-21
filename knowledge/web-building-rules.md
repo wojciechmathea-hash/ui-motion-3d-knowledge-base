@@ -19,7 +19,7 @@ Przed wyborem biblioteki lub komponentu zapisz:
 5. kryteria ukończenia i sposób pomiaru;
 6. ograniczenia: licencje, dane, prywatność, budżet wydajności.
 
-Jeśli tych informacji brakuje, powstaje mały, neutralny prototyp treściowy — nie stylizowane demo udające gotowy produkt.
+Jeśli tych informacji brakuje, powstaje kompletna, neutralna treść oparta na sprawdzalnych informacjach albo moduł jest pomijany. Gotowa strona nie zawiera placeholderów ani stylizowanego dema udającego produkt.
 
 ## 2. Struktura i treść
 
@@ -28,6 +28,7 @@ Jeśli tych informacji brakuje, powstaje mały, neutralny prototyp treściowy �
 - Najważniejsza informacja i główna akcja muszą być zrozumiałe bez animacji, CSS i WebGL.
 - Tekst linku lub przycisku opisuje rezultat działania. Unikaj samych „kliknij”, „więcej” i ikon bez nazwy.
 - Nie twórz fikcyjnych statystyk wyglądających jak fakty. Dane demonstracyjne oznacz jako koncepcyjne.
+- Nie zostawiaj `Lorem ipsum`, `TODO`, `TBD`, pustych kart, atrap obrazów, linków `#`, nieaktywnych CTA ani formularzy bez prawdziwych etykiet. Brakujący materiał zastąp pełną, uczciwą treścią roboczą lub usuń moduł.
 - Długi tekst ma szerokość około 45–75 znaków w wierszu; tekst podstawowy zaczyna się zwykle od 16 px i `line-height` około 1.5–1.75.
 
 ## 3. Hierarchia wizualna
@@ -35,6 +36,7 @@ Jeśli tych informacji brakuje, powstaje mały, neutralny prototyp treściowy �
 - Jeden dominujący komunikat i jeden dominujący akcent na viewport.
 - Najpierw ustal skalę typografii, spacing, szerokość kontenera i siatkę; efekty dobieraj na końcu.
 - Ogranicz paletę do kolorów funkcjonalnych oraz jednego–dwóch akcentów. Kolor nie może być jedynym nośnikiem znaczenia.
+- Stosuj role semantyczne zamiast surowych wartości w komponentach. Zasady, tokeny i zatwierdzone pakiety opisują `knowledge/color-palette-practices.md` oraz `catalog/color-palette-registry.json`.
 - Używaj wspólnej skali odstępów i tokenów. Komponent zewnętrzny musi zostać przemapowany na tokeny projektu.
 - Unikaj przypadkowego „demo look”: szkła na szkle, wielu neonów, wielkiego obrysowanego tekstu, HUD-ów, kul 3D i efektów kursora bez związku z treścią.
 - Tekst nie może być przycinany ani ukrywany tylko po to, by uzyskać kompozycję. Dekoracja nigdy nie powoduje poziomego scrolla dokumentu.
@@ -62,11 +64,16 @@ Jeśli tych informacji brakuje, powstaje mały, neutralny prototyp treściowy �
 ## 6. Interakcja i komponenty
 
 - Komponent ma rozwiązywać konkretną potrzebę: nawigację, ujawnienie relacji, feedback albo porównanie danych.
+- Maksymalizuj sensowną interaktywność: wybór, rozwinięcie, porównanie, filtr, podgląd i feedback dodawaj wszędzie, gdzie skracają drogę do celu lub ułatwiają zrozumienie.
+- W kompletnej witrynie oceń potrzebę: nawigatora sekcji/aktywnego stanu menu, interaktywnego hero, kart z ujawnianiem informacji, tabs/accordion, filtrów, demonstracji produktu, kontekstowych CTA i funkcjonalnej stopki. Zaimplementuj wszystkie uzasadnione elementy, ale nie dwa komponenty realizujące tę samą funkcję.
+- Hero może używać finalnego wideo lub animowanej wizualizacji, jeśli materiał ma zweryfikowane pochodzenie, poster, pauzę/sterowanie, wariant reduced-motion i nie pogarsza LCP. Autoplay nigdy nie uruchamia dźwięku.
+- Nawigacja i stopka prowadzą wyłącznie do działających sekcji, stron i kontaktów. Nie dodawaj pozycji „na przyszłość”.
 - Użyj najmniejszej liczby bibliotek i komponentów. Strona nie jest katalogiem efektów.
 - Stan aktywny, loading, empty, error, disabled, focus i reduced-motion są częścią komponentu, nie dodatkiem na końcu.
 - Działanie musi dawać natychmiastowy feedback; nie blokuj głównego wątku ciężką animacją.
 - Wszystkie lokalnie adaptowane komponenty zapisują źródło, commit/wersję, licencję i zakres zmian.
 - Komponent z repozytorium jest punktem wyjścia. Jego styl demo nie przechodzi automatycznie do projektu.
+- Efekt high-end wynika z konsekwencji, kompletności stanów, typografii, rytmu, wydajności i spokojnego motion. Usuń interakcję, która nie wnosi wartości albo powoduje wizualny lub poznawczy natłok.
 
 ## 7. Motion i scrollytelling
 
@@ -74,6 +81,7 @@ Jeśli tych informacji brakuje, powstaje mały, neutralny prototyp treściowy �
 - Każdy rozdział musi być czytelny jako zwykła sekcja dokumentu. Sticky visual jest ulepszeniem, nie jedynym nośnikiem treści.
 - Stan wizualizacji wynika z aktywnej sekcji i ma stabilny stan końcowy. Nie animuj wszystkiego przez cały czas.
 - Używaj głównie `transform` i `opacity`; unikaj animowania layoutu w każdej klatce.
+- Ruch powinien być subtelny: mikrointerakcje zwykle `120–240 ms`, ujawnienia `240–450 ms`, a przesunięcia najczęściej `4–16 px`. Preferuj krótką reakcję na działanie użytkownika zamiast dekoracyjnej pętli.
 - Przy `prefers-reduced-motion: reduce` usuń parallax, scramble, duże przesunięcia, automatyczne pętle i płynne przewijanie.
 - Na telefonie upraszczaj kompozycję do pionowego układu: wizualizacja nad treścią lub mała ilustracja w sekcji.
 - Jedna scena sticky na opowieść. Wielokrotne pełnoekranowe canvasy, 3D i video wymagają osobnego uzasadnienia.

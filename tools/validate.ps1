@@ -10,6 +10,7 @@ $GeneratorRegistryPath = Join-Path $RepoRoot "catalog/generator-registry.json"
 $LearningRegistryPath = Join-Path $RepoRoot "catalog/learning-repository-registry.json"
 $FontRegistryPath = Join-Path $RepoRoot "catalog/font-source-registry.json"
 $ScrollytellingRegistryPath = Join-Path $RepoRoot "catalog/scrollytelling-inspiration-registry.json"
+$ColorPaletteRegistryPath = Join-Path $RepoRoot "catalog/color-palette-registry.json"
 $CreationStandardPath = Join-Path $RepoRoot "CREATION_STANDARD.md"
 $AssetsPath = Join-Path $RepoRoot "catalog/generated-assets.json"
 $SummaryPath = Join-Path $RepoRoot "catalog/generated-summary.json"
@@ -19,6 +20,7 @@ $generatorRegistry = Get-Content -Raw -LiteralPath $GeneratorRegistryPath | Conv
 $learningRegistry = Get-Content -Raw -LiteralPath $LearningRegistryPath | ConvertFrom-Json
 $fontRegistry = Get-Content -Raw -LiteralPath $FontRegistryPath | ConvertFrom-Json
 $scrollytellingRegistry = Get-Content -Raw -LiteralPath $ScrollytellingRegistryPath | ConvertFrom-Json
+$colorPaletteRegistry = Get-Content -Raw -LiteralPath $ColorPaletteRegistryPath | ConvertFrom-Json
 
 if (-not (Test-Path -LiteralPath $CreationStandardPath -PathType Leaf)) {
     throw "Missing the single authoritative creation instruction: CREATION_STANDARD.md"
@@ -181,6 +183,44 @@ foreach ($inspiration in $scrollytellingRegistry.inspirations) {
     }
 }
 
+if (-not $colorPaletteRegistry.policy.openSourceOnly -or -not $colorPaletteRegistry.policy.installOnDemand) {
+    throw "Color palette packages must remain open-source-only and install-on-demand."
+}
+if (-not $colorPaletteRegistry.policy.semanticTokensRequired -or -not $colorPaletteRegistry.policy.perProjectContrastVerificationRequired) {
+    throw "Color palette policy must require semantic tokens and per-project contrast verification."
+}
+if (-not $colorPaletteRegistry.policy.rawPaletteIsNotATheme -or $colorPaletteRegistry.policy.colorMayBeSoleMeaningCarrier) {
+    throw "Color palette policy must reject raw palettes as themes and color as the sole meaning carrier."
+}
+if ($colorPaletteRegistry.standards.Count -lt 5 -or $colorPaletteRegistry.packages.Count -lt 7) {
+    throw "Color palette registry must retain its standards and at least seven vetted packages."
+}
+$duplicateColorPackageIds = @($colorPaletteRegistry.packages | Group-Object id | Where-Object Count -gt 1)
+$duplicateColorPackageNames = @($colorPaletteRegistry.packages | Group-Object package | Where-Object Count -gt 1)
+if ($duplicateColorPackageIds.Count -gt 0 -or $duplicateColorPackageNames.Count -gt 0) {
+    throw "Duplicate color palette package ids or npm package names detected."
+}
+foreach ($colorPackage in $colorPaletteRegistry.packages) {
+    foreach ($requiredProperty in @("id", "name", "package", "version", "url", "repository", "license", "mode", "bestFor", "strengths", "caveats", "inclusion")) {
+        if (-not ($colorPackage.PSObject.Properties.Name -contains $requiredProperty)) {
+            throw "Missing property '$requiredProperty' for color palette package $($colorPackage.id)."
+        }
+    }
+    if ($colorPackage.license -notin @($colorPaletteRegistry.policy.approvedLicenses)) {
+        throw "Unapproved color package license for $($colorPackage.id): $($colorPackage.license)"
+    }
+    if ($colorPackage.inclusion -ne "approved-install-on-demand") {
+        throw "Color palette package $($colorPackage.id) must remain install-on-demand."
+    }
+}
+foreach ($standard in $colorPaletteRegistry.standards) {
+    foreach ($requiredProperty in @("id", "name", "url", "rule")) {
+        if (-not ($standard.PSObject.Properties.Name -contains $requiredProperty)) {
+            throw "Missing property '$requiredProperty' for color standard $($standard.id)."
+        }
+    }
+}
+
 foreach ($generatedPath in @($AssetsPath, $SummaryPath)) {
     if (-not (Test-Path -LiteralPath $generatedPath)) {
         throw "Missing generated catalog: $generatedPath. Run tools/build-catalog.ps1."
@@ -203,6 +243,9 @@ if ($summary.generatorCount -ne $generatorRegistry.generators.Count -or $summary
 if ($summary.fontSourceCount -ne $fontRegistry.sources.Count -or $summary.scrollytellingInspirationCount -ne $scrollytellingRegistry.inspirations.Count) {
     throw "Generated font or scrollytelling summary is stale. Run tools/build-catalog.ps1."
 }
+if ($summary.colorPalettePackageCount -ne $colorPaletteRegistry.packages.Count -or $summary.colorPaletteStandardCount -ne $colorPaletteRegistry.standards.Count) {
+    throw "Generated color palette summary is stale. Run tools/build-catalog.ps1."
+}
 
 $submoduleStatus = @(git -C $RepoRoot submodule status)
 if ($LASTEXITCODE -ne 0) {
@@ -213,4 +256,6 @@ if ($uninitialized.Count -gt 0) {
     throw "Uninitialized submodules detected. Run: git submodule update --init --recursive --depth 1"
 }
 
-Write-Host "Validation passed: private, free-only, no Pro, no redistribution; one creation standard; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators, $($learningRegistry.repositories.Count) learning repositories, $($fontRegistry.sources.Count) font catalogs and $($scrollytellingRegistry.inspirations.Count) scrollytelling inspirations registered."
+& (Join-Path $PSScriptRoot "validate-projects.ps1")
+
+Write-Host "Validation passed: private, free-only, no Pro, no redistribution; one creation standard; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators, $($learningRegistry.repositories.Count) learning repositories, $($fontRegistry.sources.Count) font catalogs, $($scrollytellingRegistry.inspirations.Count) scrollytelling inspirations and $($colorPaletteRegistry.packages.Count) color palette packages registered."

@@ -9,15 +9,22 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] Odbiorca, główne zadanie i jedna najważniejsza akcja są zapisane.
 - [ ] Kolejność treści jest zrozumiała bez animacji i JavaScriptu.
 - [ ] Dane demonstracyjne są oznaczone, a twierdzenia mają źródła.
+- [ ] Nie ma placeholderów, `Lorem ipsum`, `TODO`, `TBD`, pustych kart, atrap mediów, niedziałających `#`-linków ani nieaktywnych CTA.
 - [ ] Jest jeden `h1`, logiczna hierarchia nagłówków i semantyczny landmark `main`.
 
 ## UI i responsywność
 
 - [ ] Komponenty są zmapowane na wspólne tokeny koloru, typografii, odstępów i ruchu.
+- [ ] Kolory są zmapowane na role semantyczne, a finalne pary tekst/tło, akcja/on-action, fokus i statusy mają sprawdzony kontrast.
 - [ ] Nie ma poziomego overflow przy 320, 390, 768, 1280 i 1440 CSS px.
 - [ ] Treść działa przy zoomie 200% i nie jest przycinana przez sticky/fixed warstwy.
 - [ ] Touch targety spełniają minimum 24×24 px; kluczowe kontrolki celują w 44×44 px.
 - [ ] Hover nie jest jedyną drogą do informacji lub działania.
+- [ ] Każdy sensownie interaktywny obszar oferuje wybór, ujawnienie, porównanie lub feedback zamiast pozostawać statyczną atrapą.
+- [ ] Nawigacja pokazuje kontekst lub aktywny stan, a stopka zawiera wyłącznie prawdziwe linki, kontakt i potrzebne informacje.
+- [ ] Hero ma uzasadniony element angażujący (interakcję, demo, wizualizację lub finalne wideo) albo brief świadomie wskazuje wariant statyczny.
+- [ ] Wideo ma poster, pauzę/sterowanie, napisy dla mowy, `muted` przy autoplay i wariant dla reduced motion oraz wolnej sieci.
+- [ ] Interakcje nie dublują funkcji i nie tworzą natłoku poznawczego; całość pozostaje schludna oraz profesjonalna.
 
 ## Dostępność
 
@@ -35,6 +42,7 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] Sticky visual jest ulepszeniem, nie jedynym nośnikiem znaczenia.
 - [ ] Na telefonie istnieje uproszczony pionowy układ.
 - [ ] Każda animacja ma cel i stabilny stan końcowy.
+- [ ] Animacje są subtelne, krótkie i reagują przede wszystkim na działanie użytkownika; dekoracyjne pętle mają uzasadnienie albo zostały usunięte.
 
 ## Wydajność i technika
 
@@ -43,6 +51,7 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] LCP ≤ 2.5 s, INP ≤ 200 ms i CLS ≤ 0.1 w danych terenowych lub istnieje plan pomiaru.
 - [ ] Media mają wymiary, lazy loading i odpowiedni format.
 - [ ] Ciężkie zależności są uzasadnione; scroll handler nie wykonuje niepotrzebnych renderów.
+- [ ] Dopracowanie high-end jest widoczne w stanach, spójności, płynności i braku błędów, a nie w liczbie bibliotek lub efektów.
 - [ ] Strona zachowuje podstawową treść po awarii lub wyłączeniu warstwy ulepszającej.
 
 ## Pochodzenie

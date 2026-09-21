@@ -1,0 +1,156 @@
+{
+  "verifiedAt": "2026-09-21",
+  "policy": {
+    "openSourceOnly": true,
+    "installOnDemand": true,
+    "semanticTokensRequired": true,
+    "perProjectContrastVerificationRequired": true,
+    "rawPaletteIsNotATheme": true,
+    "colorMayBeSoleMeaningCarrier": false,
+    "approvedLicenses": ["MIT", "Apache-2.0"]
+  },
+  "standards": [
+    {
+      "id": "wcag-contrast-minimum",
+      "name": "WCAG 2.2 — Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "rule": "Normal text requires at least 4.5:1 contrast; large text requires at least 3:1."
+    },
+    {
+      "id": "wcag-use-of-color",
+      "name": "WCAG 2.2 — Use of Color",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color",
+      "rule": "Color cannot be the only visual means of communicating meaning, state or required action."
+    },
+    {
+      "id": "wcag-non-text-contrast",
+      "name": "WCAG 2.2 — Non-text Contrast",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast",
+      "rule": "Essential component boundaries, states and graphical objects require at least 3:1 contrast where the criterion applies."
+    },
+    {
+      "id": "css-color-4",
+      "name": "CSS Color Module Level 4",
+      "url": "https://www.w3.org/TR/css-color-4/",
+      "rule": "Use modern perceptual color spaces such as OKLCH deliberately, with tested gamut fallbacks where project support requires them."
+    },
+    {
+      "id": "material-color-roles",
+      "name": "Material Design 3 — Color roles",
+      "url": "https://m3.material.io/styles/color/the-color-system/color-roles",
+      "rule": "Map palette primitives to semantic roles such as surface, on-surface, primary and on-primary instead of styling components with raw values."
+    },
+    {
+      "id": "radix-scale-roles",
+      "name": "Radix Colors — Understanding the scale",
+      "url": "https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale",
+      "rule": "Assign predictable scale steps to backgrounds, interactive states, borders, solid fills and text."
+    },
+    {
+      "id": "mdn-color-scheme",
+      "name": "MDN — color-scheme",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme",
+      "rule": "Declare supported schemes and design light and dark themes as separate tested mappings, including native controls."
+    }
+  ],
+  "packages": [
+    {
+      "id": "radix-colors",
+      "name": "Radix Colors",
+      "package": "@radix-ui/colors",
+      "version": "3.0.0",
+      "url": "https://www.radix-ui.com/colors",
+      "repository": "https://github.com/radix-ui/colors",
+      "license": "MIT",
+      "mode": "curated-scales",
+      "bestFor": ["application UI", "light and dark themes", "state-aware scale mapping"],
+      "strengths": ["12-step role-oriented scales", "alpha variants", "documented background, border and text usage"],
+      "caveats": ["target contrast still depends on the exact foreground/background pair", "brand mapping and visual review remain project-specific"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "adobe-leonardo",
+      "name": "Adobe Leonardo Contrast Colors",
+      "package": "@adobe/leonardo-contrast-colors",
+      "version": "1.1.0",
+      "url": "https://leonardocolor.io/",
+      "repository": "https://github.com/adobe/leonardo",
+      "license": "Apache-2.0",
+      "mode": "contrast-driven-generator",
+      "bestFor": ["adaptive palettes", "contrast-targeted scales", "accessible theme generation"],
+      "strengths": ["contrast is an input to generation", "supports theme and scale workflows", "open-source visual tool and package"],
+      "caveats": ["generated output requires semantic role mapping", "verify selected contrast method and final rendered context"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "material-color-utilities",
+      "name": "Material Color Utilities",
+      "package": "@material/material-color-utilities",
+      "version": "0.4.0",
+      "url": "https://github.com/material-foundation/material-color-utilities/tree/main/typescript",
+      "repository": "https://github.com/material-foundation/material-color-utilities",
+      "license": "Apache-2.0",
+      "mode": "dynamic-theme-generator",
+      "bestFor": ["tonal palettes", "light and dark role sets", "dynamic brand themes"],
+      "strengths": ["HCT tonal palettes", "semantic schemes", "contrast and harmonization utilities"],
+      "caveats": ["Material defaults are not a substitute for brand art direction", "deprecated Scheme APIs must not be used for new work"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "primer-primitives",
+      "name": "Primer Primitives",
+      "package": "@primer/primitives",
+      "version": "11.10.0",
+      "url": "https://primer.style/primitives/",
+      "repository": "https://github.com/primer/primitives",
+      "license": "MIT",
+      "mode": "design-tokens",
+      "bestFor": ["semantic token architecture", "high-contrast variants", "production design-system references"],
+      "strengths": ["primitive and functional token layers", "light, dark and accessibility modes", "CSS and JSON distributions"],
+      "caveats": ["do not copy GitHub brand expression", "adopt the token architecture or package only when it fits the product"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "open-props",
+      "name": "Open Props",
+      "package": "open-props",
+      "version": "1.7.23",
+      "url": "https://open-props.style/",
+      "repository": "https://github.com/argyleink/open-props",
+      "license": "MIT",
+      "mode": "css-custom-properties",
+      "bestFor": ["rapid CSS prototyping", "shared color scales", "low-JavaScript systems"],
+      "strengths": ["modular CSS custom properties", "color and gradient scales", "works without a component framework"],
+      "caveats": ["import only the modules actually used", "raw props must be remapped to semantic project tokens"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "culori",
+      "name": "Culori",
+      "package": "culori",
+      "version": "4.0.2",
+      "url": "https://culorijs.org/",
+      "repository": "https://github.com/Evercoder/culori",
+      "license": "MIT",
+      "mode": "color-science-utility",
+      "bestFor": ["OKLCH scale generation", "color conversion", "interpolation and gamut handling"],
+      "strengths": ["broad CSS Color 4 space support", "tree-shakeable functional build", "color difference and interpolation tools"],
+      "caveats": ["it computes colors but does not choose semantic roles", "contrast and gamut must be verified after transformations"],
+      "inclusion": "approved-install-on-demand"
+    },
+    {
+      "id": "colorjs",
+      "name": "Color.js",
+      "package": "colorjs.io",
+      "version": "0.7.1",
+      "url": "https://colorjs.io/",
+      "repository": "https://github.com/color-js/color.js",
+      "license": "MIT",
+      "mode": "color-science-utility",
+      "bestFor": ["CSS Color 4 and 5 workflows", "contrast checks", "wide-gamut and perceptual color manipulation"],
+      "strengths": ["maintained by CSS Color specification editors", "modular imports", "multiple contrast and color-difference methods"],
+      "caveats": ["select one documented contrast policy per project", "wide-gamut output needs an intentional fallback strategy"],
+      "inclusion": "approved-install-on-demand"
+    }
+  ]
+}

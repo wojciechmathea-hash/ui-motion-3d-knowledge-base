@@ -14,6 +14,7 @@ Wszystkie rezultaty powstają według jednej nadrzędnej instrukcji: [CREATION_S
 | `catalog/` | Rejestry źródeł, generatorów, fontów, inspiracji i repozytoriów edukacyjnych oraz generowane indeksy |
 | `docs/` | Taksonomia, przewodnik wyboru, licencje i workflow pracy |
 | `knowledge/` | Reguły kompozycji UI, motion i 3D/WebGL |
+| `projects/` | Gotowe realizacje budowane zgodnie z nadrzędnym standardem |
 | `templates/` | Szablon rekordu komponentu z pełnym provenance |
 | `tools/` | Aktualizacja submodułów, generowanie indeksu i walidacja |
 | `upstream/` | Przypięte wersje wybranych otwartych repozytoriów źródłowych |
@@ -36,16 +37,17 @@ Rejestr obejmuje teraz 42 źródła. Oprócz sześciu źródeł bazowych zawiera
 
 Pełny, pogrupowany indeks z licencjami, zastosowaniami i ograniczeniami znajduje się w [docs/free-source-directory.md](docs/free-source-directory.md).
 
-## Rejestry generatorów, nauki, inspiracji i fontów
+## Rejestry generatorów, nauki, inspiracji, fontów i koloru
 
-Baza zawiera także cztery niezależne rejestry:
+Baza zawiera także pięć niezależnych rejestrów:
 
 - [44 darmowe generatory](docs/generator-directory.md) — UI i komponenty, diagramy, grafiki, SVG, patterny, tekstury, 3D, obrazy AI oraz wideo. Narzędzia open source są oddzielone od usług chmurowych z darmowym limitem.
 - [37 repozytoriów GitHub do nauki](docs/github-learning-directory.md) — UI/UX, dostępność, design systems, efekty stron, WebGL/GLSL oraz parallax.
 - [15 wzorcowych realizacji scrollytelling](docs/scrollytelling-inspiration-directory.md) — wyłącznie do analizy struktury, rytmu i interakcji; bez kopiowania kodu i assetów.
 - [9 katalogów czcionek open source](docs/font-source-directory.md) — ze wskazaniem licencji, sposobu dostarczania i kontroli polskich znaków.
+- [7 pakietów i narzędzi palet kolorów](docs/color-palette-package-directory.md) — gotowe skale, generatory kontrastowe, tokeny i biblioteki obliczeniowe CSS Color 4/5; wszystkie open source i instalowane wyłącznie na żądanie.
 
-Rejestry maszynowe znajdują się w `catalog/generator-registry.json`, `catalog/learning-repository-registry.json`, `catalog/scrollytelling-inspiration-registry.json` i `catalog/font-source-registry.json`. Usługi freemium pozostają wyłącznie linkami; baza nie pobiera materiałów z płatnych planów.
+Rejestry maszynowe znajdują się w `catalog/generator-registry.json`, `catalog/learning-repository-registry.json`, `catalog/scrollytelling-inspiration-registry.json`, `catalog/font-source-registry.json` i `catalog/color-palette-registry.json`. Usługi freemium pozostają wyłącznie linkami; baza nie pobiera materiałów z płatnych planów.
 
 ## Start
 
@@ -87,12 +89,17 @@ git submodule update --init --recursive --depth 1
 | Generator filmu | Manim lub Motion Canvas dla kodu; Wan2.1/LTX-Video lokalnie; Firefly, Pika i Runway tylko w aktualnym bezpłatnym limicie |
 | Nauka WebGL i shaderów | WebGL Fundamentals, WebGL2 Fundamentals, Three.js Fundamentals, shader-school i WebGL2 Examples |
 | Nauka parallax | Parallax.js, Rellax, simpleParallax.js i Atropos z obowiązkowym fallbackiem reduced-motion |
+| Palety i tokeny kolorów | Radix Colors lub Primer Primitives; Leonardo i Material Color Utilities do generacji; Culori lub Color.js do własnych obliczeń i OKLCH |
 
 Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-guide.md).
 
+## Projekty
+
+- [ALLinTraders site](projects/allintraders-site/README.md) — oryginalny, responsywny landing page bez 3D, z interaktywnym Market Lab, eksploratorem programu, ostrzeżeniami o ryzyku i pełnym provenance.
+
 ## Jedna instrukcja tworzenia
 
-Każda treść, strona, prezentacja, UI i komponent podlega jednej nadrzędnej instrukcji: [CREATION_STANDARD.md](CREATION_STANDARD.md). Pomocniczy [standard budowania witryn](knowledge/web-building-rules.md) i [checklista jakości](templates/web-quality-checklist.md) rozwijają jej wymagania dla webu.
+Każda treść, strona, prezentacja, UI i komponent podlega jednej nadrzędnej instrukcji: [CREATION_STANDARD.md](CREATION_STANDARD.md). Finalne realizacje nie zawierają placeholderów, wykorzystują sensowną interaktywność i subtelny motion. Pomocniczy [standard budowania witryn](knowledge/web-building-rules.md), [praktyki palet kolorów](knowledge/color-palette-practices.md) i [checklista jakości](templates/web-quality-checklist.md) rozwijają jej wymagania dla webu.
 
 Pomocnicza [specyfikacja modeli 3D](knowledge/three-d-model-policy.md) rozwija odpowiedni rozdział instrukcji: Polygen i generyczne biblioteki low-poly/voxel są wyłączone, a finalne modele mają powstawać w zatwierdzonych generatorach open source z pełnym provenance.
 

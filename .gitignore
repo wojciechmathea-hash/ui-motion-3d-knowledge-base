@@ -3,8 +3,9 @@ Thumbs.db
 .idea/
 .vscode/
 node_modules/
+.next/
+out/
 .env
 .env.*
 !.env.example
 catalog/.tmp/
-

@@ -11,11 +11,13 @@ $GeneratorRegistryPath = Join-Path $CatalogDirectory "generator-registry.json"
 $LearningRegistryPath = Join-Path $CatalogDirectory "learning-repository-registry.json"
 $FontRegistryPath = Join-Path $CatalogDirectory "font-source-registry.json"
 $ScrollytellingRegistryPath = Join-Path $CatalogDirectory "scrollytelling-inspiration-registry.json"
+$ColorPaletteRegistryPath = Join-Path $CatalogDirectory "color-palette-registry.json"
 $registry = Get-Content -Raw -LiteralPath $RegistryPath | ConvertFrom-Json
 $generatorRegistry = Get-Content -Raw -LiteralPath $GeneratorRegistryPath | ConvertFrom-Json
 $learningRegistry = Get-Content -Raw -LiteralPath $LearningRegistryPath | ConvertFrom-Json
 $fontRegistry = Get-Content -Raw -LiteralPath $FontRegistryPath | ConvertFrom-Json
 $scrollytellingRegistry = Get-Content -Raw -LiteralPath $ScrollytellingRegistryPath | ConvertFrom-Json
+$colorPaletteRegistry = Get-Content -Raw -LiteralPath $ColorPaletteRegistryPath | ConvertFrom-Json
 
 function Get-CommitSha {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -211,6 +213,23 @@ $scrollytellingInspirationIndex = @(
         }
 )
 
+$colorPalettePackageIndex = @(
+    $colorPaletteRegistry.packages |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                package = $_.package
+                version = $_.version
+                repository = $_.repository
+                license = $_.license
+                mode = $_.mode
+                inclusion = $_.inclusion
+            }
+        }
+)
+
 $assets = [ordered]@{
     schemaVersion = 1
     generatedAt = (Get-Date).ToUniversalTime().ToString("o")
@@ -232,6 +251,7 @@ $assets = [ordered]@{
         learningRepositories = $learningRepositoryIndex
         fontSources = $fontSourceIndex
         scrollytellingInspirations = $scrollytellingInspirationIndex
+        colorPalettePackages = $colorPalettePackageIndex
     }
 }
 
@@ -302,6 +322,8 @@ $summary = [ordered]@{
     learningRepositoryCount = $learningRegistry.repositories.Count
     fontSourceCount = $fontRegistry.sources.Count
     scrollytellingInspirationCount = $scrollytellingRegistry.inspirations.Count
+    colorPalettePackageCount = $colorPaletteRegistry.packages.Count
+    colorPaletteStandardCount = $colorPaletteRegistry.standards.Count
     localUpstreamCount = @($registry.sources | Where-Object { $_.PSObject.Properties.Name -contains "upstreamPath" }).Count
     catalogOnlyCount = @($registry.sources | Where-Object { -not ($_.PSObject.Properties.Name -contains "upstreamPath") }).Count
     generatorModes = @(

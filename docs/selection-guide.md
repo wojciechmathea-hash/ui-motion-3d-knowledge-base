@@ -44,6 +44,12 @@ Przed użyciem tego katalogu przeczytaj `../CREATION_STANDARD.md`. Jest to jedyn
    - Wybierz katalog z `font-source-directory.md`, a potem sprawdź licencję i polskie znaki konkretnej rodziny.
 10. Czy szukasz inspiracji scrollytelling?
    - Użyj `scrollytelling-inspiration-directory.md` wyłącznie do analizy mechaniki. Implementację zbuduj z zatwierdzonych komponentów albo lokalnych generatorów open source.
+11. Czy budujesz paletę lub system tokenów kolorystycznych?
+   - Gotowe skale UI: Radix Colors. Architektura tokenów: Primer Primitives. Generacja kontrastowa: Leonardo. Tonalne light/dark: Material Color Utilities. Własne obliczenia OKLCH: Culori lub Color.js.
+   - Pakiet wybierz z `color-palette-package-directory.md`, a wynik zawsze przemapuj na role i sprawdź na finalnych parach kolorów.
+12. Czy strona ma wyglądać i działać jak realizacja high-end?
+   - Zacznij od kompletnej nawigacji, prawdziwej stopki i mapy interakcji. Dodaj tabs, disclosure, porównanie, filtry, demo lub sekcyjny navigator tylko tam, gdzie realizują zadanie.
+   - Wideo lub animowany hero stosuj jako finalne medium z fallbackiem i kontrolą, nigdy jako placeholder ani obowiązkową ozdobę.
 
 ## Macierz
 
