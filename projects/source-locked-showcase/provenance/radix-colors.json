@@ -1,0 +1,17 @@
+{
+  "id": "radix-colors-source-locked-showcase",
+  "name": "Radix Colors semantic palette",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "radix-colors",
+    "url": "https://www.radix-ui.com/colors",
+    "repository": "https://github.com/radix-ui/colors",
+    "author": "Radix UI contributors",
+    "commitOrVersion": "3.0.0",
+    "verifiedAt": "2026-09-21"
+  },
+  "license": "MIT",
+  "licenseFile": "licenses/RADIX_COLORS_MIT",
+  "modifications": ["mapped slate and blue scales to semantic roles"],
+  "redistribution": "private-project-only"
+}

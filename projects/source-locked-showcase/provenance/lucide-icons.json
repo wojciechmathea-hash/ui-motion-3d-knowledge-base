@@ -1,0 +1,17 @@
+{
+  "id": "lucide-icons-source-locked-showcase",
+  "name": "Lucide interface icons",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "lucide",
+    "url": "https://lucide.dev",
+    "repository": "https://github.com/lucide-icons/lucide",
+    "author": "Lucide contributors",
+    "commitOrVersion": "lucide-react 1.47.0",
+    "verifiedAt": "2026-09-21"
+  },
+  "license": "ISC",
+  "licenseFile": "licenses/LUCIDE_ISC",
+  "modifications": ["semantic icon selection", "size and stroke inherited from source API"],
+  "redistribution": "private-project-only"
+}

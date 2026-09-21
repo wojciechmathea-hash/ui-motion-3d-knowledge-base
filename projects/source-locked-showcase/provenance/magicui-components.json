@@ -1,0 +1,18 @@
+{
+  "id": "magicui-source-locked-showcase",
+  "name": "Magic UI Free component family",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "magicui-net",
+    "url": "https://magicui.design/docs",
+    "repository": "https://github.com/magicuidesign/magicui",
+    "author": "Magic UI contributors",
+    "commitOrVersion": "d7207e5692d14c00dceafa8488d6d01f197fa0e4",
+    "verifiedAt": "2026-09-21"
+  },
+  "license": "MIT",
+  "licenseFile": "licenses/MAGIC_UI_MIT.md",
+  "components": ["SiteHeader", "Hero", "ScrollProgress", "TextReveal", "BlurFade", "BentoGrid", "BentoCard", "NumberTicker", "AnimatedList", "Dock", "DockIcon", "CTASection", "SiteFooter"],
+  "modifications": ["Polish content", "real section anchors", "semantic Radix color roles", "responsive and reduced-motion integration"],
+  "redistribution": "private-project-only"
+}

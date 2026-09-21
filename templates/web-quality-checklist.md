@@ -56,6 +56,11 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 
 ## Pochodzenie
 
+- [ ] Projekt zawiera `SOURCE_LOCK_MANIFEST.md` utworzony przed implementacją.
+- [ ] Manifest obejmuje 100% widocznych i interaktywnych elementów: układy sekcji, komponenty, typografię, ikony, media, wizualizacje, ruch, tła i dekoracje.
+- [ ] Każdy wpis wskazuje `registryId`, dokładny plik lub komponent upstream, URL, commit/wersję, licencję, dozwolone modyfikacje i rekord provenance.
+- [ ] Nie ma wpisów `local-original`, elementów `reference-only` ani autorskich kształtów, układów, efektów lub wizualnych fallbacków agenta.
+- [ ] Zastosowano jedną główną rodzinę komponentów; każde odstępstwo ma w manifeście uzasadnienie funkcjonalne i zgodność tokenów.
 - [ ] Każdy adaptowany komponent ma URL, commit/wersję, licencję i opis zmian.
 - [ ] Każdy asset ma autora, źródło, licencję i datę pozyskania.
 - [ ] Nie ma elementów Pro/Premium ani materiałów o nieznanej licencji.

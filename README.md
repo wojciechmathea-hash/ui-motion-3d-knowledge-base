@@ -95,8 +95,7 @@ Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-g
 
 ## Projekty
 
-- [Interface Atlas](projects/interface-atlas-showcase/README.md) — pełny showcase bazy: scrollytelling, laboratorium komponentów, prawdziwe dane katalogów, system palet i typografii, motion oraz proceduralna topologia WebGL z fallbackiem SVG.
-- [ALLinTraders site](projects/allintraders-site/README.md) — oryginalny, responsywny landing page bez WebGL i 3D, z trackingiem scrollytelling, Market Lab, eksploratorem programu, ostrzeżeniami o ryzyku i pełnym provenance.
+- [Source Locked Showcase](projects/source-locked-showcase/README.md) — interaktywny scrollytelling bez WebGL, zbudowany wyłącznie z jawnie zmapowanych komponentów Magic UI Free i ich zatwierdzonych zależności. Pełną mapę elementów zawiera projektowy `SOURCE_LOCK_MANIFEST.md`.
 
 ## Jedna instrukcja tworzenia
 

@@ -1,0 +1,17 @@
+{
+  "id": "radix-primitives-source-locked-showcase",
+  "name": "Radix Tabs and Accordion through Magic UI/shadcn primitives",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "radix-primitives",
+    "url": "https://www.radix-ui.com/primitives",
+    "repository": "https://github.com/radix-ui/primitives",
+    "author": "Radix UI contributors",
+    "commitOrVersion": "@radix-ui/react-tabs 1.1.21; @radix-ui/react-accordion 1.2.20",
+    "verifiedAt": "2026-09-21"
+  },
+  "license": "MIT",
+  "licenseFile": "licenses/RADIX_MIT",
+  "modifications": ["content only", "responsive composition", "Polish accessible labels"],
+  "redistribution": "private-project-only"
+}

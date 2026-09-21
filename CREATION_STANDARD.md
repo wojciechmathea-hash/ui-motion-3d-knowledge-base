@@ -17,7 +17,7 @@ Komponent, efekt, font, ikona, ilustracja, model, tekstura, szablon lub inny ass
 1. **zatwierdzone źródło** — wpis w `catalog/source-registry.json` lub `catalog/font-source-registry.json`, z licencją pozwalającą na dane użycie;
 2. **lokalne narzędzie open source** — wynik wygenerowany lub zbudowany za pomocą pozycji `local-open-source` z `catalog/generator-registry.json`, po sprawdzeniu licencji narzędzia, modelu, checkpointu, rozszerzeń i danych wejściowych.
 
-Zwykły semantyczny HTML, CSS, TypeScript i kod integracyjny specyficzny dla projektu można pisać lokalnie. Nie wolno jednak przedstawiać nieudokumentowanego, ręcznie skopiowanego lub wygenerowanego przez zamkniętą usługę elementu jako komponentu z tej bazy.
+Lokalnie można pisać wyłącznie **niewizualny kod integracyjny**: semantyczne wrappery, routing, pobieranie i wiązanie danych, zarządzanie stanem, obsługę błędów, atrybuty dostępności oraz testy. Taki kod nie może samodzielnie ustanawiać wyglądu, układu, ruchu ani charakteru komponentu.
 
 Niedozwolone są:
 
@@ -29,6 +29,29 @@ Niedozwolone są:
 - Polygen oraz przypadkowe biblioteki gotowych brył low-poly/voxel jako źródło finalnych modeli 3D.
 
 `catalog/scrollytelling-inspiration-registry.json` jest wyłącznie rejestrem **do analizy**. Żadna pozycja z tego rejestru nie staje się przez to źródłem kodu, tekstów ani assetów.
+
+## 2A. TRYB SOURCE-LOCKED — zero autorskiej interpretacji wizualnej agenta
+
+Tryb `source-locked` jest domyślny i obowiązkowy. **BRAK ŹRÓDŁA = BRAK ELEMENTU.** Agent nie może uzupełniać luk własnym projektem, stylistycznym domysłem ani wygenerowanym ad hoc zamiennikiem.
+
+Każdy widoczny albo interaktywny element rezultatu musi przed implementacją wskazywać istniejący rekord w repozytorium i bazie danych. Dotyczy to w szczególności:
+
+- całych układów stron i sekcji, nawigacji, hero, stopek, kart, tabel, formularzy i kontrolek;
+- typografii, ikon, ilustracji, zdjęć, wideo, tekstur, modeli, wykresów i sposobu prezentacji danych;
+- animacji, zachowania scroll, przejść, kursorów, hoverów, focusów oraz innych efektów;
+- gradientów, teł, ramek, ornamentów, plam, orbit, siatek, przypadkowych figur i wszystkich elementów dekoracyjnych.
+
+Dla każdego elementu manifest musi podać co najmniej: `registryId`, dokładny plik lub nazwę komponentu upstream, URL źródła, commit albo wersję, licencję, dozwoloną adaptację i rekord provenance. Sam fakt, że coś znajduje się w `projects/`, na zrzucie ekranu lub w poprzedniej realizacji, nie czyni tego zatwierdzonym źródłem. Projekt może być źródłem dopiero wtedy, gdy jego używany element ma własny kompletny rekord wskazujący zatwierdzony upstream.
+
+Przed napisaniem kodu wizualnego utwórz w projekcie `SOURCE_LOCK_MANIFEST.md` na podstawie `templates/source-lock-manifest.md`. Manifest ma pokrywać 100% elementów widocznych i interaktywnych. Wpis `local-original`, brak rekordu albo pozycja `reference-only` oznacza przerwanie budowy do czasu uzupełnienia i zweryfikowania bazy.
+
+Agent może adaptować komponent wyłącznie w zakresie przewidzianym przez manifest: podmiana prawdziwej treści, mapowanie istniejących tokenów, responsywność, dostępność, reduced motion i integracja danych. Nie może zmieniać go w nową formę wizualną, projektować alternatywnego układu ani dokładać ozdobników nieobecnych w źródle.
+
+Wynik lokalnego generatora open source wolno włączyć dopiero po zapisaniu go w repozytorium i utworzeniu pełnego rekordu provenance. Generowanie assetu bezpośrednio do budowanej strony oraz tworzenie wizualnego fallbacku przez agenta jest zabronione. Gdy źródłowy element nie ma dozwolonego fallbacku, użyj prostego natywnego HTML bez autorskiej stylizacji albo pomiń moduł.
+
+Jedna realizacja używa jednej głównej rodziny komponentów lub jednego zarejestrowanego systemu wizualnego. Łączenie rodzin wymaga zapisanej w manifeście zgodności tokenów i konkretnej potrzeby, której główna rodzina nie pokrywa. Dostępność wielu efektów nie jest powodem ich łączenia.
+
+Odstępstwo jest możliwe tylko na jednoznaczne polecenie użytkownika, zapisane w manifeście dla konkretnie wskazanego elementu. Ogólne polecenia „stwórz”, „ulepsz” lub „zrób high-end” nie zezwalają agentowi na autorską interpretację wizualną.
 
 ## 3. Brief obowiązkowy
 
@@ -156,20 +179,22 @@ Brak pełnego provenance oznacza `reference-only` i zakaz integracji.
 ## 14. Proces wykonania
 
 1. Przeczytaj ten dokument i brief użytkownika.
-2. Wybierz treść oraz strukturę bez efektów.
-3. Znajdź minimalny zestaw elementów w zatwierdzonych rejestrach.
-4. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
-5. Zbuduj semantyczny, responsywny wariant bazowy.
-6. Dodaj możliwie pełny zestaw sensownych interakcji i subtelny feedback ruchowy tam, gdzie poprawiają zrozumienie, kontrolę lub orientację.
-7. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
-8. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
-9. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
+2. Wybierz treść oraz strukturę wyłącznie spośród zarejestrowanych układów i wzorców źródłowych.
+3. Utwórz `SOURCE_LOCK_MANIFEST.md` i przypisz każdy widoczny oraz interaktywny element do konkretnego rekordu i pliku upstream.
+4. Zweryfikuj 100% pokrycia manifestu. Przy braku źródła zatrzymaj budowę i najpierw uzupełnij bazę.
+5. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
+6. Zbuduj semantyczny, responsywny wariant bazowy, ograniczając kod lokalny do niewizualnej integracji.
+7. Dodaj tylko interakcje i ruch wskazane przez użyte komponenty źródłowe oraz manifest.
+8. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
+9. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
+10. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
 
 ## 15. Definicja ukończenia
 
 Rezultat jest gotowy dopiero wtedy, gdy:
 
 - realizuje brief i ma czytelną hierarchię bez efektów;
+- ma `SOURCE_LOCK_MANIFEST.md` pokrywający 100% elementów widocznych i interaktywnych, bez wpisów `local-original` i `reference-only`;
 - wszystkie komponenty i assety pochodzą z zatwierdzonych źródeł lub lokalnych narzędzi open source;
 - nie zawiera Pro, nieznanej licencji ani materiałów skopiowanych z inspiracji;
 - nie zawiera placeholderów, atrap treści, pustych modułów ani niedziałających akcji;

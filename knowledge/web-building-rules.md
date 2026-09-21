@@ -2,6 +2,14 @@
 
 Status: materiał pomocniczy. Jedyną nadrzędną instrukcją dla wszystkich formatów jest `CREATION_STANDARD.md`.
 
+## Tryb source-locked przed implementacją
+
+- Utwórz `SOURCE_LOCK_MANIFEST.md` na podstawie `templates/source-lock-manifest.md` przed napisaniem warstwy wizualnej.
+- Każdy widoczny lub interaktywny element wskazuje zatwierdzony rekord, dokładny plik upstream, wersję, licencję i provenance.
+- Brak rekordu oznacza brak elementu. Agent nie tworzy zastępczych układów, dekoracji, figur, teł, ikon, animacji ani wizualnych fallbacków.
+- Lokalny kod ogranicza się do semantyki i integracji, które nie ustanawiają nowej formy wizualnej.
+- Jedna strona ma jedną główną rodzinę komponentów; dodatkowe źródło wymaga braku funkcji w rodzinie głównej i udokumentowanej zgodności tokenów.
+
 Ten dokument jest obowiązkową bramką projektową dla każdej strony tworzonej z tej bazy. Kolejność priorytetów jest stała:
 
 > zadanie użytkownika → treść → struktura → dostępność → układ → komponenty → ruch → dekoracja

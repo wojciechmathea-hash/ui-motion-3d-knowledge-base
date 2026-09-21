@@ -12,6 +12,7 @@ $FontRegistryPath = Join-Path $RepoRoot "catalog/font-source-registry.json"
 $ScrollytellingRegistryPath = Join-Path $RepoRoot "catalog/scrollytelling-inspiration-registry.json"
 $ColorPaletteRegistryPath = Join-Path $RepoRoot "catalog/color-palette-registry.json"
 $CreationStandardPath = Join-Path $RepoRoot "CREATION_STANDARD.md"
+$SourceLockManifestTemplatePath = Join-Path $RepoRoot "templates/source-lock-manifest.md"
 $AssetsPath = Join-Path $RepoRoot "catalog/generated-assets.json"
 $SummaryPath = Join-Path $RepoRoot "catalog/generated-summary.json"
 
@@ -25,8 +26,17 @@ $colorPaletteRegistry = Get-Content -Raw -LiteralPath $ColorPaletteRegistryPath 
 if (-not (Test-Path -LiteralPath $CreationStandardPath -PathType Leaf)) {
     throw "Missing the single authoritative creation instruction: CREATION_STANDARD.md"
 }
+$creationStandard = Get-Content -Raw -LiteralPath $CreationStandardPath
+foreach ($requiredMarker in @("TRYB SOURCE-LOCKED", "BRAK ŹRÓDŁA = BRAK ELEMENTU", "SOURCE_LOCK_MANIFEST.md", "local-original")) {
+    if ($creationStandard -notmatch [regex]::Escape($requiredMarker)) {
+        throw "CREATION_STANDARD.md is missing the source-lock marker: $requiredMarker"
+    }
+}
+if (-not (Test-Path -LiteralPath $SourceLockManifestTemplatePath -PathType Leaf)) {
+    throw "Missing required source-lock template: templates/source-lock-manifest.md"
+}
 $agentInstructions = Get-Content -Raw -LiteralPath (Join-Path $RepoRoot "AGENTS.md")
-if ($agentInstructions -notmatch [regex]::Escape("CREATION_STANDARD.md") -or $agentInstructions -notmatch "jedyną nadrzędną instrukcją") {
+if ($agentInstructions -notmatch [regex]::Escape("CREATION_STANDARD.md") -or $agentInstructions -notmatch "jedyną nadrzędną instrukcją" -or $agentInstructions -notmatch "source-locked" -or $agentInstructions -notmatch [regex]::Escape("templates/source-lock-manifest.md")) {
     throw "AGENTS.md must route every creation task through the single authoritative CREATION_STANDARD.md file."
 }
 
@@ -258,4 +268,4 @@ if ($uninitialized.Count -gt 0) {
 
 & (Join-Path $PSScriptRoot "validate-projects.ps1")
 
-Write-Host "Validation passed: private, free-only, no Pro, no redistribution; one creation standard; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators, $($learningRegistry.repositories.Count) learning repositories, $($fontRegistry.sources.Count) font catalogs, $($scrollytellingRegistry.inspirations.Count) scrollytelling inspirations and $($colorPaletteRegistry.packages.Count) color palette packages registered."
+Write-Host "Validation passed: private, free-only, no Pro, no redistribution; one source-locked creation standard; $($registry.sources.Count) sources, $($generatorRegistry.generators.Count) generators, $($learningRegistry.repositories.Count) learning repositories, $($fontRegistry.sources.Count) font catalogs, $($scrollytellingRegistry.inspirations.Count) scrollytelling inspirations and $($colorPaletteRegistry.packages.Count) color palette packages registered."
