@@ -16,3 +16,36 @@
 [submodule "upstream/magicui-portfolio"]
 	path = upstream/magicui-portfolio
 	url = https://github.com/magicuidesign/portfolio.git
+[submodule "upstream/curated/shadcn-ui"]
+	path = upstream/curated/shadcn-ui
+	url = https://github.com/shadcn-ui/ui.git
+[submodule "upstream/curated/daisyui"]
+	path = upstream/curated/daisyui
+	url = https://github.com/saadeghi/daisyui.git
+[submodule "upstream/curated/hyperui"]
+	path = upstream/curated/hyperui
+	url = https://github.com/markmead/hyperui.git
+[submodule "upstream/curated/kokonutui"]
+	path = upstream/curated/kokonutui
+	url = https://github.com/kokonut-labs/kokonutui.git
+[submodule "upstream/curated/motion"]
+	path = upstream/curated/motion
+	url = https://github.com/motiondivision/motion.git
+[submodule "upstream/curated/auto-animate"]
+	path = upstream/curated/auto-animate
+	url = https://github.com/formkit/auto-animate.git
+[submodule "upstream/curated/react-three-fiber"]
+	path = upstream/curated/react-three-fiber
+	url = https://github.com/pmndrs/react-three-fiber.git
+[submodule "upstream/curated/drei"]
+	path = upstream/curated/drei
+	url = https://github.com/pmndrs/drei.git
+[submodule "upstream/curated/leva"]
+	path = upstream/curated/leva
+	url = https://github.com/pmndrs/leva.git
+[submodule "upstream/curated/tanstack-table"]
+	path = upstream/curated/tanstack-table
+	url = https://github.com/TanStack/table.git
+[submodule "upstream/curated/tabler-icons"]
+	path = upstream/curated/tabler-icons
+	url = https://github.com/tabler/tabler-icons.git

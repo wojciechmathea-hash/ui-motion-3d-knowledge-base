@@ -1,7 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T09:20:52.6701306Z",
-  "sourceCount": 6,
+  "generatedAt": "2026-09-21T09:47:52.7851536Z",
+  "sourceCount": 42,
+  "localUpstreamCount": 17,
+  "catalogOnlyCount": 25,
   "sources": [
     {
       "id": "threeui",
@@ -58,6 +60,72 @@
           "count": 32
         }
       ]
+    },
+    {
+      "id": "auto-animate",
+      "commit": "06882a8e69ba9bc8456d8f2ae6010f697fd7a37c",
+      "sourcePath": "upstream/curated/auto-animate",
+      "license": "MIT"
+    },
+    {
+      "id": "daisyui",
+      "commit": "530fd88eec05d76931c475eae92485d99ae5638c",
+      "sourcePath": "upstream/curated/daisyui",
+      "license": "MIT"
+    },
+    {
+      "id": "drei",
+      "commit": "ffa15b956e320391b0e86084cb58c8da0445abe3",
+      "sourcePath": "upstream/curated/drei",
+      "license": "MIT"
+    },
+    {
+      "id": "hyperui",
+      "commit": "ae5038979b77320793360a46b85e7c71a73beda6",
+      "sourcePath": "upstream/curated/hyperui",
+      "license": "MIT"
+    },
+    {
+      "id": "kokonutui",
+      "commit": "83eec6d982d400a18438001a8efdbac1f159dd43",
+      "sourcePath": "upstream/curated/kokonutui",
+      "license": "MIT"
+    },
+    {
+      "id": "leva",
+      "commit": "402a1e9d0899e6d384993aaffe8dc0d2c39110e1",
+      "sourcePath": "upstream/curated/leva",
+      "license": "MIT"
+    },
+    {
+      "id": "motion",
+      "commit": "16c61222c4166bbef5ff6ab0051192faa79fa8c8",
+      "sourcePath": "upstream/curated/motion",
+      "license": "MIT"
+    },
+    {
+      "id": "react-three-fiber",
+      "commit": "ff3899dbf43d2a88895fecf53c147192abfd7431",
+      "sourcePath": "upstream/curated/react-three-fiber",
+      "license": "MIT"
+    },
+    {
+      "id": "shadcn-ui",
+      "commit": "98a1fe67b439324ddc857f47fbdce056600a4329",
+      "sourcePath": "upstream/curated/shadcn-ui",
+      "license": "MIT"
+    },
+    {
+      "id": "tabler-icons",
+      "commit": "87e7c390fb4ec332ccad0bde25160b233241eb8f",
+      "sourcePath": "upstream/curated/tabler-icons",
+      "license": "MIT"
+    },
+    {
+      "id": "tanstack-table",
+      "commit": "21d713fc4947d2a08cc2136bb055889a61412ded",
+      "sourcePath": "upstream/curated/tanstack-table",
+      "license": "MIT"
     }
   ]
 }

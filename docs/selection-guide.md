@@ -7,13 +7,27 @@
    - Nie: sprawdź, czy dekoracja nie pogarsza czytelności i wydajności.
 2. Czy potrzebujesz sekwencji, scrubowania, SVG albo wielu targetów?
    - Tak: Anime.js.
+   - Jeśli animujesz głównie layout i gesty w React: Motion.
+   - Jeśli chcesz tylko płynnie animować dodawanie, usuwanie i zmianę kolejności elementów: AutoAnimate.
 3. Czy potrzebujesz gotowego komponentu React/Tailwind?
    - Subtelny efekt marketingowy: Magic UI.
    - Eksperymentalny tekst, tło lub mikrointerakcja: React Bits.
+   - Fundament design systemu: shadcn/ui, Radix Primitives albo Base UI.
+   - Gotowe klasy i wiele motywów: daisyUI.
+   - Sekcje marketingowe: HyperUI lub Kokonut UI.
    - Szerokie wyszukiwanie: 21st.dev, po weryfikacji licencji elementu.
 4. Czy rezultat wymaga głębi, shaderów lub GPU?
-   - Tak: ThreeUI Community jako punkt wyjścia.
+   - Gotowy efekt: ThreeUI Community jako punkt wyjścia.
+   - Własna scena React: React Three Fiber + Drei; Leva do strojenia.
+   - Silnik niezależny od React: Three.js albo Babylon.js.
    - Upewnij się, że istnieje statyczny fallback i budżet wydajności.
+5. Czy główną treścią są dane?
+   - Tabela headless: TanStack Table.
+   - Bardzo duży edytowalny grid: Glide Data Grid.
+   - Wykres React: Recharts; pełna kontrola: visx; duże lub złożone dane: Apache ECharts.
+6. Czy potrzebujesz gotowego assetu?
+   - Ikony: wybierz jedną rodzinę spośród Tabler, Lucide, Heroicons lub Phosphor.
+   - HDRI, tekstura albo model: zacznij od Poly Haven; dla innych kolekcji sprawdź licencję konkretnego pliku.
 
 ## Macierz
 
@@ -35,4 +49,7 @@
 - Zadbaj o stan początkowy bez JavaScript i bez WebGL.
 - Dla efektów kursora zapewnij zachowanie dotykowe lub wyłącz je na touch.
 - Dla scroll animation unikaj blokowania natywnego scrolla.
+- Nie mieszaj kilku systemów komponentów bez warstwy wspólnych tokenów typografii, koloru, radiusu i spacingu.
+- Dla danych wybieraj narzędzie na podstawie liczby elementów, dostępności i potrzeb interakcji, nie wyglądu demo.
 
+Pełny katalog porównawczy znajduje się w [free-source-directory.md](free-source-directory.md), a zasady tabel i wykresów w [`../knowledge/data-visualization.md`](../knowledge/data-visualization.md).

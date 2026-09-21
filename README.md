@@ -1,6 +1,6 @@
 # UI Motion 3D Knowledge Base
 
-Prywatna, agent-friendly baza wiedzy do projektowania i budowania interfejsów: komponenty UI, animacje, mikrointerakcje, shadery, WebGL i sceny 3D.
+Prywatna, agent-friendly baza wiedzy do projektowania i budowania interfejsów: komponenty UI, animacje, mikrointerakcje, shadery, WebGL, sceny 3D, tabele, wykresy i darmowe assety wizualne.
 
 Repozytorium porządkuje wskazane źródła, zachowuje ich pochodzenie i licencje oraz podpina otwarte implementacje jako submoduły Git. Nie jest kopią serwisów ani marketplace’em.
 
@@ -13,7 +13,7 @@ Repozytorium porządkuje wskazane źródła, zachowuje ich pochodzenie i licencj
 | `knowledge/` | Reguły kompozycji UI, motion i 3D/WebGL |
 | `templates/` | Szablon rekordu komponentu z pełnym provenance |
 | `tools/` | Aktualizacja submodułów, generowanie indeksu i walidacja |
-| `upstream/` | Przypięte wersje otwartych repozytoriów źródłowych |
+| `upstream/` | Przypięte wersje wybranych otwartych repozytoriów źródłowych |
 | `AGENTS.md` | Instrukcje dla agentów AI korzystających z bazy |
 
 ## Źródła
@@ -26,6 +26,12 @@ Repozytorium porządkuje wskazane źródła, zachowuje ich pochodzenie i licencj
 - [React Bits](https://reactbits.dev) — indeks i przypięty upstream; kod wolno wykorzystywać w produktach, ale nie redystrybuować jako bibliotekę komponentów.
 
 Szczegółowy stan prawny i techniczny jest opisany w [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) oraz [docs/licensing.md](docs/licensing.md).
+
+## Rozszerzony katalog darmowych źródeł
+
+Rejestr obejmuje teraz 42 źródła. Oprócz sześciu źródeł bazowych zawiera 36 zweryfikowanych pozycji z obszarów UI i motywów, motion, 3D/WebGL, tabel i wizualizacji danych oraz ikon i assetów 3D. Jedenaście reprezentatywnych projektów jest przypiętych jako dodatkowe submoduły, a cięższe kolekcje pozostają bezpiecznymi linkami do oficjalnych stron.
+
+Pełny, pogrupowany indeks z licencjami, zastosowaniami i ograniczeniami znajduje się w [docs/free-source-directory.md](docs/free-source-directory.md).
 
 ## Start
 
@@ -52,6 +58,15 @@ git submodule update --init --recursive --depth 1
 | Efektowne tła, tekst i mikrointerakcje React | React Bits |
 | Szerokie wyszukiwanie społecznościowe | 21st.dev, z obowiązkową kontrolą licencji |
 | Darmowy template widoczny przy Magic UI Pro | Publiczny `magicuidesign/portfolio` na licencji MIT; cała warstwa Pro pozostaje wyłączona |
+| Headless UI i dostępne prymitywy | Radix Primitives, Base UI, TanStack Table |
+| Motywy i gotowe sekcje Tailwind | shadcn/ui, daisyUI, HyperUI, Kokonut UI |
+| Proste animacje layoutu | AutoAnimate |
+| Animacje React i gesty | Motion albo React Spring |
+| React + Three.js | React Three Fiber + Drei; Leva do strojenia parametrów |
+| Tabele i duże zbiory danych | TanStack Table, Glide Data Grid, Grid.js |
+| Wykresy | Recharts, Apache ECharts, visx, Chart.js lub Tremor |
+| Ikony | Tabler Icons, Lucide, Heroicons albo Phosphor Icons |
+| HDRI, tekstury i modele 3D | Poly Haven; glTF Sample Assets i Babylon Assets dopiero po kontroli licencji konkretnego pliku |
 
 Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-guide.md).
 

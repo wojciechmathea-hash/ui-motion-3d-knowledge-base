@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T09:20:52.6701306Z",
+  "generatedAt": "2026-09-21T09:47:52.7851536Z",
   "policy": {
     "private": true,
     "freeOnly": true,
@@ -4123,6 +4123,161 @@
         "id": "WarpText",
         "category": "TextAnimations",
         "sourcePath": "upstream/react-bits/src/content/TextAnimations/WarpText"
+      }
+    ],
+    "curatedUpstreams": [
+      {
+        "id": "auto-animate",
+        "name": "AutoAnimate",
+        "sourcePath": "upstream/curated/auto-animate",
+        "commit": "06882a8e69ba9bc8456d8f2ae6010f697fd7a37c",
+        "license": "MIT",
+        "domains": [
+          "animation",
+          "layout-transitions",
+          "microinteractions",
+          "framework-agnostic"
+        ]
+      },
+      {
+        "id": "daisyui",
+        "name": "daisyUI",
+        "sourcePath": "upstream/curated/daisyui",
+        "commit": "530fd88eec05d76931c475eae92485d99ae5638c",
+        "license": "MIT",
+        "domains": [
+          "tailwind",
+          "themes",
+          "components",
+          "design-tokens"
+        ]
+      },
+      {
+        "id": "drei",
+        "name": "Drei",
+        "sourcePath": "upstream/curated/drei",
+        "commit": "ffa15b956e320391b0e86084cb58c8da0445abe3",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "3d",
+          "threejs",
+          "helpers",
+          "shaders"
+        ]
+      },
+      {
+        "id": "hyperui",
+        "name": "HyperUI",
+        "sourcePath": "upstream/curated/hyperui",
+        "commit": "ae5038979b77320793360a46b85e7c71a73beda6",
+        "license": "MIT",
+        "domains": [
+          "tailwind",
+          "components",
+          "marketing-ui",
+          "ecommerce"
+        ]
+      },
+      {
+        "id": "kokonutui",
+        "name": "Kokonut UI",
+        "sourcePath": "upstream/curated/kokonutui",
+        "commit": "83eec6d982d400a18438001a8efdbac1f159dd43",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "tailwind",
+          "components",
+          "microinteractions"
+        ]
+      },
+      {
+        "id": "leva",
+        "name": "Leva",
+        "sourcePath": "upstream/curated/leva",
+        "commit": "402a1e9d0899e6d384993aaffe8dc0d2c39110e1",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "controls",
+          "3d-tooling",
+          "prototyping",
+          "design-tuning"
+        ]
+      },
+      {
+        "id": "motion",
+        "name": "Motion",
+        "sourcePath": "upstream/curated/motion",
+        "commit": "16c61222c4166bbef5ff6ab0051192faa79fa8c8",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "javascript",
+          "animation",
+          "gestures",
+          "layout",
+          "scroll"
+        ]
+      },
+      {
+        "id": "react-three-fiber",
+        "name": "React Three Fiber",
+        "sourcePath": "upstream/curated/react-three-fiber",
+        "commit": "ff3899dbf43d2a88895fecf53c147192abfd7431",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "3d",
+          "threejs",
+          "webgl",
+          "rendering"
+        ]
+      },
+      {
+        "id": "shadcn-ui",
+        "name": "shadcn/ui",
+        "sourcePath": "upstream/curated/shadcn-ui",
+        "commit": "98a1fe67b439324ddc857f47fbdce056600a4329",
+        "license": "MIT",
+        "domains": [
+          "react",
+          "tailwind",
+          "components",
+          "themes",
+          "forms",
+          "data-display"
+        ]
+      },
+      {
+        "id": "tabler-icons",
+        "name": "Tabler Icons",
+        "sourcePath": "upstream/curated/tabler-icons",
+        "commit": "87e7c390fb4ec332ccad0bde25160b233241eb8f",
+        "license": "MIT",
+        "domains": [
+          "icons",
+          "svg",
+          "react",
+          "vue",
+          "svelte"
+        ]
+      },
+      {
+        "id": "tanstack-table",
+        "name": "TanStack Table",
+        "sourcePath": "upstream/curated/tanstack-table",
+        "commit": "21d713fc4947d2a08cc2136bb055889a61412ded",
+        "license": "MIT",
+        "domains": [
+          "tables",
+          "data-grid",
+          "headless-ui",
+          "sorting",
+          "filtering",
+          "virtualization"
+        ]
       }
     ]
   }

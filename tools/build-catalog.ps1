@@ -6,6 +6,8 @@ $ErrorActionPreference = "Stop"
 
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 $CatalogDirectory = Join-Path $RepoRoot "catalog"
+$RegistryPath = Join-Path $CatalogDirectory "source-registry.json"
+$registry = Get-Content -Raw -LiteralPath $RegistryPath | ConvertFrom-Json
 
 function Get-CommitSha {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -124,6 +126,25 @@ $twentyFirstItems = @(
         }
 )
 
+$curatedUpstreams = @(
+    $registry.sources |
+        Where-Object {
+            $_.PSObject.Properties.Name -contains "upstreamPath" -and
+            $_.upstreamPath -like "upstream/curated/*"
+        } |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                sourcePath = $_.upstreamPath
+                commit = Get-CommitSha $_.upstreamPath
+                license = $_.license
+                domains = @($_.domains)
+            }
+        }
+)
+
 $assets = [ordered]@{
     schemaVersion = 1
     generatedAt = (Get-Date).ToUniversalTime().ToString("o")
@@ -140,60 +161,76 @@ $assets = [ordered]@{
         magicuiFree = $magicItems
         twentyFirstDev = $twentyFirstItems
         reactBits = $reactBitsItems
+        curatedUpstreams = $curatedUpstreams
     }
 }
+
+$sourceSummaries = @(
+    [ordered]@{
+        id = "threeui"
+        commit = Get-CommitSha "upstream/threeui"
+        itemCount = $threeUiItems.Count
+        routeCount = $threeUiReport.communityRoutes
+        variantCount = $threeUiReport.communityVariants
+    },
+    [ordered]@{
+        id = "animejs"
+        commit = Get-CommitSha "upstream/animejs"
+        exampleCount = $animeItems.Count
+    },
+    [ordered]@{
+        id = "magicui-pro-free-surface"
+        commit = Get-CommitSha "upstream/magicui-portfolio"
+        freeTemplateCount = 1
+        componentFileCount = $portfolioItems.Count
+    },
+    [ordered]@{
+        id = "magicui-net"
+        commit = Get-CommitSha "upstream/magicui"
+        registryItemCount = $magicItems.Count
+    },
+    [ordered]@{
+        id = "21st-dev"
+        commit = Get-CommitSha "upstream/21st-skill"
+        officialSkillCount = $twentyFirstItems.Count
+        marketplaceMirrorCount = 0
+    },
+    [ordered]@{
+        id = "react-bits"
+        commit = Get-CommitSha "upstream/react-bits"
+        componentCount = $reactBitsItems.Count
+        categories = @(
+            $reactBitsItems |
+                Group-Object { $_["category"] } |
+                Sort-Object Name |
+                ForEach-Object {
+                    [ordered]@{
+                        name = $_.Name
+                        count = $_.Count
+                    }
+                }
+        )
+    }
+)
+
+$sourceSummaries += @(
+    $curatedUpstreams | ForEach-Object {
+        [ordered]@{
+            id = $_.id
+            commit = $_.commit
+            sourcePath = $_.sourcePath
+            license = $_.license
+        }
+    }
+)
 
 $summary = [ordered]@{
     schemaVersion = 1
     generatedAt = $assets.generatedAt
-    sourceCount = 6
-    sources = @(
-        [ordered]@{
-            id = "threeui"
-            commit = Get-CommitSha "upstream/threeui"
-            itemCount = $threeUiItems.Count
-            routeCount = $threeUiReport.communityRoutes
-            variantCount = $threeUiReport.communityVariants
-        },
-        [ordered]@{
-            id = "animejs"
-            commit = Get-CommitSha "upstream/animejs"
-            exampleCount = $animeItems.Count
-        },
-        [ordered]@{
-            id = "magicui-pro-free-surface"
-            commit = Get-CommitSha "upstream/magicui-portfolio"
-            freeTemplateCount = 1
-            componentFileCount = $portfolioItems.Count
-        },
-        [ordered]@{
-            id = "magicui-net"
-            commit = Get-CommitSha "upstream/magicui"
-            registryItemCount = $magicItems.Count
-        },
-        [ordered]@{
-            id = "21st-dev"
-            commit = Get-CommitSha "upstream/21st-skill"
-            officialSkillCount = $twentyFirstItems.Count
-            marketplaceMirrorCount = 0
-        },
-        [ordered]@{
-            id = "react-bits"
-            commit = Get-CommitSha "upstream/react-bits"
-            componentCount = $reactBitsItems.Count
-            categories = @(
-                $reactBitsItems |
-                    Group-Object { $_["category"] } |
-                    Sort-Object Name |
-                    ForEach-Object {
-                        [ordered]@{
-                            name = $_.Name
-                            count = $_.Count
-                        }
-                    }
-            )
-        }
-    )
+    sourceCount = $registry.sources.Count
+    localUpstreamCount = @($registry.sources | Where-Object { $_.PSObject.Properties.Name -contains "upstreamPath" }).Count
+    catalogOnlyCount = @($registry.sources | Where-Object { -not ($_.PSObject.Properties.Name -contains "upstreamPath") }).Count
+    sources = $sourceSummaries
 }
 
 Write-JsonFile -Path (Join-Path $CatalogDirectory "generated-assets.json") -Value $assets

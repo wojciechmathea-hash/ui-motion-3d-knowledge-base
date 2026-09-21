@@ -38,11 +38,27 @@ if ($missingUrls.Count -gt 0) {
     throw "Missing requested sources: $($missingUrls -join ', ')"
 }
 
-if ($registry.sources.Count -ne $expectedUrls.Count) {
-    throw "The registry must contain exactly one record for each of the six requested websites."
+if ($registry.sources.Count -lt $expectedUrls.Count) {
+    throw "The registry cannot contain fewer records than the six originally requested websites."
+}
+
+$duplicateIds = @($registry.sources | Group-Object id | Where-Object Count -gt 1)
+if ($duplicateIds.Count -gt 0) {
+    throw "Duplicate source ids: $($duplicateIds.Name -join ', ')"
+}
+
+$duplicateUrls = @($registry.sources | Group-Object requestedUrl | Where-Object Count -gt 1)
+if ($duplicateUrls.Count -gt 0) {
+    throw "Duplicate source URLs: $($duplicateUrls.Name -join ', ')"
 }
 
 foreach ($source in $registry.sources) {
+    foreach ($requiredProperty in @("id", "name", "requestedUrl", "accessTier", "license", "inclusion", "redistribution", "excluded", "domains")) {
+        if (-not ($source.PSObject.Properties.Name -contains $requiredProperty)) {
+            throw "Missing property '$requiredProperty' for source $($source.id)."
+        }
+    }
+
     if ($source.PSObject.Properties.Name -contains "upstreamPath") {
         $upstreamPath = Join-Path $RepoRoot $source.upstreamPath
         if (-not (Test-Path -LiteralPath $upstreamPath)) {
@@ -50,9 +66,11 @@ foreach ($source in $registry.sources) {
         }
     }
 
-    foreach ($licenseFile in @($source.licenseFiles)) {
-        if (-not (Test-Path -LiteralPath (Join-Path $RepoRoot $licenseFile))) {
-            throw "Missing license file for $($source.id): $licenseFile"
+    if ($source.PSObject.Properties.Name -contains "licenseFiles") {
+        foreach ($licenseFile in @($source.licenseFiles)) {
+            if (-not (Test-Path -LiteralPath (Join-Path $RepoRoot $licenseFile))) {
+                throw "Missing license file for $($source.id): $licenseFile"
+            }
         }
     }
 }
@@ -69,6 +87,11 @@ if (-not $assets.policy.private -or -not $assets.policy.freeOnly -or $assets.pol
     throw "Generated catalog policy does not match private/free-only/no-Pro/no-redistribution requirements."
 }
 
+$summary = Get-Content -Raw -LiteralPath $SummaryPath | ConvertFrom-Json
+if ($summary.sourceCount -ne $registry.sources.Count) {
+    throw "Generated summary is stale. Run tools/build-catalog.ps1."
+}
+
 $submoduleStatus = @(git -C $RepoRoot submodule status)
 if ($LASTEXITCODE -ne 0) {
     throw "Unable to read submodule status."
@@ -78,5 +101,4 @@ if ($uninitialized.Count -gt 0) {
     throw "Uninitialized submodules detected. Run: git submodule update --init --recursive --depth 1"
 }
 
-Write-Host "Validation passed: private, free-only, no Pro, no redistribution; all six websites are registered."
-
+Write-Host "Validation passed: private, free-only, no Pro, no redistribution; $($registry.sources.Count) sources registered."

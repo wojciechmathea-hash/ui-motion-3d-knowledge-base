@@ -9,6 +9,8 @@ Każdy wzorzec może należeć do wielu kategorii. Nazwa kategorii opisuje rolę
 - `input`: formularze, pola, przełączniki, suwaki, drag controls.
 - `action`: button, CTA, command, contextual action.
 - `data-display`: karty, listy, tabele, tree, terminal, statystyki.
+- `data-grid`: sortowanie, filtrowanie, edycja, selekcja, wirtualizacja.
+- `data-visualization`: wykresy, mapy, diagramy, dashboardy i legendy.
 - `feedback`: loader, progress, notification, empty/error/success state.
 - `overlay`: modal, popover, tooltip, drawer, command palette.
 - `media`: gallery, carousel, poster wall, device mockup.
@@ -34,9 +36,18 @@ Każdy wzorzec może należeć do wielu kategorii. Nazwa kategorii opisuje rolę
 - `generative-art`: algorytmiczny wzorzec, noise, field, topology.
 - `immersive-background`: pełnoekranowa scena wspierająca treść.
 
+## Kategorie assetów
+
+- `icon`: SVG, outline, filled, duotone i zestawy o wielu wagach.
+- `3d-model`: glTF/GLB, geometria, rig, animacje i materiały.
+- `texture`: PBR, albedo, normal, roughness, displacement i maski.
+- `hdri`: oświetlenie i środowisko sceny.
+- `font`: font tekstowy lub display z osobną licencją.
+- `illustration`: wektor, raster lub kompozycja dekoracyjna.
+
 ## Tagi techniczne
 
-`react`, `typescript`, `tailwind`, `css`, `svg`, `canvas-2d`, `webgl`, `threejs`, `motion`, `animejs`, `glsl`, `r3f`, `client-only`, `gpu-heavy`.
+`react`, `vue`, `typescript`, `tailwind`, `css`, `svg`, `canvas-2d`, `webgl`, `webgpu`, `threejs`, `babylonjs`, `motion`, `animejs`, `glsl`, `r3f`, `d3`, `client-only`, `gpu-heavy`, `virtualized`.
 
 ## Tagi jakościowe
 
@@ -48,4 +59,3 @@ Każdy wzorzec może należeć do wielu kategorii. Nazwa kategorii opisuje rolę
 - `2-supporting`: ruch wspiera hierarchię, ale nie dominuje.
 - `3-hero`: główny akcent jednej sekcji.
 - `4-immersive`: doświadczenie jest zbudowane wokół ruchu/3D; wymaga zgody projektowej i fallbacku.
-

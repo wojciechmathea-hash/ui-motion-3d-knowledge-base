@@ -63,3 +63,31 @@ Submoduł jest odnośnikiem do oficjalnego upstreamu; to repo nie publikuje osob
 
 W tej bazie 21st.dev działa w trybie `reference-only`: wyszukiwanie wyłącznie oficjalnym interfejsem/API/CLI, a import dopiero po zapisaniu licencji konkretnego komponentu.
 
+## Dodatkowe przypięte upstreamy
+
+Poniższe otwarte repozytoria są dostępne w `upstream/curated/` jako submoduły. Każdy wskazany plik licencji pozostaje częścią upstreamu.
+
+| Projekt | Lokalna ścieżka | Licencja |
+|---|---|---|
+| shadcn/ui | `upstream/curated/shadcn-ui` | MIT |
+| daisyUI | `upstream/curated/daisyui` | MIT; płatne motywy i template’y są wyłączone |
+| HyperUI | `upstream/curated/hyperui` | MIT |
+| Kokonut UI | `upstream/curated/kokonutui` | MIT |
+| Motion | `upstream/curated/motion` | MIT; płatne materiały Motion+ są wyłączone |
+| AutoAnimate | `upstream/curated/auto-animate` | MIT |
+| React Three Fiber | `upstream/curated/react-three-fiber` | MIT |
+| Drei | `upstream/curated/drei` | MIT; assety demonstracyjne wymagają osobnej kontroli |
+| Leva | `upstream/curated/leva` | MIT |
+| TanStack Table | `upstream/curated/tanstack-table` | MIT |
+| Tabler Icons | `upstream/curated/tabler-icons` | MIT |
+
+## Źródła katalogowe bez lokalnego mirroru
+
+Pozostałe darmowe źródła są indeksowane jako oficjalne linki. Obejmuje to m.in. Radix Primitives, Base UI, Flowbite, Mantine, React Spring, tsParticles, Three.js, Babylon.js, Recharts, Apache ECharts, visx, Chart.js, Grid.js, Tremor, Lucide, Heroicons, Phosphor Icons oraz biblioteki assetów 3D.
+
+- Theatre.js ma rozdzielone warunki: core jest Apache-2.0, a Studio AGPL-3.0.
+- Poly Haven publikuje assety jako CC0; nie wolno jednak scrapować witryny. Używany ma być oficjalny interfejs lub API.
+- Khronos glTF Sample Assets ma licencje mieszane zależne od modelu.
+- Babylon.js Assets jest domyślnie CC-BY-4.0, ale katalogi mogą mieć wyjątki.
+
+Pełna lista i precyzyjne reguły znajdują się w `catalog/source-registry.json` i `docs/free-source-directory.md`.
