@@ -95,7 +95,8 @@ Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-g
 
 ## Projekty
 
-- [ALLinTraders site](projects/allintraders-site/README.md) — oryginalny, responsywny landing page bez 3D, z interaktywnym Market Lab, eksploratorem programu, ostrzeżeniami o ryzyku i pełnym provenance.
+- [Interface Atlas](projects/interface-atlas-showcase/README.md) — pełny showcase bazy: scrollytelling, laboratorium komponentów, prawdziwe dane katalogów, system palet i typografii, motion oraz proceduralna topologia WebGL z fallbackiem SVG.
+- [ALLinTraders site](projects/allintraders-site/README.md) — oryginalny, responsywny landing page bez WebGL i 3D, z trackingiem scrollytelling, Market Lab, eksploratorem programu, ostrzeżeniami o ryzyku i pełnym provenance.
 
 ## Jedna instrukcja tworzenia
 
