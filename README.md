@@ -28,14 +28,17 @@ Wszystkie rezultaty powstają według jednej nadrzędnej instrukcji: [CREATION_S
 - [magicui.net](https://magicui.net) — źródło discovery kierujące do oficjalnego, bezpłatnego [Magic UI](https://magicui.design); otwarte repo Magic UI jest submodułem.
 - [21st.dev](https://21st.dev) — używany przez oficjalne narzędzie i linki; marketplace nie jest scrapowany, a licencja jest sprawdzana osobno dla każdego komponentu.
 - [React Bits](https://reactbits.dev) — indeks i przypięty upstream; kod wolno wykorzystywać w produktach, ale nie redystrybuować jako bibliotekę komponentów.
+- [HorizonX](https://horizonx.so) — wyłącznie publiczne materiały procesowe i referencja; biblioteka oraz eksport komponentów wymagają subskrypcji, więc liczba zatwierdzonych darmowych komponentów wynosi 0.
 
 Szczegółowy stan prawny i techniczny jest opisany w [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) oraz [docs/licensing.md](docs/licensing.md).
 
 ## Rozszerzony katalog darmowych źródeł
 
-Rejestr obejmuje teraz 42 źródła. Oprócz sześciu źródeł bazowych zawiera 36 zweryfikowanych pozycji z obszarów UI i motywów, motion, 3D/WebGL, tabel i wizualizacji danych oraz ikon i assetów 3D. Jedenaście reprezentatywnych projektów jest przypiętych jako dodatkowe submoduły, a cięższe kolekcje pozostają bezpiecznymi linkami do oficjalnych stron.
+Rejestr obejmuje teraz 43 źródła. Oprócz sześciu źródeł bazowych zawiera HorizonX w trybie `reference-only` oraz 36 zweryfikowanych pozycji z obszarów UI i motywów, motion, 3D/WebGL, tabel i wizualizacji danych oraz ikon i assetów 3D. Jedenaście reprezentatywnych projektów jest przypiętych jako dodatkowe submoduły, a cięższe kolekcje pozostają bezpiecznymi linkami do oficjalnych stron.
 
 Pełny, pogrupowany indeks z licencjami, zastosowaniami i ograniczeniami znajduje się w [docs/free-source-directory.md](docs/free-source-directory.md).
+
+Zweryfikowany darmowy zakres HorizonX oraz powód wyłączenia jego komponentów opisuje [docs/horizonx-free-surface.md](docs/horizonx-free-surface.md).
 
 ## Rejestry generatorów, nauki, inspiracji, fontów i koloru
 

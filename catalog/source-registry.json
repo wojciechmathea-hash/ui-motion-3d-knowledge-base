@@ -182,6 +182,34 @@
       ]
     },
     {
+      "id": "horizonx-free-surface",
+      "name": "HorizonX — public preview and free resources only",
+      "requestedUrl": "https://horizonx.so",
+      "canonicalDocumentation": "https://horizonx.so/what-is-horizonx",
+      "freeResourceUrls": [
+        "https://horizonx.so/resources/vibe-coding-ui-specification",
+        "https://horizonx.so/resources/vibe-coding-ui-production-readiness"
+      ],
+      "accessTier": "public-preview-and-free-documentation-only",
+      "license": "All rights reserved for the component and asset library; the Vibe Coding UI Specification is explicitly free to copy and adapt",
+      "inclusion": "reference-only",
+      "redistribution": "metadata-and-links-only",
+      "excluded": [
+        "all catalog components, UI kits, templates, design systems and assets",
+        "all HTML, React, Svelte and Figma exports from interactive tools",
+        "all membership downloads, including products not marked Premium",
+        "screenshots, previews, product imagery and marketing copy",
+        "scraping or reconstruction of previewed components"
+      ],
+      "domains": [
+        "ui-quality",
+        "agent-instructions",
+        "production-readiness",
+        "premium-library-reference",
+        "interactive-tools-reference"
+      ]
+    },
+    {
       "id": "shadcn-ui",
       "name": "shadcn/ui",
       "requestedUrl": "https://ui.shadcn.com",

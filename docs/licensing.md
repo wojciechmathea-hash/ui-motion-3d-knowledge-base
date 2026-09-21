@@ -44,3 +44,8 @@ Serwis nie ma jednej licencji dla całego katalogu. Nie wolno tworzyć bulk mirr
 
 Komponenty mogą działać w prywatnej lub komercyjnej aplikacji końcowej, ale nie mogą zostać sprzedane, sublicencjonowane ani redystrybuowane jako komponenty, bundle lub port. Ten projekt nie buduje z nich publicznej paczki.
 
+### HorizonX
+
+HorizonX jest komercyjną biblioteką subskrypcyjną bez darmowego tieru pobierania i nie jest projektem open source. Publiczne edytory pozwalają bez konta konfigurować i oglądać komponenty, ale eksport HTML, React, Svelte i Figma wymaga członkostwa. W bazie nie ma więc zatwierdzonych darmowych komponentów HorizonX.
+
+Dozwolone są wyłącznie linki, własne notatki oraz analiza jawnie darmowych materiałów procesowych. Strona Vibe Coding UI Specification zezwala wprost na bezpłatne kopiowanie i adaptację specyfikacji; nie rozszerza to praw na komponenty, assety, obrazy ani kod platformy. Szczegóły i dowody znajdują się w `docs/horizonx-free-surface.md`.

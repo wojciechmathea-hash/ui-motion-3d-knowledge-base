@@ -63,6 +63,20 @@ Submoduł jest odnośnikiem do oficjalnego upstreamu; to repo nie publikuje osob
 
 W tej bazie 21st.dev działa w trybie `reference-only`: wyszukiwanie wyłącznie oficjalnym interfejsem/API/CLI, a import dopiero po zapisaniu licencji konkretnego komponentu.
 
+## HorizonX
+
+- Strona: https://horizonx.so
+- Opis modelu dostępu: https://horizonx.so/what-is-horizonx
+- Cennik: https://horizonx.so/pricing
+- Warunki: https://horizonx.so/terms
+- Status: `reference-only`; biblioteka nie jest open source i nie ma darmowego tieru pobierania.
+- Interaktywne narzędzia można publicznie konfigurować i oglądać, lecz eksport HTML, React, Svelte i Figma wymaga członkostwa.
+- Vibe Coding UI Specification jest na swojej stronie jawnie oznaczona jako darmowa do kopiowania i adaptacji; traktujemy ją wyłącznie jako materiał procesowy, nie komponent.
+- Żaden komponent, template, UI kit, asset ani eksport HorizonX nie jest kopiowany do repozytorium.
+- Zabronione są scraping, rekonstrukcja na podstawie podglądu i kopiowanie materiałów marketingowych.
+
+Pełny audyt zakresu znajduje się w `docs/horizonx-free-surface.md`.
+
 ## Dodatkowe przypięte upstreamy
 
 Poniższe otwarte repozytoria są dostępne w `upstream/curated/` jako submoduły. Każdy wskazany plik licencji pozostaje częścią upstreamu.

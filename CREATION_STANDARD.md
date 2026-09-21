@@ -67,6 +67,24 @@ Przed tworzeniem zapisz krótko:
 
 Jeżeli informacji brakuje, przygotuj kompletną, neutralną treść opartą na zweryfikowanych faktach albo pomiń dany moduł. Nie maskuj braków przypadkowymi efektami i nie zostawiaj placeholderów.
 
+## 3A. Kontrakt jakości i kierunek artystyczny
+
+Samo użycie zatwierdzonych komponentów nie gwarantuje dobrego projektu. `SOURCE_LOCK_MANIFEST.md` odpowiada na pytanie **skąd pochodzi element**, a brief musi dodatkowo odpowiedzieć **dlaczego element istnieje, jaką pełni rolę i jak łączy się z resztą kompozycji**.
+
+Przed wyborem komponentów dopisz do `BRIEF.md` kontrakt jakości zawierający:
+
+- jedną konkretną tezę wizualną opisującą charakter, rytm i sposób prowadzenia uwagi; same przymiotniki typu „premium”, „nowocześnie” lub „high-end” nie są tezą ani wymaganiem wdrożeniowym;
+- trzy zasady kierunku artystycznego oraz trzy jawne antycele, czyli cechy, których rezultat nie może mieć;
+- jeden zarejestrowany wzorzec kompozycyjny lub rodzinę layoutów, która wyznacza strukturę strony; pojedyncze komponenty nie zastępują wzorca całej kompozycji;
+- gramatykę layoutu: siatkę, szerokości, rytm odstępów, skalę typografii, zasady powierzchni, promieni, cieni, obramowań i pracy z mediami;
+- gramatykę ruchu: maksymalnie kilka powtarzalnych rodzin wejścia, wyjścia i reakcji na stan, wraz z zasadą reduced motion;
+- mapę punktów ciężkości: co jest dominantą każdego viewportu, co jest dowodem, a co działaniem użytkownika;
+- mierzalne warunki odrzucenia projektu oraz widoki, na których zostanie wykonany audyt wizualny.
+
+Przed motion przygotuj statyczny układ pierwszego viewportu i co najmniej jednego reprezentatywnego modułu lub sceny. Jeżeli hierarchia, rytm i relacje nie działają bez animacji, zatrzymaj implementację i popraw kompozycję. Nie próbuj ratować słabego layoutu gradientem, tłem, szkłem, parallaxem, kursorem ani większą liczbą komponentów.
+
+Komponenty dobiera się do zatwierdzonej kompozycji, nigdy odwrotnie. Liczba wykorzystanych bibliotek, efektów i interakcji nie jest kryterium jakości. Wynik ma wyglądać jak jeden świadomie zaprojektowany produkt, a nie demo technologiczne, galeria biblioteki lub zbiór niezależnych eksperymentów.
+
 ## 4. Treść i narracja
 
 - Pisz od wniosku do uzasadnienia. Jeden akapit powinien realizować jedną myśl.
@@ -98,6 +116,11 @@ Jeżeli informacji brakuje, przygotuj kompletną, neutralną treść opartą na 
 - Nie łącz wielu dominant: intensywnego tła, wielkiego tekstu, kursora, szkła, neonu, parallaxu i animacji ciągłej w jednej scenie.
 - Kolor nie jest jedynym nośnikiem znaczenia. Wykresy mają etykiety, jednostki, źródło i tekstowy wniosek.
 - Dla ilustracji i zdjęć utrzymuj jeden kierunek artystyczny, spójny kadr, temperaturę koloru i poziom szczegółu.
+- Karty i obramowane powierzchnie stosuj tylko dla niezależnych obiektów, grup funkcjonalnych lub treści wymagających wyraźnej granicy. Nie zamieniaj całej strony w „zupę kart”, gdzie każdy tekst znajduje się w osobnym zaokrąglonym pudełku.
+- Sąsiadujące sekcje muszą mieć widoczną ciągłość siatki, rytmu, typografii albo narracji. Gdy wyglądają jak elementy z różnych realizacji, wróć do kontraktu jakości zamiast maskować przejście efektem.
+- Negatywna przestrzeń musi prowadzić uwagę lub rozdzielać znaczenia. Przypadkowa pustka, nieuzasadnione wielkie nagłówki i nierówne optycznie marginesy są błędem, nie stylem.
+- Nie dopasowuj komponentów przez `zoom`, arbitralne `scale()`, przycinanie istotnej treści ani zmniejszanie całych modułów do nieczytelnego podglądu. Dopasuj siatkę, wariant komponentu lub strukturę treści.
+- Każdy viewport ma mieć jasny punkt wejścia, dominującą relację i spokojne tło. Jeżeli tło jest silniejsze niż komunikat lub kontrolka, uprość tło.
 
 ## 7. Strony, UI i komponenty
 
@@ -115,6 +138,10 @@ Jeżeli informacji brakuje, przygotuj kompletną, neutralną treść opartą na 
 - Maksymalizuj **wartość i pokrycie interakcji**, nie ich surową liczbę. Jeżeli dwa komponenty rozwiązują to samo albo zwiększają obciążenie poznawcze klienta, zostaw prostszy i lepiej dopracowany wariant.
 - Projektuj mobile-first i testuj przynajmniej szerokości 320/390, 768, 1280 i 1440 CSS px oraz zoom 200%.
 - Podstawowa akcja nie może zależeć wyłącznie od hover, drag, WebGL ani animacji.
+- Nie wybieraj sekcji po to, aby „pokazać możliwości repozytorium”. Każda sekcja istnieje wyłącznie dlatego, że realizuje etap narracji lub zadanie użytkownika.
+- Interaktywność oznacza głębię zachowania: czytelny stan, natychmiastowy feedback, logiczne przejście i użyteczną konsekwencję. Sam hover, tilt, świecenie, przesuwanie kursora lub animowane tło nie czynią modułu wartościowym.
+- Jeżeli dwa kolejne moduły mają inną typografię, geometrię, zasady powierzchni lub język ruchu bez zapisanej przyczyny, projekt nie przechodzi bramki spójności.
+- Techniczna poprawność, komplet provenance i zgodność source-lock są warunkami koniecznymi, lecz nie wystarczają do uznania rezultatu za estetycznie ukończony.
 
 ## 8. Motion i scrollytelling
 
@@ -129,6 +156,11 @@ Jeżeli informacji brakuje, przygotuj kompletną, neutralną treść opartą na 
 - `prefers-reduced-motion: reduce` usuwa parallax, scramble, duże przesunięcia, automatyczne pętle i smooth scroll.
 - Na telefonie upraszczaj scrollytelling do pionowej narracji z czytelnymi stanami statycznymi.
 - Inspiracje analizuj przez: strukturę, rytm, rolę mediów, progresję informacji, zachowanie mobile, dostępność i koszt wydajnościowy. Nie kopiuj ich warstwy wizualnej.
+- Dla każdej ważnej sceny opisz trzy stany: przed wejściem, aktywny oraz po wyjściu. Element nie może po prostu nagle znikać i pojawiać się bez przestrzennej lub narracyjnej ciągłości.
+- Jedna realizacja używa ograniczonego zestawu powtarzalnych archetypów przejść. Losowe mieszanie fade, slide, blur, scale, mask, scramble, parallax i 3D jest zabronione.
+- Scena przypięta scrollowi musi ujawniać relację, zmianę lub konsekwencję. Zamiana kolejnych slajdów przez próg scrolla z generycznym fade nie jest wystarczającym scrollytellingiem.
+- Ruch sterowany scrollem powinien mieć ciągłe mapowanie postępu tam, gdzie użytkownik oczekuje kontroli, stabilne stany spoczynkowe oraz poprawny kierunek przy przewijaniu wstecz.
+- Wejście i wyjście komponentu projektuj jako jedną sekwencję. Nie dopuszczaj skoku layoutu, krótkiego pustego kadru, nakładania tekstu ani utraty fokusu podczas przejścia.
 
 ## 9. 3D i WebGL
 
@@ -179,15 +211,35 @@ Brak pełnego provenance oznacza `reference-only` i zakaz integracji.
 ## 14. Proces wykonania
 
 1. Przeczytaj ten dokument i brief użytkownika.
-2. Wybierz treść oraz strukturę wyłącznie spośród zarejestrowanych układów i wzorców źródłowych.
-3. Utwórz `SOURCE_LOCK_MANIFEST.md` i przypisz każdy widoczny oraz interaktywny element do konkretnego rekordu i pliku upstream.
-4. Zweryfikuj 100% pokrycia manifestu. Przy braku źródła zatrzymaj budowę i najpierw uzupełnij bazę.
-5. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
-6. Zbuduj semantyczny, responsywny wariant bazowy, ograniczając kod lokalny do niewizualnej integracji.
-7. Dodaj tylko interakcje i ruch wskazane przez użyte komponenty źródłowe oraz manifest.
-8. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
-9. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
-10. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
+2. Zapisz w `BRIEF.md` kontrakt jakości: tezę wizualną, zasady, antycele, gramatykę layoutu i gramatykę ruchu.
+3. Wybierz treść oraz strukturę wyłącznie spośród zarejestrowanych układów i wzorców źródłowych.
+4. Utwórz `SOURCE_LOCK_MANIFEST.md` i przypisz każdy widoczny oraz interaktywny element do konkretnego rekordu i pliku upstream.
+5. Zweryfikuj 100% pokrycia manifestu. Przy braku źródła zatrzymaj budowę i najpierw uzupełnij bazę.
+6. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
+7. Zbuduj statyczny, semantyczny i responsywny wariant bazowy, ograniczając kod lokalny do niewizualnej integracji.
+8. Wykonaj pierwszy audyt wizualny bez motion. Popraw hierarchię, rytm, siatkę, typografię i ciągłość sekcji, zanim dodasz efekty.
+9. Zaimplementuj jedną reprezentatywną sekwencję wejścia, stanu aktywnego i wyjścia. Zatwierdź jej jakość oraz zachowanie przy przewijaniu wstecz, zanim powielisz ją na całą stronę.
+10. Dodaj tylko interakcje i ruch wskazane przez użyte komponenty źródłowe, manifest i gramatykę ruchu.
+11. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
+12. Wykonaj końcowy audyt wizualny na co najmniej 390×844, 768×1024 i 1440×900 CSS px oraz w co najmniej jednym stanie interaktywnym każdej kluczowej sekcji.
+13. W audycie nazwij trzy najbardziej widoczne słabości realizacji i popraw je przed ukończeniem. Brak znalezionych problemów bez dowodów oznacza audyt niewykonany, nie projekt idealny.
+14. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
+15. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
+
+## 14A. Warunki natychmiastowego odrzucenia
+
+Nie uznawaj rezultatu za gotowy i nie próbuj „dopieszczać” go kolejnymi efektami, jeżeli występuje choć jeden z poniższych problemów:
+
+- strona przypomina galerię komponentów, dokumentację biblioteki albo techniczne demo zamiast spójnego produktu;
+- kolejne sekcje mają odrębny język wizualny lub motion bez uzasadnienia w kontrakcie jakości;
+- treść nachodzi na siebie, jest przycinana, mieści się wyłącznie dzięki skalowaniu albo traci hierarchię na którymkolwiek widoku testowym;
+- większość treści zamknięto w podobnych kartach, a różnica ważności wynika tylko z rozmiaru lub koloru obramowania;
+- animacje są serią identycznych pojawień i zniknięć, losowym zbiorem efektów albo powodują pusty kadr, migotanie lub skoki layoutu;
+- tło, shader, gradient, kursor lub ornament konkuruje z głównym komunikatem i akcją;
+- interaktywność nie zmienia stanu, nie pomaga zrozumieć treści i służy wyłącznie demonstracji efektu;
+- projekt jest „zgodny technicznie”, lecz na zrzucie wygląda niedokończony, generyczny, przypadkowy albo optycznie niespójny.
+
+W takim przypadku wróć do briefu, wzorca kompozycyjnego i statycznego layoutu. Nowa biblioteka lub dodatkowy efekt nie są naprawą problemu z kierunkiem artystycznym.
 
 ## 15. Definicja ukończenia
 
@@ -201,6 +253,11 @@ Rezultat jest gotowy dopiero wtedy, gdy:
 - wykorzystuje sensowne możliwości interakcji i odpowiada na działanie użytkownika subtelną animacją lub innym jednoznacznym feedbackiem;
 - działa na klawiaturze, telefonie, przy zoomie 200% i reduced motion;
 - mieści się w uzasadnionym budżecie wydajności;
-- ma kompletne provenance i przechodzi walidację repozytorium.
+- ma kompletne provenance i przechodzi walidację repozytorium;
+- posiada konkretny kontrakt jakości i zachowuje jedną tezę wizualną, gramatykę layoutu oraz gramatykę ruchu;
+- nie przypomina katalogu komponentów, nie używa `zoom`/`scale()` jako protezy layoutu i nie zawiera „zupy kart”;
+- przechodzi udokumentowany audyt statycznej kompozycji, reprezentatywnej sekwencji motion oraz trzech wymaganych viewportów;
+- ma nazwane i poprawione co najmniej trzy realne słabości wizualne wykryte przed ukończeniem;
+- nie spełnia żadnego warunku natychmiastowego odrzucenia z sekcji 14A.
 
 Materiały normatywne: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [WAI Understanding WCAG](https://www.w3.org/WAI/WCAG22/understanding/), [ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/) oraz [Core Web Vitals](https://web.dev/articles/defining-core-web-vitals-thresholds).

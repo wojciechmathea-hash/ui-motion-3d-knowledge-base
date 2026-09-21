@@ -19,6 +19,14 @@ Stan weryfikacji: 2026-09-21. Katalog obejmuje wyłącznie darmowe warstwy produ
 
 Oryginalne źródła UI — Magic UI, React Bits, 21st.dev i darmowy publiczny template powiązany z Magic UI Pro — zachowują reguły opisane w `THIRD_PARTY_NOTICES.md`. Warstwy Pro pozostają wyłączone.
 
+## Źródła referencyjne i darmowe materiały procesowe
+
+| Źródło | Darmowy zakres | Status w bazie |
+|---|---|---|
+| [HorizonX](https://horizonx.so) | Vibe Coding UI Specification jest jawnie bezpłatna do kopiowania i adaptacji; publiczna checklista jakości jest darmowym narzędziem | `reference-only`; 0 zatwierdzonych darmowych komponentów, ponieważ biblioteka i eksporty wymagają subskrypcji |
+
+Szczegółowa weryfikacja HorizonX znajduje się w `docs/horizonx-free-surface.md`. Publiczny podgląd interaktywnego komponentu nie jest bezpłatnym komponentem i nie może trafić do projektu.
+
 ## Motion i efekty
 
 | Źródło | Najlepsze zastosowanie | Licencja | Tryb |

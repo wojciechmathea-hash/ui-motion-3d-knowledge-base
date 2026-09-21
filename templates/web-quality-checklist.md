@@ -12,6 +12,18 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] Nie ma placeholderów, `Lorem ipsum`, `TODO`, `TBD`, pustych kart, atrap mediów, niedziałających `#`-linków ani nieaktywnych CTA.
 - [ ] Jest jeden `h1`, logiczna hierarchia nagłówków i semantyczny landmark `main`.
 
+## Kierunek artystyczny i spójność
+
+- [ ] `BRIEF.md` zawiera jedną konkretną tezę wizualną, trzy zasady i trzy antycele; nie opiera kierunku wyłącznie na słowach „premium”, „nowocześnie” lub „high-end”.
+- [ ] Wskazano jeden zarejestrowany wzorzec kompozycyjny lub rodzinę layoutów dla całej realizacji.
+- [ ] Zapisano jedną gramatykę layoutu: siatkę, szerokości, odstępy, typografię, powierzchnie, promienie, cienie i media.
+- [ ] Zapisano jedną gramatykę ruchu: powtarzalne wejścia, wyjścia, feedback i wariant reduced motion.
+- [ ] Każda sekcja realizuje etap narracji lub zadanie użytkownika; żadna nie istnieje tylko po to, by pokazać komponent albo efekt.
+- [ ] Strona wygląda jak jeden produkt, nie jak galeria biblioteki, dokumentacja komponentów lub techniczne demo.
+- [ ] Sąsiadujące sekcje zachowują ciągłość siatki, rytmu, typografii i języka motion.
+- [ ] Karty i obramowane powierzchnie mają funkcjonalne uzasadnienie; całość nie tworzy „zupy kart”.
+- [ ] Tło, gradient, shader, kursor i dekoracje pozostają słabsze od głównego komunikatu oraz działania.
+
 ## UI i responsywność
 
 - [ ] Komponenty są zmapowane na wspólne tokeny koloru, typografii, odstępów i ruchu.
@@ -43,6 +55,19 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] Na telefonie istnieje uproszczony pionowy układ.
 - [ ] Każda animacja ma cel i stabilny stan końcowy.
 - [ ] Animacje są subtelne, krótkie i reagują przede wszystkim na działanie użytkownika; dekoracyjne pętle mają uzasadnienie albo zostały usunięte.
+- [ ] Każda kluczowa scena ma zaprojektowany stan przed wejściem, aktywny i po wyjściu oraz poprawnie działa przy przewijaniu wstecz.
+- [ ] Ograniczona liczba archetypów przejść tworzy jeden język ruchu; efekty nie są losowo mieszane.
+- [ ] Elementy nie znikają i nie pojawiają się nagle, jeżeli zmiana wymaga ciągłości przestrzennej lub narracyjnej.
+- [ ] Sticky/pinned scena ujawnia relację lub zmianę, a nie tylko zamienia slajdy generycznym fade.
+
+## Audyt wizualny
+
+- [ ] Statyczny pierwszy viewport i reprezentatywny moduł zostały ocenione i poprawione przed dodaniem motion.
+- [ ] Wykonano zrzuty lub równoważną inspekcję na 390×844, 768×1024 i 1440×900 CSS px.
+- [ ] Sprawdzono początek, środek, koniec oraz co najmniej jeden aktywny stan każdej kluczowej sekcji.
+- [ ] Nie ma kolizji, przycięć, pustych klatek przejściowych, skoków layoutu ani dopasowania przez `zoom` lub arbitralne `scale()`.
+- [ ] Nazwano trzy najbardziej widoczne słabości wizualne i poprawiono je przed ukończeniem.
+- [ ] Rezultat nie spełnia żadnego warunku natychmiastowego odrzucenia z sekcji 14A `CREATION_STANDARD.md`.
 
 ## Wydajność i technika
 
