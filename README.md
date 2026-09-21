@@ -8,7 +8,7 @@ Repozytorium porządkuje wskazane źródła, zachowuje ich pochodzenie i licencj
 
 | Obszar | Zawartość |
 |---|---|
-| `catalog/` | Rejestr źródeł, zasady użycia i automatycznie generowane podsumowanie zasobów |
+| `catalog/` | Osobne rejestry źródeł, generatorów i repozytoriów edukacyjnych oraz generowane indeksy |
 | `docs/` | Taksonomia, przewodnik wyboru, licencje i workflow pracy |
 | `knowledge/` | Reguły kompozycji UI, motion i 3D/WebGL |
 | `templates/` | Szablon rekordu komponentu z pełnym provenance |
@@ -32,6 +32,15 @@ Szczegółowy stan prawny i techniczny jest opisany w [THIRD_PARTY_NOTICES.md](T
 Rejestr obejmuje teraz 42 źródła. Oprócz sześciu źródeł bazowych zawiera 36 zweryfikowanych pozycji z obszarów UI i motywów, motion, 3D/WebGL, tabel i wizualizacji danych oraz ikon i assetów 3D. Jedenaście reprezentatywnych projektów jest przypiętych jako dodatkowe submoduły, a cięższe kolekcje pozostają bezpiecznymi linkami do oficjalnych stron.
 
 Pełny, pogrupowany indeks z licencjami, zastosowaniami i ograniczeniami znajduje się w [docs/free-source-directory.md](docs/free-source-directory.md).
+
+## Generatory i materiały edukacyjne
+
+Baza zawiera także dwa niezależne rejestry:
+
+- [38 darmowych generatorów](docs/generator-directory.md) — UI i komponenty, diagramy, grafiki, SVG, patterny, tekstury, 3D, obrazy AI oraz wideo. Narzędzia open source są oddzielone od usług chmurowych z darmowym limitem.
+- [37 repozytoriów GitHub do nauki](docs/github-learning-directory.md) — UI/UX, dostępność, design systems, efekty stron, WebGL/GLSL oraz parallax.
+
+Rejestry maszynowe znajdują się w `catalog/generator-registry.json` i `catalog/learning-repository-registry.json`. Usługi freemium pozostają wyłącznie linkami; baza nie pobiera materiałów z płatnych planów.
 
 ## Start
 
@@ -67,6 +76,11 @@ git submodule update --init --recursive --depth 1
 | Wykresy | Recharts, Apache ECharts, visx, Chart.js lub Tremor |
 | Ikony | Tabler Icons, Lucide, Heroicons albo Phosphor Icons |
 | HDRI, tekstury i modele 3D | Poly Haven; glTF Sample Assets i Babylon Assets dopiero po kontroli licencji konkretnego pliku |
+| Generator UI lub aplikacji | Lokalnie: Penpot, GrapesJS, Puck, Onlook; free tier: v0, Bolt albo Lovable |
+| Generator grafik i patternów | css-doodle, Tabbied, Haikei lub BGJar; dla AI: lokalny ComfyUI/InvokeAI albo zweryfikowany free tier |
+| Generator filmu | Manim lub Motion Canvas dla kodu; Wan2.1/LTX-Video lokalnie; Firefly, Pika i Runway tylko w aktualnym bezpłatnym limicie |
+| Nauka WebGL i shaderów | WebGL Fundamentals, WebGL2 Fundamentals, Three.js Fundamentals, shader-school i WebGL2 Examples |
+| Nauka parallax | Parallax.js, Rellax, simpleParallax.js i Atropos z obowiązkowym fallbackiem reduced-motion |
 
 Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-guide.md).
 

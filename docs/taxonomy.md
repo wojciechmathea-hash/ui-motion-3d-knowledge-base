@@ -45,6 +45,18 @@ Każdy wzorzec może należeć do wielu kategorii. Nazwa kategorii opisuje rolę
 - `font`: font tekstowy lub display z osobną licencją.
 - `illustration`: wektor, raster lub kompozycja dekoracyjna.
 
+## Kategorie generatorów
+
+- `ui-generation`: prompt, layout lub canvas do interfejsu.
+- `component-generation`: generowanie kodu pojedynczego komponentu.
+- `screenshot-to-ui`: rekonstrukcja autoryzowanego projektu z obrazu lub nagrania.
+- `generative-art`: proceduralne wzory, tła, SVG i obrazy.
+- `image-generation`: text/image-to-image, inpainting i compositing AI.
+- `video-generation`: text/image-to-video i generatywna edycja.
+- `programmatic-video`: animacja i montaż sterowane kodem.
+- `3d-generation`: image/text-to-3D oraz proceduralne materiały.
+- `diagram-as-code`: diagram generowany z tekstowej definicji.
+
 ## Tagi techniczne
 
 `react`, `vue`, `typescript`, `tailwind`, `css`, `svg`, `canvas-2d`, `webgl`, `webgpu`, `threejs`, `babylonjs`, `motion`, `animejs`, `glsl`, `r3f`, `d3`, `client-only`, `gpu-heavy`, `virtualized`.

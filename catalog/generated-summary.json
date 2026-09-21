@@ -1,9 +1,391 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T09:47:52.7851536Z",
+  "generatedAt": "2026-09-21T10:11:07.0149632Z",
   "sourceCount": 42,
+  "generatorCount": 38,
+  "learningRepositoryCount": 37,
   "localUpstreamCount": 17,
   "catalogOnlyCount": 25,
+  "generatorModes": [
+    {
+      "name": "free-software-external-model-required",
+      "count": 2
+    },
+    {
+      "name": "free-web-tool",
+      "count": 2
+    },
+    {
+      "name": "hosted-free-tier",
+      "count": 10
+    },
+    {
+      "name": "local-model-free-license",
+      "count": 1
+    },
+    {
+      "name": "local-open-source",
+      "count": 23
+    }
+  ],
+  "learningTopics": [
+    {
+      "name": "3d",
+      "count": 3
+    },
+    {
+      "name": "3d-math",
+      "count": 2
+    },
+    {
+      "name": "3d-tilt",
+      "count": 1
+    },
+    {
+      "name": "3d-transitions",
+      "count": 1
+    },
+    {
+      "name": "accessibility",
+      "count": 5
+    },
+    {
+      "name": "after-effects",
+      "count": 1
+    },
+    {
+      "name": "animation",
+      "count": 3
+    },
+    {
+      "name": "animation-lifecycle",
+      "count": 1
+    },
+    {
+      "name": "aria",
+      "count": 1
+    },
+    {
+      "name": "audio",
+      "count": 1
+    },
+    {
+      "name": "canvas",
+      "count": 3
+    },
+    {
+      "name": "cards",
+      "count": 1
+    },
+    {
+      "name": "carousel",
+      "count": 1
+    },
+    {
+      "name": "colors",
+      "count": 1
+    },
+    {
+      "name": "component-patterns",
+      "count": 1
+    },
+    {
+      "name": "components",
+      "count": 1
+    },
+    {
+      "name": "controls",
+      "count": 1
+    },
+    {
+      "name": "css-animation",
+      "count": 1
+    },
+    {
+      "name": "debugger",
+      "count": 1
+    },
+    {
+      "name": "design-resources",
+      "count": 1
+    },
+    {
+      "name": "design-system",
+      "count": 4
+    },
+    {
+      "name": "design-tools",
+      "count": 1
+    },
+    {
+      "name": "device-orientation",
+      "count": 1
+    },
+    {
+      "name": "effects",
+      "count": 11
+    },
+    {
+      "name": "examples",
+      "count": 4
+    },
+    {
+      "name": "exercises",
+      "count": 1
+    },
+    {
+      "name": "fonts",
+      "count": 1
+    },
+    {
+      "name": "functional-rendering",
+      "count": 1
+    },
+    {
+      "name": "fundamentals",
+      "count": 1
+    },
+    {
+      "name": "gestures",
+      "count": 1
+    },
+    {
+      "name": "glsl",
+      "count": 6
+    },
+    {
+      "name": "gpu-compute",
+      "count": 1
+    },
+    {
+      "name": "gpu-programming",
+      "count": 1
+    },
+    {
+      "name": "images",
+      "count": 2
+    },
+    {
+      "name": "interactive-backgrounds",
+      "count": 1
+    },
+    {
+      "name": "internationalization",
+      "count": 1
+    },
+    {
+      "name": "keyboard",
+      "count": 1
+    },
+    {
+      "name": "layered-depth",
+      "count": 2
+    },
+    {
+      "name": "layout",
+      "count": 2
+    },
+    {
+      "name": "learning-resources",
+      "count": 1
+    },
+    {
+      "name": "libraries",
+      "count": 1
+    },
+    {
+      "name": "material-design",
+      "count": 1
+    },
+    {
+      "name": "math",
+      "count": 1
+    },
+    {
+      "name": "microinteractions",
+      "count": 1
+    },
+    {
+      "name": "midi",
+      "count": 1
+    },
+    {
+      "name": "motion",
+      "count": 1
+    },
+    {
+      "name": "motion-graphics",
+      "count": 1
+    },
+    {
+      "name": "page-transition",
+      "count": 1
+    },
+    {
+      "name": "parallax",
+      "count": 6
+    },
+    {
+      "name": "parallax-foundation",
+      "count": 1
+    },
+    {
+      "name": "particles",
+      "count": 2
+    },
+    {
+      "name": "performance",
+      "count": 1
+    },
+    {
+      "name": "pointer",
+      "count": 2
+    },
+    {
+      "name": "prototyping",
+      "count": 1
+    },
+    {
+      "name": "react",
+      "count": 5
+    },
+    {
+      "name": "rendering",
+      "count": 3
+    },
+    {
+      "name": "research",
+      "count": 1
+    },
+    {
+      "name": "reveal",
+      "count": 1
+    },
+    {
+      "name": "routing",
+      "count": 1
+    },
+    {
+      "name": "scene-graph",
+      "count": 1
+    },
+    {
+      "name": "scroll",
+      "count": 7
+    },
+    {
+      "name": "scroll-detection",
+      "count": 1
+    },
+    {
+      "name": "shader-editor",
+      "count": 2
+    },
+    {
+      "name": "shaders",
+      "count": 2
+    },
+    {
+      "name": "smooth-scroll",
+      "count": 1
+    },
+    {
+      "name": "ssao",
+      "count": 1
+    },
+    {
+      "name": "standards",
+      "count": 1
+    },
+    {
+      "name": "starter-examples",
+      "count": 1
+    },
+    {
+      "name": "svg",
+      "count": 2
+    },
+    {
+      "name": "threejs",
+      "count": 4
+    },
+    {
+      "name": "timeline",
+      "count": 2
+    },
+    {
+      "name": "tokens",
+      "count": 2
+    },
+    {
+      "name": "tools",
+      "count": 1
+    },
+    {
+      "name": "touch",
+      "count": 2
+    },
+    {
+      "name": "transparency",
+      "count": 1
+    },
+    {
+      "name": "tutorials",
+      "count": 3
+    },
+    {
+      "name": "typescript",
+      "count": 2
+    },
+    {
+      "name": "ui",
+      "count": 8
+    },
+    {
+      "name": "ux",
+      "count": 9
+    },
+    {
+      "name": "vanilla-js",
+      "count": 1
+    },
+    {
+      "name": "vector-animation",
+      "count": 1
+    },
+    {
+      "name": "video",
+      "count": 1
+    },
+    {
+      "name": "visualization",
+      "count": 1
+    },
+    {
+      "name": "web-components",
+      "count": 3
+    },
+    {
+      "name": "webgl",
+      "count": 9
+    },
+    {
+      "name": "webgl-adjacent",
+      "count": 1
+    },
+    {
+      "name": "webgl2",
+      "count": 3
+    },
+    {
+      "name": "webgpu",
+      "count": 2
+    },
+    {
+      "name": "workshop",
+      "count": 1
+    }
+  ],
   "sources": [
     {
       "id": "threeui",

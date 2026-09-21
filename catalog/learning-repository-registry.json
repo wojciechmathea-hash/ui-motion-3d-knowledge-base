@@ -1,0 +1,384 @@
+{
+  "$schema": "../schemas/learning-repository-registry.schema.json",
+  "schemaVersion": 1,
+  "snapshotDate": "2026-09-21",
+  "policy": {
+    "officialRepositoryLinksOnly": true,
+    "copyRequiresLicenseReview": true,
+    "repositoryLicenseDoesNotAutomaticallyCoverDemoAssets": true,
+    "paidCourseMirrorsExcluded": true,
+    "bulkMirroring": false
+  },
+  "repositories": [
+    {
+      "id": "design-resources-for-developers",
+      "name": "Design Resources for Developers",
+      "repository": "https://github.com/bradtraversy/design-resources-for-developers",
+      "license": "MIT",
+      "topics": ["ui", "ux", "design-resources", "fonts", "colors", "images"],
+      "learningValue": "Curated map of free design resources for developers",
+      "inclusion": "official-github-link",
+      "caveats": ["Every linked external resource has its own terms"]
+    },
+    {
+      "id": "awesome-design-tools",
+      "name": "Awesome Design Tools",
+      "repository": "https://github.com/goabstract/Awesome-Design-Tools",
+      "license": "MIT",
+      "topics": ["ui", "ux", "design-tools", "prototyping", "research"],
+      "learningValue": "Broad overview of product-design tools and workflows",
+      "inclusion": "official-github-link",
+      "caveats": ["A listed product may be paid or discontinued; the list license does not license linked products"]
+    },
+    {
+      "id": "aria-practices",
+      "name": "WAI-ARIA Authoring Practices Guide",
+      "repository": "https://github.com/w3c/aria-practices",
+      "license": "W3C Software and Document License",
+      "topics": ["ux", "accessibility", "aria", "keyboard", "component-patterns"],
+      "learningValue": "Normative-quality interaction patterns, keyboard behavior and accessible examples",
+      "inclusion": "official-github-link",
+      "caveats": ["Examples teach patterns and still require testing with real assistive technologies"]
+    },
+    {
+      "id": "carbon-design-system",
+      "name": "Carbon Design System",
+      "repository": "https://github.com/carbon-design-system/carbon",
+      "license": "Apache-2.0",
+      "topics": ["ui", "ux", "design-system", "tokens", "components", "motion"],
+      "learningValue": "Large-scale design-system architecture, tokens, components and motion guidance",
+      "inclusion": "official-github-link",
+      "caveats": ["Brand assets and IBM trademarks are not granted by the code license"]
+    },
+    {
+      "id": "react-spectrum",
+      "name": "React Spectrum",
+      "repository": "https://github.com/adobe/react-spectrum",
+      "license": "Apache-2.0",
+      "topics": ["ui", "ux", "accessibility", "react", "internationalization", "design-system"],
+      "learningValue": "Reference implementation for accessible cross-platform component behavior",
+      "inclusion": "official-github-link",
+      "caveats": ["Adobe branding and example assets may have separate rights"]
+    },
+    {
+      "id": "fluentui",
+      "name": "Fluent UI",
+      "repository": "https://github.com/microsoft/fluentui",
+      "license": "MIT",
+      "topics": ["ui", "ux", "design-system", "react", "web-components", "accessibility"],
+      "learningValue": "Enterprise component architecture and interaction patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Microsoft trademarks and branded assets are separate from the MIT code"]
+    },
+    {
+      "id": "primer-react",
+      "name": "Primer React",
+      "repository": "https://github.com/primer/react",
+      "license": "MIT",
+      "topics": ["ui", "ux", "design-system", "react", "accessibility"],
+      "learningValue": "Production design-system patterns used in GitHub interfaces",
+      "inclusion": "official-github-link",
+      "caveats": ["Do not copy GitHub branding or product identity"]
+    },
+    {
+      "id": "material-web",
+      "name": "Material Web",
+      "repository": "https://github.com/material-components/material-web",
+      "license": "Apache-2.0",
+      "topics": ["ui", "ux", "material-design", "web-components", "tokens"],
+      "learningValue": "Material component implementation and design-token architecture",
+      "inclusion": "official-github-link",
+      "caveats": ["Material trademarks and some design assets are governed separately"]
+    },
+    {
+      "id": "open-ui-standard",
+      "name": "Open UI",
+      "repository": "https://github.com/openui/open-ui",
+      "license": "W3C Software and Document License; W3C 3-Clause BSD for test suites",
+      "topics": ["ui", "ux", "standards", "controls", "web-components", "accessibility"],
+      "learningValue": "Browser-level research on interoperable UI controls and behaviors",
+      "inclusion": "official-github-link",
+      "caveats": ["Specifications are evolving and are not a drop-in component library"]
+    },
+    {
+      "id": "motion-learning",
+      "name": "Motion source, docs and examples",
+      "repository": "https://github.com/motiondivision/motion",
+      "license": "MIT",
+      "topics": ["effects", "animation", "react", "gestures", "layout", "scroll"],
+      "learningValue": "Modern animation architecture, layout transitions and gesture patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Motion+ paid examples are excluded"]
+    },
+    {
+      "id": "animejs-learning",
+      "name": "Anime.js examples",
+      "repository": "https://github.com/juliangarnier/anime",
+      "license": "MIT",
+      "topics": ["effects", "animation", "timeline", "svg", "canvas", "scroll"],
+      "learningValue": "Readable examples of timelines, easing, staggering and SVG motion",
+      "inclusion": "official-github-link",
+      "caveats": ["Demo media and fonts must be checked separately"]
+    },
+    {
+      "id": "auto-animate-learning",
+      "name": "AutoAnimate",
+      "repository": "https://github.com/formkit/auto-animate",
+      "license": "MIT",
+      "topics": ["effects", "animation", "layout", "microinteractions"],
+      "learningValue": "Minimal enhancement pattern for DOM layout changes",
+      "inclusion": "official-github-link",
+      "caveats": ["Respect reduced motion even when the library animates automatically"]
+    },
+    {
+      "id": "lenis",
+      "name": "Lenis",
+      "repository": "https://github.com/darkroomengineering/lenis",
+      "license": "MIT",
+      "topics": ["effects", "scroll", "smooth-scroll", "parallax-foundation"],
+      "learningValue": "Modern smooth-scroll implementation and scroll-event integration",
+      "inclusion": "official-github-link",
+      "caveats": ["Never use by default; verify keyboard scrolling, anchors, find-in-page and reduced motion"]
+    },
+    {
+      "id": "locomotive-scroll",
+      "name": "Locomotive Scroll",
+      "repository": "https://github.com/locomotivemtl/locomotive-scroll",
+      "license": "MIT",
+      "topics": ["effects", "scroll", "parallax", "scroll-detection"],
+      "learningValue": "Scroll observation, progress values and data-driven parallax patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Smooth-scroll behavior can harm accessibility and native navigation"]
+    },
+    {
+      "id": "aos",
+      "name": "AOS",
+      "repository": "https://github.com/michalsnik/aos",
+      "license": "MIT",
+      "topics": ["effects", "scroll", "reveal", "css-animation"],
+      "learningValue": "Simple declarative reveal-on-scroll patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Avoid hiding essential content before JavaScript initializes"]
+    },
+    {
+      "id": "barba",
+      "name": "Barba.js",
+      "repository": "https://github.com/barbajs/barba",
+      "license": "MIT",
+      "topics": ["effects", "page-transition", "routing", "animation-lifecycle"],
+      "learningValue": "Page-transition lifecycle and progressive navigation patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Preserve focus, history, announcements and deep-link behavior"]
+    },
+    {
+      "id": "lottie-web",
+      "name": "lottie-web",
+      "repository": "https://github.com/airbnb/lottie-web",
+      "license": "MIT",
+      "topics": ["effects", "vector-animation", "after-effects", "svg", "canvas"],
+      "learningValue": "Runtime architecture for exported vector animation",
+      "inclusion": "official-github-link",
+      "caveats": ["Animation JSON and embedded artwork retain their own rights"]
+    },
+    {
+      "id": "swiper",
+      "name": "Swiper",
+      "repository": "https://github.com/nolimits4web/swiper",
+      "license": "MIT",
+      "topics": ["effects", "carousel", "touch", "parallax", "3d-transitions"],
+      "learningValue": "Touch interaction, virtual slides, accessibility and layered transition effects",
+      "inclusion": "official-github-link",
+      "caveats": ["Carousels require keyboard, pause and readable non-drag controls"]
+    },
+    {
+      "id": "tsparticles-learning",
+      "name": "tsParticles",
+      "repository": "https://github.com/tsparticles/tsparticles",
+      "license": "MIT",
+      "topics": ["effects", "particles", "canvas", "interactive-backgrounds"],
+      "learningValue": "Configurable particle systems, emitters and interaction patterns",
+      "inclusion": "official-github-link",
+      "caveats": ["Cap density and disable or simplify under reduced motion"]
+    },
+    {
+      "id": "motion-canvas-learning",
+      "name": "Motion Canvas",
+      "repository": "https://github.com/motion-canvas/motion-canvas",
+      "license": "MIT",
+      "topics": ["effects", "motion-graphics", "typescript", "timeline", "video"],
+      "learningValue": "Programmatic scene composition, signals, timelines and reusable animation components",
+      "inclusion": "official-github-link",
+      "caveats": ["Fonts, audio and imported media need separate licenses"]
+    },
+    {
+      "id": "parallaxjs",
+      "name": "Parallax.js",
+      "repository": "https://github.com/wagerfield/parallax",
+      "license": "MIT",
+      "topics": ["parallax", "pointer", "device-orientation", "layered-depth"],
+      "learningValue": "Layered pointer and device-orientation parallax implementation",
+      "inclusion": "official-github-link",
+      "caveats": ["Provide touch and reduced-motion fallbacks; device-orientation permission varies"]
+    },
+    {
+      "id": "rellax",
+      "name": "Rellax",
+      "repository": "https://github.com/dixonandmoe/rellax",
+      "license": "MIT",
+      "topics": ["parallax", "scroll", "vanilla-js", "layered-depth"],
+      "learningValue": "Small, readable scroll-parallax implementation",
+      "inclusion": "official-github-link",
+      "caveats": ["Treat as a legacy reference and test modern browser behavior"]
+    },
+    {
+      "id": "simpleparallax",
+      "name": "simpleParallax.js",
+      "repository": "https://github.com/geosigno/simpleParallax.js",
+      "license": "MIT",
+      "topics": ["parallax", "images", "scroll", "typescript"],
+      "learningValue": "Focused image-parallax API with straightforward examples",
+      "inclusion": "official-github-link",
+      "caveats": ["Avoid large offscreen images and excessive scale factors"]
+    },
+    {
+      "id": "atropos",
+      "name": "Atropos",
+      "repository": "https://github.com/nolimits4web/atropos",
+      "license": "MIT",
+      "topics": ["parallax", "pointer", "3d-tilt", "cards", "touch"],
+      "learningValue": "Layered 3D tilt and parallax for cards and media",
+      "inclusion": "official-github-link",
+      "caveats": ["Do not make core actions depend on tilt or hover"]
+    },
+    {
+      "id": "webgl-fundamentals",
+      "name": "WebGL Fundamentals",
+      "repository": "https://github.com/gfxfundamentals/webgl-fundamentals",
+      "license": "BSD-3-Clause",
+      "topics": ["webgl", "glsl", "3d-math", "tutorials", "fundamentals"],
+      "learningValue": "Progressive lessons from raw WebGL setup through lighting, textures and scene graphs",
+      "inclusion": "official-github-link",
+      "caveats": ["Third-party images and translations may include separate notices"]
+    },
+    {
+      "id": "webgl2-fundamentals",
+      "name": "WebGL2 Fundamentals",
+      "repository": "https://github.com/gfxfundamentals/webgl2-fundamentals",
+      "license": "BSD-3-Clause",
+      "topics": ["webgl2", "glsl", "3d-math", "tutorials", "rendering"],
+      "learningValue": "Modern raw WebGL2 lessons and reusable mental models",
+      "inclusion": "official-github-link",
+      "caveats": ["Check asset notices before copying example media"]
+    },
+    {
+      "id": "threejs-fundamentals",
+      "name": "Three.js Fundamentals",
+      "repository": "https://github.com/gfxfundamentals/threejsfundamentals",
+      "license": "BSD-3-Clause",
+      "topics": ["webgl", "threejs", "3d", "tutorials", "scene-graph"],
+      "learningValue": "Structured Three.js curriculum covering cameras, lighting, materials, loaders and performance",
+      "inclusion": "official-github-link",
+      "caveats": ["Example assets and translations may have separate attribution"]
+    },
+    {
+      "id": "webgl2examples",
+      "name": "WebGL2 Examples",
+      "repository": "https://github.com/tsherif/webgl2examples",
+      "license": "MIT",
+      "topics": ["webgl2", "rendering", "particles", "ssao", "transparency"],
+      "learningValue": "Single-file implementations of real rendering algorithms in raw WebGL2",
+      "inclusion": "official-github-link",
+      "caveats": ["Examples optimize for readability rather than production architecture"]
+    },
+    {
+      "id": "shader-school",
+      "name": "shader-school",
+      "repository": "https://github.com/stackgl/shader-school",
+      "license": "MIT",
+      "topics": ["webgl", "glsl", "shaders", "workshop", "exercises"],
+      "learningValue": "Interactive exercises for shader fundamentals",
+      "inclusion": "official-github-link",
+      "caveats": ["Older toolchain; use the concepts rather than pinning legacy dependencies"]
+    },
+    {
+      "id": "awesome-webgl",
+      "name": "awesome-webgl",
+      "repository": "https://github.com/sjfricke/awesome-webgl",
+      "license": "CC0-1.0 for the curated list",
+      "topics": ["webgl", "glsl", "learning-resources", "libraries", "tools"],
+      "learningValue": "Curated discovery map for WebGL libraries, articles, tutorials and tools",
+      "inclusion": "official-github-link",
+      "caveats": ["Every linked project has its own license and maintenance status"]
+    },
+    {
+      "id": "regl",
+      "name": "regl",
+      "repository": "https://github.com/regl-project/regl",
+      "license": "MIT",
+      "topics": ["webgl", "functional-rendering", "examples", "performance"],
+      "learningValue": "Functional abstraction over WebGL with a large example collection",
+      "inclusion": "official-github-link",
+      "caveats": ["Demo assets must be checked separately"]
+    },
+    {
+      "id": "luma-gl",
+      "name": "luma.gl",
+      "repository": "https://github.com/visgl/luma.gl",
+      "license": "MIT",
+      "topics": ["webgl", "webgpu", "rendering", "gpu-compute", "examples"],
+      "learningValue": "Production GPU abstractions and migration path toward WebGPU",
+      "inclusion": "official-github-link",
+      "caveats": ["Match examples to the installed major version"]
+    },
+    {
+      "id": "threejs-learning",
+      "name": "Three.js docs and examples",
+      "repository": "https://github.com/mrdoob/three.js",
+      "license": "MIT",
+      "topics": ["webgl", "webgpu", "threejs", "3d", "examples", "shaders"],
+      "learningValue": "Canonical implementation, manual, API docs and comprehensive examples",
+      "inclusion": "official-github-link",
+      "caveats": ["Example media can have separate notices; use the version matching the project"]
+    },
+    {
+      "id": "react-three-fiber-learning",
+      "name": "React Three Fiber docs and examples",
+      "repository": "https://github.com/pmndrs/react-three-fiber",
+      "license": "MIT",
+      "topics": ["webgl", "threejs", "react", "3d", "examples"],
+      "learningValue": "Declarative Three.js architecture, render-loop hooks and React integration",
+      "inclusion": "official-github-link",
+      "caveats": ["Showcase projects can have their own authors and licenses"]
+    },
+    {
+      "id": "webgl-sandbox",
+      "name": "WebGL Sandbox",
+      "repository": "https://github.com/benc-uk/webgl-sandbox",
+      "license": "MIT",
+      "topics": ["webgl2", "glsl", "shader-editor", "audio", "midi"],
+      "learningValue": "Compact interactive GLSL editor with audio and MIDI inputs",
+      "inclusion": "official-github-link",
+      "caveats": ["Small project; audit dependencies before production use"]
+    },
+    {
+      "id": "shadered",
+      "name": "SHADERed",
+      "repository": "https://github.com/dfranx/SHADERed",
+      "license": "MIT",
+      "topics": ["webgl-adjacent", "glsl", "shader-editor", "debugger", "gpu-programming"],
+      "learningValue": "Shader IDE, debugger and examples useful for understanding GPU pipelines",
+      "inclusion": "official-github-link",
+      "caveats": ["Desktop OpenGL tooling; porting shaders to WebGL may require syntax and feature changes"]
+    },
+    {
+      "id": "threejs-examples",
+      "name": "Three.js Examples by Yuri Sulyma",
+      "repository": "https://github.com/ysulyma/threejs-examples",
+      "license": "MIT",
+      "topics": ["webgl", "threejs", "math", "visualization", "starter-examples"],
+      "learningValue": "Small runnable Three.js projects for mathematical and visual experimentation",
+      "inclusion": "official-github-link",
+      "caveats": ["Reference examples may target older Three.js releases"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/learning-repository-registry.schema.json",
+  "title": "UI, UX, web effects and WebGL learning repository registry",
+  "type": "object",
+  "required": ["schemaVersion", "snapshotDate", "policy", "repositories"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "snapshotDate": { "type": "string", "format": "date" },
+    "policy": {
+      "type": "object",
+      "required": ["officialRepositoryLinksOnly", "copyRequiresLicenseReview"]
+    },
+    "repositories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "repository",
+          "license",
+          "topics",
+          "learningValue",
+          "inclusion",
+          "caveats"
+        ]
+      }
+    }
+  }
+}

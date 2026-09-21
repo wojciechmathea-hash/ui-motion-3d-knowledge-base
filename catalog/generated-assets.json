@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T09:47:52.7851536Z",
+  "generatedAt": "2026-09-21T10:11:07.0149632Z",
   "policy": {
     "private": true,
     "freeOnly": true,
@@ -4277,6 +4277,983 @@
           "sorting",
           "filtering",
           "virtualization"
+        ]
+      }
+    ],
+    "generators": [
+      {
+        "id": "adobe-firefly",
+        "name": "Adobe Firefly",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "image-generation",
+          "vector-generation",
+          "video-generation",
+          "audio-generation"
+        ],
+        "licenseOrTerms": "Adobe General Terms and Generative AI Additional Terms",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "automatic1111",
+        "name": "Stable Diffusion WebUI",
+        "mode": "local-open-source",
+        "categories": [
+          "image-generation",
+          "inpainting",
+          "extensions",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "AGPL-3.0 for the application",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "bgjar",
+        "name": "BGJar",
+        "mode": "free-web-tool",
+        "categories": [
+          "svg",
+          "backgrounds",
+          "patterns",
+          "waves",
+          "blobs"
+        ],
+        "licenseOrTerms": "CC-BY-4.0 for free-plan downloads",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "blender",
+        "name": "Blender",
+        "mode": "local-open-source",
+        "categories": [
+          "3d-model",
+          "render",
+          "animation",
+          "video-editing",
+          "compositing"
+        ],
+        "licenseOrTerms": "GPL-3.0-or-later for Blender code",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "bolt",
+        "name": "Bolt",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "ui-generation",
+          "app-builder",
+          "component-generation",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "Bolt terms and pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "canva-free",
+        "name": "Canva Free and Canva AI",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "graphic-design",
+          "ui-mockup",
+          "image-generation",
+          "video-generation",
+          "presentation"
+        ],
+        "licenseOrTerms": "Canva Terms, Content License and AI Product Terms",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "carbon-code-images",
+        "name": "Carbon",
+        "mode": "local-open-source",
+        "categories": [
+          "code-image",
+          "social-graphic",
+          "svg",
+          "png"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "comfyui",
+        "name": "ComfyUI",
+        "mode": "local-open-source",
+        "categories": [
+          "image-generation",
+          "video-generation",
+          "workflow",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "GPL-3.0 for the application",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "craftjs",
+        "name": "Craft.js",
+        "mode": "local-open-source",
+        "categories": [
+          "ui-builder",
+          "react",
+          "drag-and-drop",
+          "components"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "css-doodle",
+        "name": "css-doodle",
+        "mode": "local-open-source",
+        "categories": [
+          "generative-art",
+          "patterns",
+          "backgrounds",
+          "image",
+          "video"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "drawio",
+        "name": "draw.io / diagrams.net",
+        "mode": "local-open-source",
+        "categories": [
+          "diagram",
+          "whiteboard",
+          "flowchart",
+          "architecture"
+        ],
+        "licenseOrTerms": "Apache-2.0 for repository code; stencils and icons have additional terms",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "excalidraw",
+        "name": "Excalidraw",
+        "mode": "local-open-source",
+        "categories": [
+          "diagram",
+          "wireframe",
+          "whiteboard",
+          "svg"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "ffmpeg",
+        "name": "FFmpeg",
+        "mode": "local-open-source",
+        "categories": [
+          "video-processing",
+          "transcoding",
+          "composition",
+          "automation"
+        ],
+        "licenseOrTerms": "LGPL-2.1-or-later by default; GPL applies to builds with optional GPL components",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "grapesjs",
+        "name": "GrapesJS",
+        "mode": "local-open-source",
+        "categories": [
+          "ui-builder",
+          "page-builder",
+          "email-builder",
+          "components"
+        ],
+        "licenseOrTerms": "BSD-3-Clause for the open-source core",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "haikei",
+        "name": "Haikei",
+        "mode": "free-web-tool",
+        "categories": [
+          "svg",
+          "backgrounds",
+          "blobs",
+          "waves",
+          "gradients"
+        ],
+        "licenseOrTerms": "Haikei Terms of Service",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "ideogram",
+        "name": "Ideogram",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "image-generation",
+          "typography",
+          "graphic-design",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Ideogram Terms of Service and pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "invokeai",
+        "name": "InvokeAI",
+        "mode": "local-open-source",
+        "categories": [
+          "image-generation",
+          "inpainting",
+          "canvas",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Apache-2.0 application with additional model license files",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "kdenlive",
+        "name": "Kdenlive",
+        "mode": "local-open-source",
+        "categories": [
+          "video-editing",
+          "motion",
+          "titles",
+          "composition"
+        ],
+        "licenseOrTerms": "GPL-3.0-or-later",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "leonardo",
+        "name": "Leonardo.Ai",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "image-generation",
+          "video-generation",
+          "upscaling",
+          "background-removal"
+        ],
+        "licenseOrTerms": "Leonardo.Ai Terms and pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "lovable",
+        "name": "Lovable",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "ui-generation",
+          "app-builder",
+          "component-generation",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "Lovable Terms and pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "ltx-video",
+        "name": "LTX-Video",
+        "mode": "local-open-source",
+        "categories": [
+          "text-to-video",
+          "image-to-video",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Apache-2.0 for this repository revision",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "manim",
+        "name": "Manim Community",
+        "mode": "local-open-source",
+        "categories": [
+          "programmatic-video",
+          "math-animation",
+          "motion-graphics"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "material-maker",
+        "name": "Material Maker",
+        "mode": "local-open-source",
+        "categories": [
+          "procedural-texture",
+          "pbr-material",
+          "3d-asset",
+          "shader"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "mermaid",
+        "name": "Mermaid",
+        "mode": "local-open-source",
+        "categories": [
+          "diagram",
+          "diagram-as-code",
+          "documentation",
+          "svg"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "microsoft-designer",
+        "name": "Microsoft Designer",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "graphic-design",
+          "image-generation",
+          "social-graphic",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Microsoft Services Agreement and Designer Terms",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "motion-canvas",
+        "name": "Motion Canvas",
+        "mode": "local-open-source",
+        "categories": [
+          "programmatic-video",
+          "typescript",
+          "motion-graphics",
+          "presentation"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "onlook",
+        "name": "Onlook",
+        "mode": "local-open-source",
+        "categories": [
+          "ui-design",
+          "visual-code-editor",
+          "react",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "Apache-2.0 for the repository",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "openui-wandb",
+        "name": "OpenUI",
+        "mode": "free-software-external-model-required",
+        "categories": [
+          "ui-generation",
+          "component-generation",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "Apache-2.0 for the application",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "penpot",
+        "name": "Penpot",
+        "mode": "local-open-source",
+        "categories": [
+          "ui-design",
+          "ux-prototyping",
+          "design-systems",
+          "vector"
+        ],
+        "licenseOrTerms": "MPL-2.0 for the application; shared design files may have separate licenses",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "pika",
+        "name": "Pika",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "video-generation",
+          "image-to-video",
+          "video-effects",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Pika Terms and pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "puck",
+        "name": "Puck",
+        "mode": "local-open-source",
+        "categories": [
+          "ui-builder",
+          "react",
+          "page-builder",
+          "components"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "runway",
+        "name": "Runway",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "video-generation",
+          "image-generation",
+          "audio-generation",
+          "video-editing"
+        ],
+        "licenseOrTerms": "Runway Terms and Free Plan documentation",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "screenshot-to-code",
+        "name": "screenshot-to-code",
+        "mode": "free-software-external-model-required",
+        "categories": [
+          "screenshot-to-ui",
+          "component-generation",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "MIT for the application",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "stability-core-models",
+        "name": "Stability AI Core Models",
+        "mode": "local-model-free-license",
+        "categories": [
+          "image-generation",
+          "video-generation",
+          "3d-generation",
+          "audio-generation"
+        ],
+        "licenseOrTerms": "Stability AI Community License plus Acceptable Use Policy",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "tabbied",
+        "name": "Tabbied",
+        "mode": "local-open-source",
+        "categories": [
+          "patterns",
+          "backgrounds",
+          "generative-art",
+          "png"
+        ],
+        "licenseOrTerms": "MIT",
+        "inclusion": "catalog-link-only"
+      },
+      {
+        "id": "triposr",
+        "name": "TripoSR",
+        "mode": "local-open-source",
+        "categories": [
+          "image-to-3d",
+          "3d-model",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "MIT repository license",
+        "inclusion": "catalog-link-only-conditional"
+      },
+      {
+        "id": "v0",
+        "name": "v0",
+        "mode": "hosted-free-tier",
+        "categories": [
+          "ui-generation",
+          "component-generation",
+          "app-builder",
+          "ai-to-code"
+        ],
+        "licenseOrTerms": "Vercel v0 terms and service pricing",
+        "inclusion": "catalog-link-only-free-tier"
+      },
+      {
+        "id": "wan21",
+        "name": "Wan2.1",
+        "mode": "local-open-source",
+        "categories": [
+          "text-to-video",
+          "image-to-video",
+          "video-editing",
+          "ai-generation"
+        ],
+        "licenseOrTerms": "Apache-2.0 as stated by the project",
+        "inclusion": "catalog-link-only-conditional"
+      }
+    ],
+    "learningRepositories": [
+      {
+        "id": "animejs-learning",
+        "name": "Anime.js examples",
+        "repository": "https://github.com/juliangarnier/anime",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "animation",
+          "timeline",
+          "svg",
+          "canvas",
+          "scroll"
+        ]
+      },
+      {
+        "id": "aos",
+        "name": "AOS",
+        "repository": "https://github.com/michalsnik/aos",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "scroll",
+          "reveal",
+          "css-animation"
+        ]
+      },
+      {
+        "id": "aria-practices",
+        "name": "WAI-ARIA Authoring Practices Guide",
+        "repository": "https://github.com/w3c/aria-practices",
+        "license": "W3C Software and Document License",
+        "topics": [
+          "ux",
+          "accessibility",
+          "aria",
+          "keyboard",
+          "component-patterns"
+        ]
+      },
+      {
+        "id": "atropos",
+        "name": "Atropos",
+        "repository": "https://github.com/nolimits4web/atropos",
+        "license": "MIT",
+        "topics": [
+          "parallax",
+          "pointer",
+          "3d-tilt",
+          "cards",
+          "touch"
+        ]
+      },
+      {
+        "id": "auto-animate-learning",
+        "name": "AutoAnimate",
+        "repository": "https://github.com/formkit/auto-animate",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "animation",
+          "layout",
+          "microinteractions"
+        ]
+      },
+      {
+        "id": "awesome-design-tools",
+        "name": "Awesome Design Tools",
+        "repository": "https://github.com/goabstract/Awesome-Design-Tools",
+        "license": "MIT",
+        "topics": [
+          "ui",
+          "ux",
+          "design-tools",
+          "prototyping",
+          "research"
+        ]
+      },
+      {
+        "id": "awesome-webgl",
+        "name": "awesome-webgl",
+        "repository": "https://github.com/sjfricke/awesome-webgl",
+        "license": "CC0-1.0 for the curated list",
+        "topics": [
+          "webgl",
+          "glsl",
+          "learning-resources",
+          "libraries",
+          "tools"
+        ]
+      },
+      {
+        "id": "barba",
+        "name": "Barba.js",
+        "repository": "https://github.com/barbajs/barba",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "page-transition",
+          "routing",
+          "animation-lifecycle"
+        ]
+      },
+      {
+        "id": "carbon-design-system",
+        "name": "Carbon Design System",
+        "repository": "https://github.com/carbon-design-system/carbon",
+        "license": "Apache-2.0",
+        "topics": [
+          "ui",
+          "ux",
+          "design-system",
+          "tokens",
+          "components",
+          "motion"
+        ]
+      },
+      {
+        "id": "design-resources-for-developers",
+        "name": "Design Resources for Developers",
+        "repository": "https://github.com/bradtraversy/design-resources-for-developers",
+        "license": "MIT",
+        "topics": [
+          "ui",
+          "ux",
+          "design-resources",
+          "fonts",
+          "colors",
+          "images"
+        ]
+      },
+      {
+        "id": "fluentui",
+        "name": "Fluent UI",
+        "repository": "https://github.com/microsoft/fluentui",
+        "license": "MIT",
+        "topics": [
+          "ui",
+          "ux",
+          "design-system",
+          "react",
+          "web-components",
+          "accessibility"
+        ]
+      },
+      {
+        "id": "lenis",
+        "name": "Lenis",
+        "repository": "https://github.com/darkroomengineering/lenis",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "scroll",
+          "smooth-scroll",
+          "parallax-foundation"
+        ]
+      },
+      {
+        "id": "locomotive-scroll",
+        "name": "Locomotive Scroll",
+        "repository": "https://github.com/locomotivemtl/locomotive-scroll",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "scroll",
+          "parallax",
+          "scroll-detection"
+        ]
+      },
+      {
+        "id": "lottie-web",
+        "name": "lottie-web",
+        "repository": "https://github.com/airbnb/lottie-web",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "vector-animation",
+          "after-effects",
+          "svg",
+          "canvas"
+        ]
+      },
+      {
+        "id": "luma-gl",
+        "name": "luma.gl",
+        "repository": "https://github.com/visgl/luma.gl",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "webgpu",
+          "rendering",
+          "gpu-compute",
+          "examples"
+        ]
+      },
+      {
+        "id": "material-web",
+        "name": "Material Web",
+        "repository": "https://github.com/material-components/material-web",
+        "license": "Apache-2.0",
+        "topics": [
+          "ui",
+          "ux",
+          "material-design",
+          "web-components",
+          "tokens"
+        ]
+      },
+      {
+        "id": "motion-canvas-learning",
+        "name": "Motion Canvas",
+        "repository": "https://github.com/motion-canvas/motion-canvas",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "motion-graphics",
+          "typescript",
+          "timeline",
+          "video"
+        ]
+      },
+      {
+        "id": "motion-learning",
+        "name": "Motion source, docs and examples",
+        "repository": "https://github.com/motiondivision/motion",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "animation",
+          "react",
+          "gestures",
+          "layout",
+          "scroll"
+        ]
+      },
+      {
+        "id": "open-ui-standard",
+        "name": "Open UI",
+        "repository": "https://github.com/openui/open-ui",
+        "license": "W3C Software and Document License; W3C 3-Clause BSD for test suites",
+        "topics": [
+          "ui",
+          "ux",
+          "standards",
+          "controls",
+          "web-components",
+          "accessibility"
+        ]
+      },
+      {
+        "id": "parallaxjs",
+        "name": "Parallax.js",
+        "repository": "https://github.com/wagerfield/parallax",
+        "license": "MIT",
+        "topics": [
+          "parallax",
+          "pointer",
+          "device-orientation",
+          "layered-depth"
+        ]
+      },
+      {
+        "id": "primer-react",
+        "name": "Primer React",
+        "repository": "https://github.com/primer/react",
+        "license": "MIT",
+        "topics": [
+          "ui",
+          "ux",
+          "design-system",
+          "react",
+          "accessibility"
+        ]
+      },
+      {
+        "id": "react-spectrum",
+        "name": "React Spectrum",
+        "repository": "https://github.com/adobe/react-spectrum",
+        "license": "Apache-2.0",
+        "topics": [
+          "ui",
+          "ux",
+          "accessibility",
+          "react",
+          "internationalization",
+          "design-system"
+        ]
+      },
+      {
+        "id": "react-three-fiber-learning",
+        "name": "React Three Fiber docs and examples",
+        "repository": "https://github.com/pmndrs/react-three-fiber",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "threejs",
+          "react",
+          "3d",
+          "examples"
+        ]
+      },
+      {
+        "id": "regl",
+        "name": "regl",
+        "repository": "https://github.com/regl-project/regl",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "functional-rendering",
+          "examples",
+          "performance"
+        ]
+      },
+      {
+        "id": "rellax",
+        "name": "Rellax",
+        "repository": "https://github.com/dixonandmoe/rellax",
+        "license": "MIT",
+        "topics": [
+          "parallax",
+          "scroll",
+          "vanilla-js",
+          "layered-depth"
+        ]
+      },
+      {
+        "id": "shader-school",
+        "name": "shader-school",
+        "repository": "https://github.com/stackgl/shader-school",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "glsl",
+          "shaders",
+          "workshop",
+          "exercises"
+        ]
+      },
+      {
+        "id": "shadered",
+        "name": "SHADERed",
+        "repository": "https://github.com/dfranx/SHADERed",
+        "license": "MIT",
+        "topics": [
+          "webgl-adjacent",
+          "glsl",
+          "shader-editor",
+          "debugger",
+          "gpu-programming"
+        ]
+      },
+      {
+        "id": "simpleparallax",
+        "name": "simpleParallax.js",
+        "repository": "https://github.com/geosigno/simpleParallax.js",
+        "license": "MIT",
+        "topics": [
+          "parallax",
+          "images",
+          "scroll",
+          "typescript"
+        ]
+      },
+      {
+        "id": "swiper",
+        "name": "Swiper",
+        "repository": "https://github.com/nolimits4web/swiper",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "carousel",
+          "touch",
+          "parallax",
+          "3d-transitions"
+        ]
+      },
+      {
+        "id": "threejs-examples",
+        "name": "Three.js Examples by Yuri Sulyma",
+        "repository": "https://github.com/ysulyma/threejs-examples",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "threejs",
+          "math",
+          "visualization",
+          "starter-examples"
+        ]
+      },
+      {
+        "id": "threejs-fundamentals",
+        "name": "Three.js Fundamentals",
+        "repository": "https://github.com/gfxfundamentals/threejsfundamentals",
+        "license": "BSD-3-Clause",
+        "topics": [
+          "webgl",
+          "threejs",
+          "3d",
+          "tutorials",
+          "scene-graph"
+        ]
+      },
+      {
+        "id": "threejs-learning",
+        "name": "Three.js docs and examples",
+        "repository": "https://github.com/mrdoob/three.js",
+        "license": "MIT",
+        "topics": [
+          "webgl",
+          "webgpu",
+          "threejs",
+          "3d",
+          "examples",
+          "shaders"
+        ]
+      },
+      {
+        "id": "tsparticles-learning",
+        "name": "tsParticles",
+        "repository": "https://github.com/tsparticles/tsparticles",
+        "license": "MIT",
+        "topics": [
+          "effects",
+          "particles",
+          "canvas",
+          "interactive-backgrounds"
+        ]
+      },
+      {
+        "id": "webgl-fundamentals",
+        "name": "WebGL Fundamentals",
+        "repository": "https://github.com/gfxfundamentals/webgl-fundamentals",
+        "license": "BSD-3-Clause",
+        "topics": [
+          "webgl",
+          "glsl",
+          "3d-math",
+          "tutorials",
+          "fundamentals"
+        ]
+      },
+      {
+        "id": "webgl-sandbox",
+        "name": "WebGL Sandbox",
+        "repository": "https://github.com/benc-uk/webgl-sandbox",
+        "license": "MIT",
+        "topics": [
+          "webgl2",
+          "glsl",
+          "shader-editor",
+          "audio",
+          "midi"
+        ]
+      },
+      {
+        "id": "webgl2-fundamentals",
+        "name": "WebGL2 Fundamentals",
+        "repository": "https://github.com/gfxfundamentals/webgl2-fundamentals",
+        "license": "BSD-3-Clause",
+        "topics": [
+          "webgl2",
+          "glsl",
+          "3d-math",
+          "tutorials",
+          "rendering"
+        ]
+      },
+      {
+        "id": "webgl2examples",
+        "name": "WebGL2 Examples",
+        "repository": "https://github.com/tsherif/webgl2examples",
+        "license": "MIT",
+        "topics": [
+          "webgl2",
+          "rendering",
+          "particles",
+          "ssao",
+          "transparency"
         ]
       }
     ]

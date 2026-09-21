@@ -28,6 +28,14 @@
 6. Czy potrzebujesz gotowego assetu?
    - Ikony: wybierz jedną rodzinę spośród Tabler, Lucide, Heroicons lub Phosphor.
    - HDRI, tekstura albo model: zacznij od Poly Haven; dla innych kolekcji sprawdź licencję konkretnego pliku.
+7. Czy potrzebujesz wygenerować materiał?
+   - UI i komponenty bez chmury: Penpot, GrapesJS, Puck lub Onlook.
+   - Pattern, SVG lub tło: css-doodle, Tabbied, Haikei albo BGJar.
+   - Programowe wideo: Manim lub Motion Canvas.
+   - Lokalne AI: wybierz interfejs i osobno zatwierdzony model z `generator-registry.json`.
+   - SaaS: przed każdym użyciem sprawdź aktualny limit, widoczność, watermark i prawa do outputu.
+8. Czy celem jest nauka lub analiza wzorca?
+   - Użyj `github-learning-directory.md`, przypnij commit i kopiuj tylko minimalny fragment.
 
 ## Macierz
 

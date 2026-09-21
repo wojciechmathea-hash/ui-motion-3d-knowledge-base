@@ -4,7 +4,7 @@ To repozytorium jest prywatną bazą wiedzy do projektowania UI, motion i doświ
 
 ## Kolejność pracy
 
-1. Przeczytaj `catalog/source-registry.json`, `docs/free-source-directory.md` i `docs/selection-guide.md`.
+1. Przeczytaj odpowiedni rejestr: `catalog/source-registry.json`, `catalog/generator-registry.json` albo `catalog/learning-repository-registry.json`, a następnie właściwy katalog w `docs/`.
 2. Wybierz najmniejszą liczbę bibliotek potrzebną do danego efektu.
 3. Sprawdź pole `redistribution` i licencję przed skopiowaniem kodu albo assetu.
 4. Zapisz provenance według `templates/component-record.json`.
@@ -20,6 +20,9 @@ To repozytorium jest prywatną bazą wiedzy do projektowania UI, motion i doświ
 - 21st.dev: nie scrapować ani nie kopiować demo, screenshotów, filmów, miniaturek, opisów lub całego katalogu. Korzystać z oficjalnego UI/API/CLI i tylko dla wybranych elementów.
 - Poly Haven: pobierać ręcznie lub przez oficjalne API, nie przez scraping strony. Assety są CC0, ale kod klienta API ma osobną licencję.
 - Khronos glTF Sample Assets i Babylon.js Assets: licencja jest sprawdzana i zapisywana osobno dla każdego pliku; nazwa kolekcji nie wystarcza.
+- Generatory SaaS: korzystać wyłącznie z aktualnego bezpłatnego limitu. Przed produkcyjnym użyciem ponownie sprawdzić plan, prywatność, watermark i prawa do outputu.
+- Generatory lokalne AI: licencja interfejsu nie obejmuje modelu, checkpointu, LoRA, custom node ani danych wejściowych.
+- Repozytoria edukacyjne: kopiować tylko minimalny fragment po kontroli licencji. Assety demo nie dziedziczą automatycznie licencji kodu.
 
 ## Reguły projektowe
 
@@ -35,3 +38,5 @@ To repozytorium jest prywatną bazą wiedzy do projektowania UI, motion i doświ
 ## Wymagany provenance
 
 Każdy lokalnie zapisany wzorzec lub komponent powinien mieć: nazwę, źródłowy URL, autora, commit lub wersję, licencję, datę weryfikacji, zakres modyfikacji oraz listę assetów z osobnymi licencjami.
+
+Każdy wygenerowany asset powinien dodatkowo zapisywać: narzędzie i model, plan, prompt lub parametry, źródła wejściowe, widoczność wyniku, watermark i warunki outputu obowiązujące w dniu generowania.

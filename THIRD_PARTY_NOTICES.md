@@ -91,3 +91,18 @@ Pozostałe darmowe źródła są indeksowane jako oficjalne linki. Obejmuje to m
 - Babylon.js Assets jest domyślnie CC-BY-4.0, ale katalogi mogą mieć wyjątki.
 
 Pełna lista i precyzyjne reguły znajdują się w `catalog/source-registry.json` i `docs/free-source-directory.md`.
+
+## Generatory
+
+Generatory są przechowywane wyłącznie jako metadane i oficjalne linki w `catalog/generator-registry.json`; ich programy, modele i wyniki nie są automatycznie kopiowane.
+
+- Open-source aplikacja nie nadaje swojej licencji modelom, checkpointom, LoRA, custom nodes ani materiałom wejściowym.
+- Bezpłatny plan SaaS może mieć publiczne wyniki, watermark, jednorazowe kredyty albo zmienny limit.
+- Paid/Pro credits, modele, template’y i funkcje są wyłączone.
+- Wynik o niejasnych prawach ma status `do-not-import`.
+
+Opis zastosowań i ograniczeń znajduje się w `docs/generator-directory.md`.
+
+## Repozytoria edukacyjne
+
+Repozytoria UI/UX, efektów webowych, WebGL i parallax są indeksowane jako oficjalne linki w `catalog/learning-repository-registry.json`. Licencja repozytorium obejmuje wskazany kod lub dokumentację, lecz nie musi obejmować assetów demonstracyjnych. Nie są tworzone pełne mirrory tych repozytoriów.

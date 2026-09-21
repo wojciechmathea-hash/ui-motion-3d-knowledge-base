@@ -7,7 +7,11 @@ $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 $CatalogDirectory = Join-Path $RepoRoot "catalog"
 $RegistryPath = Join-Path $CatalogDirectory "source-registry.json"
+$GeneratorRegistryPath = Join-Path $CatalogDirectory "generator-registry.json"
+$LearningRegistryPath = Join-Path $CatalogDirectory "learning-repository-registry.json"
 $registry = Get-Content -Raw -LiteralPath $RegistryPath | ConvertFrom-Json
+$generatorRegistry = Get-Content -Raw -LiteralPath $GeneratorRegistryPath | ConvertFrom-Json
+$learningRegistry = Get-Content -Raw -LiteralPath $LearningRegistryPath | ConvertFrom-Json
 
 function Get-CommitSha {
     param([Parameter(Mandatory)][string]$RelativePath)
@@ -145,6 +149,35 @@ $curatedUpstreams = @(
         }
 )
 
+$generatorIndex = @(
+    $generatorRegistry.generators |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                mode = $_.mode
+                categories = @($_.categories)
+                licenseOrTerms = $_.licenseOrTerms
+                inclusion = $_.inclusion
+            }
+        }
+)
+
+$learningRepositoryIndex = @(
+    $learningRegistry.repositories |
+        Sort-Object id |
+        ForEach-Object {
+            [ordered]@{
+                id = $_.id
+                name = $_.name
+                repository = $_.repository
+                license = $_.license
+                topics = @($_.topics)
+            }
+        }
+)
+
 $assets = [ordered]@{
     schemaVersion = 1
     generatedAt = (Get-Date).ToUniversalTime().ToString("o")
@@ -162,6 +195,8 @@ $assets = [ordered]@{
         twentyFirstDev = $twentyFirstItems
         reactBits = $reactBitsItems
         curatedUpstreams = $curatedUpstreams
+        generators = $generatorIndex
+        learningRepositories = $learningRepositoryIndex
     }
 }
 
@@ -228,8 +263,33 @@ $summary = [ordered]@{
     schemaVersion = 1
     generatedAt = $assets.generatedAt
     sourceCount = $registry.sources.Count
+    generatorCount = $generatorRegistry.generators.Count
+    learningRepositoryCount = $learningRegistry.repositories.Count
     localUpstreamCount = @($registry.sources | Where-Object { $_.PSObject.Properties.Name -contains "upstreamPath" }).Count
     catalogOnlyCount = @($registry.sources | Where-Object { -not ($_.PSObject.Properties.Name -contains "upstreamPath") }).Count
+    generatorModes = @(
+        $generatorRegistry.generators |
+            Group-Object mode |
+            Sort-Object Name |
+            ForEach-Object {
+                [ordered]@{
+                    name = $_.Name
+                    count = $_.Count
+                }
+            }
+    )
+    learningTopics = @(
+        $learningRegistry.repositories |
+            ForEach-Object { $_.topics } |
+            Group-Object |
+            Sort-Object Name |
+            ForEach-Object {
+                [ordered]@{
+                    name = $_.Name
+                    count = $_.Count
+                }
+            }
+    )
     sources = $sourceSummaries
 }
 
