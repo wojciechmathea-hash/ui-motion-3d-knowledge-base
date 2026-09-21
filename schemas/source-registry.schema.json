@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/source-registry.schema.json",
+  "title": "UI knowledge-base source registry",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "snapshotDate",
+    "repositoryPolicy",
+    "sources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "snapshotDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "repositoryPolicy": {
+      "type": "object",
+      "required": [
+        "visibility",
+        "freeOnly",
+        "proAllowed",
+        "redistribution"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "requestedUrl",
+          "accessTier",
+          "license",
+          "inclusion",
+          "redistribution",
+          "excluded",
+          "domains"
+        ]
+      }
+    }
+  }
+}
+

@@ -1,0 +1,186 @@
+{
+  "$schema": "../schemas/source-registry.schema.json",
+  "schemaVersion": 1,
+  "snapshotDate": "2026-09-21",
+  "repositoryPolicy": {
+    "visibility": "private",
+    "audience": "single-owner",
+    "freeOnly": true,
+    "proAllowed": false,
+    "redistribution": false,
+    "unknownLicenseAction": "reference-only"
+  },
+  "sources": [
+    {
+      "id": "threeui",
+      "name": "ThreeUI",
+      "requestedUrl": "https://threeui.com/browse",
+      "canonicalRepository": "https://github.com/MengTo/threeui",
+      "upstreamPath": "upstream/threeui",
+      "accessTier": "community-free",
+      "license": "MIT with separately licensed fonts and third-party assets",
+      "licenseFiles": [
+        "upstream/threeui/LICENSE",
+        "upstream/threeui/ASSET-LICENSES.md",
+        "upstream/threeui/FONT-LICENSES.md",
+        "upstream/threeui/THIRD_PARTY_NOTICES.md"
+      ],
+      "inclusion": "full-open-upstream",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": [
+        "Pro components",
+        "Beta components",
+        "remote catalog thumbnails and preview videos"
+      ],
+      "domains": [
+        "3d",
+        "webgl",
+        "shaders",
+        "generative-art",
+        "interactive-backgrounds",
+        "landing-pages",
+        "buttons",
+        "text-effects"
+      ]
+    },
+    {
+      "id": "animejs",
+      "name": "Anime.js",
+      "requestedUrl": "https://animejs.com",
+      "canonicalRepository": "https://github.com/juliangarnier/anime",
+      "upstreamPath": "upstream/animejs",
+      "accessTier": "free-open-source",
+      "license": "MIT",
+      "licenseFiles": [
+        "upstream/animejs/LICENSE.md"
+      ],
+      "inclusion": "full-open-upstream",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": [],
+      "domains": [
+        "timeline",
+        "css-animation",
+        "svg",
+        "scroll",
+        "stagger",
+        "drag",
+        "canvas",
+        "threejs"
+      ]
+    },
+    {
+      "id": "magicui-pro-free-surface",
+      "name": "Magic UI Pro — free/public surface only",
+      "requestedUrl": "https://pro.magicui.design",
+      "canonicalRepository": "https://github.com/magicuidesign/portfolio",
+      "upstreamPath": "upstream/magicui-portfolio",
+      "accessTier": "free-only",
+      "license": "MIT for the linked public portfolio template",
+      "licenseFiles": [
+        "upstream/magicui-portfolio/LICENSE"
+      ],
+      "inclusion": "free-explicitly-licensed-assets-only",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": [
+        "all paid templates",
+        "all Pro sections",
+        "all gated code and assets",
+        "public repositories without an explicit license"
+      ],
+      "domains": [
+        "portfolio-template",
+        "landing-page-reference",
+        "section-taxonomy-reference"
+      ]
+    },
+    {
+      "id": "magicui-net",
+      "name": "magicui.net / Magic UI Free",
+      "requestedUrl": "https://magicui.net",
+      "canonicalDocumentation": "https://magicui.design/docs",
+      "canonicalRepository": "https://github.com/magicuidesign/magicui",
+      "upstreamPath": "upstream/magicui",
+      "accessTier": "free-open-source",
+      "license": "MIT",
+      "licenseFiles": [
+        "upstream/magicui/LICENSE.md"
+      ],
+      "inclusion": "full-open-upstream",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": [
+        "affiliate-only content",
+        "Magic UI Pro assets"
+      ],
+      "domains": [
+        "react",
+        "tailwind",
+        "motion",
+        "marketing-ui",
+        "text-effects",
+        "backgrounds",
+        "buttons",
+        "cards",
+        "device-mockups"
+      ]
+    },
+    {
+      "id": "21st-dev",
+      "name": "21st.dev",
+      "requestedUrl": "https://21st.dev",
+      "canonicalToolRepository": "https://github.com/21st-dev/skill",
+      "upstreamPath": "upstream/21st-skill",
+      "accessTier": "free-official-tooling-and-per-item-assets",
+      "license": "Apache-2.0 for the tool; per-item license for marketplace content",
+      "licenseFiles": [
+        "upstream/21st-skill/LICENSE"
+      ],
+      "inclusion": "official-tool-and-verified-items-only",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": [
+        "bulk marketplace scrape",
+        "demos and previews",
+        "screenshots, GIFs, videos and thumbnails",
+        "items with missing or incompatible license",
+        "paid or metered generated assets"
+      ],
+      "domains": [
+        "component-discovery",
+        "themes",
+        "templates",
+        "react",
+        "shadcn",
+        "community-components"
+      ]
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "requestedUrl": "https://reactbits.dev",
+      "canonicalRepository": "https://github.com/DavidHDev/react-bits",
+      "upstreamPath": "upstream/react-bits",
+      "accessTier": "free-source-available",
+      "license": "MIT + Commons Clause License Condition v1.0",
+      "licenseFiles": [
+        "upstream/react-bits/LICENSE.md"
+      ],
+      "inclusion": "upstream-reference-for-private-product-use",
+      "redistribution": "forbidden-as-components-or-bundle",
+      "excluded": [
+        "resale",
+        "sublicensing",
+        "component bundle redistribution",
+        "ported library redistribution"
+      ],
+      "domains": [
+        "react",
+        "text-animation",
+        "backgrounds",
+        "microinteractions",
+        "components",
+        "cursor-effects",
+        "webgl"
+      ]
+    }
+  ]
+}
+

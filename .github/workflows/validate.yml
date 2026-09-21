@@ -1,0 +1,21 @@
+name: Validate knowledge base
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 1
+      - name: Validate source policy and catalogs
+        shell: pwsh
+        run: ./tools/validate.ps1
+

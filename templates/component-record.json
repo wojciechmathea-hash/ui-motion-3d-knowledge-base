@@ -1,0 +1,34 @@
+{
+  "id": "source--component-name",
+  "name": "Component name",
+  "source": {
+    "registryId": "threeui|animejs|magicui-pro-free-surface|magicui-net|21st-dev|react-bits",
+    "url": "https://example.com/component",
+    "repository": "https://github.com/owner/repository",
+    "author": "Author name",
+    "commitOrVersion": "commit-sha-or-version",
+    "verifiedAt": "YYYY-MM-DD"
+  },
+  "access": {
+    "tier": "free",
+    "license": "SPDX-or-exact-license-name",
+    "licenseUrl": "https://example.com/license",
+    "assetLicensesVerified": false,
+    "redistribution": "private-use-only"
+  },
+  "classification": {
+    "categories": [],
+    "technologyTags": [],
+    "qualityTags": [],
+    "motionIntensity": "1-subtle|2-supporting|3-hero|4-immersive"
+  },
+  "integration": {
+    "dependencies": [],
+    "clientOnly": false,
+    "fallback": "",
+    "reducedMotion": "",
+    "modifications": []
+  },
+  "assets": []
+}
+

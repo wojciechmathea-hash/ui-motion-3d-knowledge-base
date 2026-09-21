@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-21T09:20:52.6701306Z",
+  "sourceCount": 6,
+  "sources": [
+    {
+      "id": "threeui",
+      "commit": "68802d5428071ada5c20db8094b1649e6bb770ed",
+      "itemCount": 43,
+      "routeCount": 104,
+      "variantCount": 163
+    },
+    {
+      "id": "animejs",
+      "commit": "01b81be1df6843ccfe0a71c0699a746bf740dd77",
+      "exampleCount": 24
+    },
+    {
+      "id": "magicui-pro-free-surface",
+      "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+      "freeTemplateCount": 1,
+      "componentFileCount": 42
+    },
+    {
+      "id": "magicui-net",
+      "commit": "d7207e5692d14c00dceafa8488d6d01f197fa0e4",
+      "registryItemCount": 249
+    },
+    {
+      "id": "21st-dev",
+      "commit": "15c7436c41dc88c54094f1be93ce53bda456b114",
+      "officialSkillCount": 7,
+      "marketplaceMirrorCount": 0
+    },
+    {
+      "id": "react-bits",
+      "commit": "9481af758aae6cfb34c3652ec40a1c099360331f",
+      "componentCount": 205,
+      "categories": [
+        {
+          "name": "Animations",
+          "count": 38
+        },
+        {
+          "name": "Backgrounds",
+          "count": 57
+        },
+        {
+          "name": "Components",
+          "count": 45
+        },
+        {
+          "name": "Micro",
+          "count": 33
+        },
+        {
+          "name": "TextAnimations",
+          "count": 32
+        }
+      ]
+    }
+  ]
+}

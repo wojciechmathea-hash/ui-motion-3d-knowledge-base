@@ -1,0 +1,18 @@
+[submodule "upstream/threeui"]
+	path = upstream/threeui
+	url = https://github.com/MengTo/threeui.git
+[submodule "upstream/animejs"]
+	path = upstream/animejs
+	url = https://github.com/juliangarnier/anime.git
+[submodule "upstream/magicui"]
+	path = upstream/magicui
+	url = https://github.com/magicuidesign/magicui.git
+[submodule "upstream/react-bits"]
+	path = upstream/react-bits
+	url = https://github.com/DavidHDev/react-bits.git
+[submodule "upstream/21st-skill"]
+	path = upstream/21st-skill
+	url = https://github.com/21st-dev/skill.git
+[submodule "upstream/magicui-portfolio"]
+	path = upstream/magicui-portfolio
+	url = https://github.com/magicuidesign/portfolio.git

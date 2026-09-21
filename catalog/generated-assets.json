@@ -1,0 +1,4129 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-21T09:20:52.6701306Z",
+  "policy": {
+    "private": true,
+    "freeOnly": true,
+    "proAllowed": false,
+    "redistribution": false
+  },
+  "catalogs": {
+    "threeui": [
+      {
+        "id": "kage-landing-page",
+        "variants": [],
+        "controls": [
+          "headingFont",
+          "bodyFont",
+          "headingWeight",
+          "bodyWeight",
+          "primaryColor",
+          "headingSize",
+          "bodySize",
+          "headingLetterSpacing"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "complete-shelf-landing-page",
+        "variants": [],
+        "controls": [
+          "headingFont",
+          "bodyFont",
+          "headingWeight",
+          "bodyWeight",
+          "primaryColor",
+          "headingSize",
+          "bodySize",
+          "headingLetterSpacing"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "bestsellers-book-showcase",
+        "variants": [],
+        "controls": [
+          "headingFont",
+          "bodyFont",
+          "headingWeight",
+          "bodyWeight",
+          "primaryColor",
+          "headingSize",
+          "bodySize",
+          "headingLetterSpacing"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "sylva-hero",
+        "variants": [
+          "living-green"
+        ],
+        "controls": [
+          "headingFont",
+          "bodyFont",
+          "headingWeight",
+          "bodyWeight",
+          "primaryColor",
+          "headingSize",
+          "bodySize",
+          "headingLetterSpacing"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "meng-to-sketchbook-landing-page",
+        "variants": [],
+        "controls": [
+          "headingFont",
+          "bodyFont",
+          "headingWeight",
+          "bodyWeight",
+          "primaryColor",
+          "headingSize",
+          "bodySize",
+          "headingLetterSpacing"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "predictive-arc",
+        "variants": [
+          "predictive",
+          "data-pixel",
+          "signal-particles",
+          "override-grid",
+          "ribbon-field",
+          "void-field",
+          "halftone-flow",
+          "amber-halftone"
+        ],
+        "controls": [
+          "mode",
+          "speed",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "liquid-form",
+        "variants": [],
+        "controls": [
+          "speed",
+          "morph",
+          "noiseScale",
+          "mouseAmount",
+          "metal",
+          "camera",
+          "tintHue",
+          "tintAmount"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "crt",
+        "variants": [
+          "terminal",
+          "cinematic",
+          "blue-screen",
+          "nintendo"
+        ],
+        "controls": [
+          "speed",
+          "typeSpeed",
+          "motion",
+          "hue",
+          "saturation",
+          "brightness",
+          "opacity"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "energy-orb",
+        "variants": [
+          "energy-orb"
+        ],
+        "controls": [
+          "speed",
+          "scale",
+          "smokeScale",
+          "smokeStrength",
+          "smokeSpeed",
+          "hue",
+          "saturation",
+          "glow",
+          "starDensity",
+          "starSpeed",
+          "starSize",
+          "brightness",
+          "opacity"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "spark-badge",
+        "variants": [
+          "badge"
+        ],
+        "controls": [
+          "speed",
+          "particleAmount",
+          "rainAmount",
+          "turbulence",
+          "spread"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "elements",
+        "variants": [
+          "elemental-water",
+          "elemental-lightning",
+          "elemental-flame",
+          "condensation",
+          "generative-tree"
+        ],
+        "controls": [
+          "speed",
+          "size",
+          "particleAmount",
+          "hue",
+          "saturation",
+          "brightness",
+          "opacity"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "typography-vortex",
+        "variants": [],
+        "controls": [
+          "mode",
+          "speed",
+          "ringGrowth",
+          "opacity",
+          "dissolveRadius",
+          "particleAmount",
+          "suctionDuration"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "semantic-bloom",
+        "variants": [],
+        "controls": [
+          "mode",
+          "text",
+          "size",
+          "opacity"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "globe-study",
+        "variants": [
+          "globe-study",
+          "outline-typeflow",
+          "morphing-glyph-cloud",
+          "cloth-study",
+          "ripple-study",
+          "ball-study"
+        ],
+        "controls": [
+          "mode",
+          "scale",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "gallery-heading",
+        "variants": [
+          "rising-diagonal",
+          "falling-diagonal",
+          "horizontal-sweep",
+          "vertical-loop"
+        ],
+        "controls": [
+          "mode",
+          "font",
+          "weight",
+          "headlineSize",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "star-portal",
+        "variants": [
+          "star-portal",
+          "ignition-button",
+          "induction-button",
+          "plasma-button",
+          "tactile-button",
+          "thinking-button"
+        ],
+        "controls": [
+          "mode",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "rectangle-buttons",
+        "variants": [
+          "dark-pill",
+          "launch-button",
+          "dot-border-button",
+          "floating-dots-cta",
+          "sliding-text-cta",
+          "gradient-beam-cta",
+          "gradient-pill-button",
+          "generate-button",
+          "glassmorphism-cta",
+          "spinning-border-button",
+          "gradient-cta",
+          "lumen-cta",
+          "lumen-cta-ghost",
+          "trochil-signal",
+          "attune-thermal",
+          "tideform-outline",
+          "understory-arrow-pill",
+          "meridian-keycap-primary",
+          "meridian-keycap-secondary",
+          "halvorsen-arrow-pill",
+          "aster-glass-access",
+          "aster-glass-arrow"
+        ],
+        "controls": [
+          "mode",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "circle-buttons",
+        "variants": [
+          "play",
+          "plus",
+          "mail"
+        ],
+        "controls": [
+          "mode",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "liquid-metal-button",
+        "variants": [
+          "play-circle",
+          "pill",
+          "circle"
+        ],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "character-carousel",
+        "variants": [
+          "character-filmstrip",
+          "character-wave"
+        ],
+        "controls": [
+          "speed",
+          "scale",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "gallery",
+        "variants": [],
+        "controls": [
+          "speed",
+          "scale",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "sylva-living-world",
+        "variants": [
+          "living-green"
+        ],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "temple-night",
+        "variants": [
+          "temple-night"
+        ],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "landscape",
+        "variants": [
+          "sunrise",
+          "noon",
+          "sunset",
+          "night",
+          "rain",
+          "storm",
+          "snow"
+        ],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "japanese-tower",
+        "variants": [
+          "japan",
+          "china",
+          "vietnam",
+          "thailand",
+          "cambodia",
+          "turkey"
+        ],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "bookshelf",
+        "variants": [],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "structure-flow",
+        "variants": [
+          "structure-flow",
+          "emerald-horizon",
+          "orbital-sphere",
+          "dot-matrix",
+          "expanse-field",
+          "logic-core",
+          "dimensional-field",
+          "data-field",
+          "topology-field",
+          "nebula",
+          "fluid-field",
+          "ember-storm",
+          "flux-vortex"
+        ],
+        "controls": [
+          "speed",
+          "pointSize",
+          "opacity",
+          "maskStart",
+          "maskSolid"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "warp-field",
+        "variants": [
+          "streaks",
+          "letters",
+          "keycaps",
+          "hyperspace"
+        ],
+        "controls": [
+          "speed",
+          "streakOpacity",
+          "tileOpacity",
+          "fov",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "engraved-certificate",
+        "variants": [],
+        "controls": [
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "woven-cloth",
+        "variants": [
+          "woven-cloth",
+          "iridescent",
+          "atelier",
+          "washi"
+        ],
+        "controls": [
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "performance-gauges",
+        "variants": [
+          "tachometer",
+          "speedometer",
+          "boost",
+          "power"
+        ],
+        "controls": [
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "uplink-loader",
+        "variants": [],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "koi-studies",
+        "variants": [],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "article-headings",
+        "variants": [
+          "threeui-intro",
+          "particle-wordmark",
+          "audio-wordmark"
+        ],
+        "controls": [
+          "mode",
+          "duration",
+          "stagger",
+          "scrambleLength",
+          "preserveChance",
+          "tailChance"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "animated-top-dock",
+        "variants": [
+          "sable",
+          "modern",
+          "retro",
+          "glass"
+        ],
+        "controls": [
+          "proximity",
+          "spring",
+          "damping",
+          "widthGrowth",
+          "heightGrowth",
+          "drop"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "sketchbook",
+        "variants": [],
+        "controls": [],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "constellation-field",
+        "variants": [
+          "constellation-field",
+          "particle-drift",
+          "particle-network",
+          "gateway-flow",
+          "connectivity-graph",
+          "interface-lines",
+          "defense-lines",
+          "topo-field"
+        ],
+        "controls": [
+          "mode",
+          "speed",
+          "size",
+          "strokeWidth",
+          "length",
+          "density",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "portal-field",
+        "variants": [
+          "portal-field",
+          "cloud-field",
+          "flow-field",
+          "bell-field",
+          "stream-convergence"
+        ],
+        "controls": [
+          "speed",
+          "size",
+          "length",
+          "density",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "diagnostics-panel",
+        "variants": [
+          "layers",
+          "nodes",
+          "flow"
+        ],
+        "controls": [
+          "mode",
+          "speed",
+          "size",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "skeuomorphic-toggle",
+        "variants": [
+          "skeuomorphic-toggle",
+          "modern",
+          "glass",
+          "shader"
+        ],
+        "controls": [
+          "mode",
+          "speed",
+          "size",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "matrix-field",
+        "variants": [
+          "matrix-field",
+          "atmospheric-blade",
+          "vanishing-array",
+          "halftone-relay"
+        ],
+        "controls": [
+          "speed",
+          "size",
+          "length",
+          "density",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "wireframe-forms",
+        "variants": [
+          "cube",
+          "cylinders",
+          "sphere"
+        ],
+        "controls": [
+          "mode",
+          "speed",
+          "size",
+          "length",
+          "density",
+          "opacity",
+          "hue",
+          "saturation",
+          "brightness"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      },
+      {
+        "id": "brand-orbs",
+        "variants": [
+          "claude",
+          "openai",
+          "codex",
+          "cursor",
+          "gemini",
+          "figma",
+          "framer",
+          "react",
+          "swift",
+          "designcode",
+          "aura",
+          "dreamcut",
+          "ui",
+          "ux",
+          "css",
+          "ios",
+          "neuform",
+          "github",
+          "x",
+          "instagram",
+          "threads",
+          "linkedin",
+          "email"
+        ],
+        "controls": [
+          "size",
+          "mode",
+          "speed"
+        ],
+        "sourcePath": "upstream/threeui/src/data/shaders.tsx"
+      }
+    ],
+    "animejs": [
+      {
+        "id": "additive-creature",
+        "sourcePath": "upstream/animejs/examples/additive-creature"
+      },
+      {
+        "id": "additive-fireflies",
+        "sourcePath": "upstream/animejs/examples/additive-fireflies"
+      },
+      {
+        "id": "advanced-grid-staggering",
+        "sourcePath": "upstream/animejs/examples/advanced-grid-staggering"
+      },
+      {
+        "id": "animatable-follow-cursor",
+        "sourcePath": "upstream/animejs/examples/animatable-follow-cursor"
+      },
+      {
+        "id": "animejs-v4-logo-animation",
+        "sourcePath": "upstream/animejs/examples/animejs-v4-logo-animation"
+      },
+      {
+        "id": "auto-layout",
+        "sourcePath": "upstream/animejs/examples/auto-layout"
+      },
+      {
+        "id": "canvas-2d",
+        "sourcePath": "upstream/animejs/examples/canvas-2d"
+      },
+      {
+        "id": "clock-playback-controls",
+        "sourcePath": "upstream/animejs/examples/clock-playback-controls"
+      },
+      {
+        "id": "draggable-infinite-auto-carousel",
+        "sourcePath": "upstream/animejs/examples/draggable-infinite-auto-carousel"
+      },
+      {
+        "id": "draggable-mouse-scroll-snap-carousel",
+        "sourcePath": "upstream/animejs/examples/draggable-mouse-scroll-snap-carousel"
+      },
+      {
+        "id": "draggable-playground",
+        "sourcePath": "upstream/animejs/examples/draggable-playground"
+      },
+      {
+        "id": "irregular-playback-typewriter",
+        "sourcePath": "upstream/animejs/examples/irregular-playback-typewriter"
+      },
+      {
+        "id": "layered-css-transforms",
+        "sourcePath": "upstream/animejs/examples/layered-css-transforms"
+      },
+      {
+        "id": "onscroll-responsive-scope",
+        "sourcePath": "upstream/animejs/examples/onscroll-responsive-scope"
+      },
+      {
+        "id": "onscroll-sticky",
+        "sourcePath": "upstream/animejs/examples/onscroll-sticky"
+      },
+      {
+        "id": "stagger",
+        "sourcePath": "upstream/animejs/examples/stagger"
+      },
+      {
+        "id": "svg-graph",
+        "sourcePath": "upstream/animejs/examples/svg-graph"
+      },
+      {
+        "id": "svg-line-drawing",
+        "sourcePath": "upstream/animejs/examples/svg-line-drawing"
+      },
+      {
+        "id": "text",
+        "sourcePath": "upstream/animejs/examples/text"
+      },
+      {
+        "id": "threejs",
+        "sourcePath": "upstream/animejs/examples/threejs"
+      },
+      {
+        "id": "timeline-50K-stars",
+        "sourcePath": "upstream/animejs/examples/timeline-50K-stars"
+      },
+      {
+        "id": "timeline-refresh-starlings",
+        "sourcePath": "upstream/animejs/examples/timeline-refresh-starlings"
+      },
+      {
+        "id": "timeline-seamless-loop",
+        "sourcePath": "upstream/animejs/examples/timeline-seamless-loop"
+      },
+      {
+        "id": "timeline-stress-test",
+        "sourcePath": "upstream/animejs/examples/timeline-stress-test"
+      }
+    ],
+    "magicuiProFreeSurface": [
+      {
+        "id": "icons",
+        "sourcePath": "upstream/magicui-portfolio/src/components/icons.tsx"
+      },
+      {
+        "id": "blur-fade-text",
+        "sourcePath": "upstream/magicui-portfolio/src/components/magicui/blur-fade-text.tsx"
+      },
+      {
+        "id": "blur-fade",
+        "sourcePath": "upstream/magicui-portfolio/src/components/magicui/blur-fade.tsx"
+      },
+      {
+        "id": "dock",
+        "sourcePath": "upstream/magicui-portfolio/src/components/magicui/dock.tsx"
+      },
+      {
+        "id": "flickering-grid",
+        "sourcePath": "upstream/magicui-portfolio/src/components/magicui/flickering-grid.tsx"
+      },
+      {
+        "id": "code-block",
+        "sourcePath": "upstream/magicui-portfolio/src/components/mdx/code-block.tsx"
+      },
+      {
+        "id": "media-container",
+        "sourcePath": "upstream/magicui-portfolio/src/components/mdx/media-container.tsx"
+      },
+      {
+        "id": "mode-toggle",
+        "sourcePath": "upstream/magicui-portfolio/src/components/mode-toggle.tsx"
+      },
+      {
+        "id": "navbar",
+        "sourcePath": "upstream/magicui-portfolio/src/components/navbar.tsx"
+      },
+      {
+        "id": "project-card",
+        "sourcePath": "upstream/magicui-portfolio/src/components/project-card.tsx"
+      },
+      {
+        "id": "contact-section",
+        "sourcePath": "upstream/magicui-portfolio/src/components/section/contact-section.tsx"
+      },
+      {
+        "id": "hackathons-section",
+        "sourcePath": "upstream/magicui-portfolio/src/components/section/hackathons-section.tsx"
+      },
+      {
+        "id": "projects-section",
+        "sourcePath": "upstream/magicui-portfolio/src/components/section/projects-section.tsx"
+      },
+      {
+        "id": "work-section",
+        "sourcePath": "upstream/magicui-portfolio/src/components/section/work-section.tsx"
+      },
+      {
+        "id": "theme-provider",
+        "sourcePath": "upstream/magicui-portfolio/src/components/theme-provider.tsx"
+      },
+      {
+        "id": "timeline",
+        "sourcePath": "upstream/magicui-portfolio/src/components/timeline.tsx"
+      },
+      {
+        "id": "accordion",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/accordion.tsx"
+      },
+      {
+        "id": "avatar",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/avatar.tsx"
+      },
+      {
+        "id": "badge",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/badge.tsx"
+      },
+      {
+        "id": "button",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/button.tsx"
+      },
+      {
+        "id": "card",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/card.tsx"
+      },
+      {
+        "id": "separator",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/separator.tsx"
+      },
+      {
+        "id": "csharp",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/csharp.tsx"
+      },
+      {
+        "id": "docker",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/docker.tsx"
+      },
+      {
+        "id": "golang",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/golang.tsx"
+      },
+      {
+        "id": "golangDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/golangDark.tsx"
+      },
+      {
+        "id": "java",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/java.tsx"
+      },
+      {
+        "id": "kubernetes",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/kubernetes.tsx"
+      },
+      {
+        "id": "nextjsIconDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/nextjsIconDark.tsx"
+      },
+      {
+        "id": "nextjsLogoDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/nextjsLogoDark.tsx"
+      },
+      {
+        "id": "nextjsLogoLight",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/nextjsLogoLight.tsx"
+      },
+      {
+        "id": "nodejs",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/nodejs.tsx"
+      },
+      {
+        "id": "postgresql",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/postgresql.tsx"
+      },
+      {
+        "id": "postgresqlWordmarkDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/postgresqlWordmarkDark.tsx"
+      },
+      {
+        "id": "postgresqlWordmarkLight",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/postgresqlWordmarkLight.tsx"
+      },
+      {
+        "id": "python",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/python.tsx"
+      },
+      {
+        "id": "reactDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/reactDark.tsx"
+      },
+      {
+        "id": "reactLight",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/reactLight.tsx"
+      },
+      {
+        "id": "reactWordmarkDark",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/reactWordmarkDark.tsx"
+      },
+      {
+        "id": "reactWordmarkLight",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/reactWordmarkLight.tsx"
+      },
+      {
+        "id": "typescript",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/svgs/typescript.tsx"
+      },
+      {
+        "id": "tooltip",
+        "sourcePath": "upstream/magicui-portfolio/src/components/ui/tooltip.tsx"
+      }
+    ],
+    "magicuiFree": [
+      {
+        "id": "magic-card",
+        "type": "registry:ui",
+        "title": "Magic Card",
+        "description": "A spotlight effect that follows your mouse cursor and highlights borders on hover.",
+        "dependencies": [
+          "motion",
+          "next-themes"
+        ],
+        "registryDependencies": null
+      },
+      {
+        "id": "android",
+        "type": "registry:ui",
+        "title": "Android",
+        "description": "A mockup of an Android device.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "warp-background",
+        "type": "registry:ui",
+        "title": "Warp Background",
+        "description": "A card with a time warping background effect.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "line-shadow-text",
+        "type": "registry:ui",
+        "title": "Line Shadow Text",
+        "description": "A text component with a moving line shadow.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "aurora-text",
+        "type": "registry:ui",
+        "title": "Aurora Text",
+        "description": "A beautiful aurora text effect",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "morphing-text",
+        "type": "registry:ui",
+        "title": "Morphing Text",
+        "description": "A dynamic text morphing component for Magic UI.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "scroll-progress",
+        "type": "registry:ui",
+        "title": "Scroll Progress",
+        "description": "Animated Scroll Progress for your pages",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "lens",
+        "type": "registry:ui",
+        "title": "Lens",
+        "description": "A interactive component that enables zooming into images, videos and other elements.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "pointer",
+        "type": "registry:ui",
+        "title": "Pointer",
+        "description": "A component that displays a pointer when hovering over an element",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "smooth-cursor",
+        "type": "registry:ui",
+        "title": null,
+        "description": "A customizable, physics-based smooth cursor animation component with spring animations and rotation effects",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "progressive-blur",
+        "type": "registry:ui",
+        "title": "Progressive Blur",
+        "description": "The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "neon-gradient-card",
+        "type": "registry:ui",
+        "title": "Neon Gradient Card",
+        "description": "A beautiful neon card effect",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "noise-texture",
+        "type": "registry:ui",
+        "title": "Noise Texture",
+        "description": "An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "meteors",
+        "type": "registry:ui",
+        "title": "Meteors",
+        "description": "A meteor shower effect.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "grid-pattern",
+        "type": "registry:ui",
+        "title": "Grid Pattern",
+        "description": "A background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "hexagon-pattern",
+        "type": "registry:ui",
+        "title": "Hexagon Pattern",
+        "description": "A background hexagon pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "striped-pattern",
+        "type": "registry:ui",
+        "title": "Striped Pattern",
+        "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "interactive-grid-pattern",
+        "type": "registry:ui",
+        "title": "Interactive Grid Pattern",
+        "description": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "dot-pattern",
+        "type": "registry:ui",
+        "title": "Dot Pattern",
+        "description": "A background dot pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "flickering-grid",
+        "type": "registry:ui",
+        "title": "Flickering Grid",
+        "description": "A flickering grid background made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "hero-video-dialog",
+        "type": "registry:ui",
+        "title": "Hero Video Dialog",
+        "description": "A hero video dialog component.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "code-comparison",
+        "type": "registry:ui",
+        "title": "Code Comparison",
+        "description": "A component which compares two code snippets.",
+        "dependencies": [
+          "shiki",
+          "next-themes"
+        ],
+        "registryDependencies": null
+      },
+      {
+        "id": "marquee",
+        "type": "registry:ui",
+        "title": "Marquee",
+        "description": "An infinite scrolling component that can be used to display text, images, or videos.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "globe",
+        "type": "registry:ui",
+        "title": "Globe",
+        "description": "An autorotating, interactive, and highly performant globe made using WebGL.",
+        "dependencies": [
+          "cobe@^0.6.4",
+          "motion"
+        ],
+        "registryDependencies": null
+      },
+      {
+        "id": "glyph-matrix",
+        "type": "registry:ui",
+        "title": "Glyph Matrix",
+        "description": "An animated grid of subtly shifting glyphs with fade effect and theme support.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "glare-hover",
+        "type": "registry:ui",
+        "title": "Glare Hover",
+        "description": "A diagonal glare on hover using a ::before gradient and CSS variables (angle, size, duration, color).",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "shimmer-button",
+        "type": "registry:ui",
+        "title": "Shimmer Button",
+        "description": "A button with a shimmering light which travels around the perimeter.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "tweet-card",
+        "type": "registry:ui",
+        "title": "Tweet Card",
+        "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
+        "dependencies": "react-tweet",
+        "registryDependencies": null
+      },
+      {
+        "id": "client-tweet-card",
+        "type": "registry:ui",
+        "title": "Client Tweet Card",
+        "description": "A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
+        "dependencies": "react-tweet",
+        "registryDependencies": null
+      },
+      {
+        "id": "bento-grid",
+        "type": "registry:ui",
+        "title": "Bento Grid",
+        "description": "Bento grid is a layout used to showcase the features of a product in a simple and elegant way.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": "button"
+      },
+      {
+        "id": "particles",
+        "type": "registry:ui",
+        "title": "Particles",
+        "description": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "number-ticker",
+        "type": "registry:ui",
+        "title": "Number Ticker",
+        "description": "Animate numbers to count up or down to a target number",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "ripple",
+        "type": "registry:ui",
+        "title": "Ripple",
+        "description": "An animated ripple effect typically used behind elements to emphasize them.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "retro-grid",
+        "type": "registry:ui",
+        "title": "Retro Grid",
+        "description": "An animated scrolling retro grid effect",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-list",
+        "type": "registry:ui",
+        "title": "Animated List",
+        "description": "A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-shiny-text",
+        "type": "registry:ui",
+        "title": "Animated Shiny Text",
+        "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-grid-pattern",
+        "type": "registry:ui",
+        "title": "Animated Grid Pattern",
+        "description": "A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "border-beam",
+        "type": "registry:ui",
+        "title": "Border Beam",
+        "description": "An animated beam of light which travels along the border of its container.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-beam",
+        "type": "registry:ui",
+        "title": "Animated Beam",
+        "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "text-reveal",
+        "type": "registry:ui",
+        "title": "Text Reveal",
+        "description": "Fade in text as you scroll down the page.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "dia-text-reveal",
+        "type": "registry:ui",
+        "title": "Dia Text Reveal",
+        "description": "A horizontal color band sweeps across text, revealing a gradient shine before settling on the base color.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "hyper-text",
+        "type": "registry:ui",
+        "title": "Hyper Text",
+        "description": "A text animation that scrambles letters before revealing the final text.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-gradient-text",
+        "type": "registry:ui",
+        "title": "Animated Gradient Text",
+        "description": "An animated gradient background which transitions between colors for text.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "orbiting-circles",
+        "type": "registry:ui",
+        "title": "Orbiting Circles",
+        "description": "A collection of circles which move in orbit along a circular path",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "dock",
+        "type": "registry:ui",
+        "title": "Dock",
+        "description": "An implementation of the MacOS dock using react + tailwindcss + motion",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "word-rotate",
+        "type": "registry:ui",
+        "title": "Word Rotate",
+        "description": "A vertical rotation of words",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "avatar-circles",
+        "type": "registry:ui",
+        "title": "Avatar Circles",
+        "description": "Overlapping circles of avatars.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "typing-animation",
+        "type": "registry:ui",
+        "title": "Typing Animation",
+        "description": "Characters appearing in typed animation",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "sparkles-text",
+        "type": "registry:ui",
+        "title": "Sparkles Text",
+        "description": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "spinning-text",
+        "type": "registry:ui",
+        "title": "Spinning Text",
+        "description": "The Spinning Text component animates text in a circular motion with customizable speed, direction, color, and transitions for dynamic and engaging effects.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "comic-text",
+        "type": "registry:ui",
+        "title": "Comic Text",
+        "description": "Comic text animation",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "icon-cloud",
+        "type": "registry:ui",
+        "title": "Icon Cloud",
+        "description": "An interactive 3D tag cloud component",
+        "dependencies": "lucide-react",
+        "registryDependencies": "button"
+      },
+      {
+        "id": "text-animate",
+        "type": "registry:ui",
+        "title": "Text Animate",
+        "description": "A text animation component that animates text using a variety of different animations.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "scroll-based-velocity",
+        "type": "registry:ui",
+        "title": "Scroll Based Velocity",
+        "description": "Scrolling text whose speed changes based on scroll speed",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "shiny-button",
+        "type": "registry:ui",
+        "title": "Shiny Button",
+        "description": "A shiny button component with dynamic styles in the dark mode or light mode.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "shine-border",
+        "type": "registry:ui",
+        "title": "Shine Border",
+        "description": "Shine border is an animated background border effect.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-circular-progress-bar",
+        "type": "registry:ui",
+        "title": "Animated Circular Progress Bar",
+        "description": "Animated Circular Progress Bar is a component that displays a circular gauge with a percentage value.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "confetti",
+        "type": "registry:ui",
+        "title": "Confetti",
+        "description": "Confetti animations are best used to delight your users when something special happens",
+        "dependencies": [
+          "canvas-confetti",
+          "@types/canvas-confetti"
+        ],
+        "registryDependencies": "button"
+      },
+      {
+        "id": "cool-mode",
+        "type": "registry:ui",
+        "title": "Cool Mode",
+        "description": "Cool mode effect for buttons, links, and other DOMs",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "pulsating-button",
+        "type": "registry:ui",
+        "title": "Pulsating Button",
+        "description": "An animated pulsating button useful for capturing attention of users.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "ripple-button",
+        "type": "registry:ui",
+        "title": "Ripple Button",
+        "description": "An animated button with ripple useful for user engagement.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "file-tree",
+        "type": "registry:ui",
+        "title": "File Tree",
+        "description": "A component used to showcase the folder and file structure of a directory.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "blur-fade",
+        "type": "registry:ui",
+        "title": "Blur Fade",
+        "description": "Blur fade in and out animation. Used to smoothly fade in and out content.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "safari",
+        "type": "registry:ui",
+        "title": "Safari",
+        "description": "A safari browser mockup to showcase your website.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "iphone",
+        "type": "registry:ui",
+        "title": "iPhone",
+        "description": "A mockup of the iPhone",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "rainbow-button",
+        "type": "registry:ui",
+        "title": "Rainbow Button",
+        "description": "An animated button with a rainbow effect.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "interactive-hover-button",
+        "type": "registry:ui",
+        "title": null,
+        "description": null,
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "terminal",
+        "type": "registry:ui",
+        "title": "Terminal",
+        "description": "A terminal component",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "video-text",
+        "type": "registry:ui",
+        "title": "Video Text",
+        "description": "A component that displays text with a video playing in the background.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "pixel-image",
+        "type": "registry:ui",
+        "title": "Pixel Image",
+        "description": "A component that displays an image with a pixelated effect, creating a retro aesthetic.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "highlighter",
+        "type": "registry:ui",
+        "title": "Highlighter",
+        "description": "A text highlighter that mimics the effect of a human-drawn marker stroke.",
+        "dependencies": [
+          "motion",
+          "rough-notation"
+        ],
+        "registryDependencies": null
+      },
+      {
+        "id": "animated-theme-toggler",
+        "type": "registry:ui",
+        "title": "Theme Toggler",
+        "description": "Theme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.",
+        "dependencies": "lucide-react",
+        "registryDependencies": null
+      },
+      {
+        "id": "light-rays",
+        "type": "registry:ui",
+        "title": "Light Rays",
+        "description": "A component with animated light rays which shine down from above.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "dotted-map",
+        "type": "registry:ui",
+        "title": "Dotted Map",
+        "description": "A component with a dotted map.",
+        "dependencies": "svg-dotted-map",
+        "registryDependencies": null
+      },
+      {
+        "id": "backlight",
+        "type": "registry:ui",
+        "title": "Backlight",
+        "description": "A backlight glow effect for videos, images, and SVGs.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "kinetic-text",
+        "type": "registry:ui",
+        "title": "Kinetic Text",
+        "description": "A text component that animates font weight of characters on hover.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "text-3d-flip",
+        "type": "registry:ui",
+        "title": "Text 3D Flip",
+        "description": "A text effect that flips each letter in 3D with a staggered animation on hover.",
+        "dependencies": "motion",
+        "registryDependencies": null
+      },
+      {
+        "id": "floating-3d-particles",
+        "type": "registry:ui",
+        "title": "Floating 3D Particles",
+        "description": "A canvas-based pseudo-3D particle field with perspective projection, continuous rotation and buoyant drift.",
+        "dependencies": null,
+        "registryDependencies": null
+      },
+      {
+        "id": "magic-card-demo",
+        "type": "registry:example",
+        "title": "Magic Card Demo",
+        "description": "Example showing a spotlight effect that follows your mouse cursor and highlights borders on hover.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/magic-card"
+      },
+      {
+        "id": "magic-card-demo-2",
+        "type": "registry:example",
+        "title": "Magic Card Demo 2",
+        "description": "Example showing a magic card with an orb effect.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/magic-card",
+          "@magicui/avatar-circles"
+        ]
+      },
+      {
+        "id": "android-demo",
+        "type": "registry:example",
+        "title": "Android Demo",
+        "description": "Example showing a mockup of an Android device.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/android"
+      },
+      {
+        "id": "android-demo-2",
+        "type": "registry:example",
+        "title": "Android Demo 2",
+        "description": "Second example showing a mockup of an Android device.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/android"
+      },
+      {
+        "id": "android-demo-3",
+        "type": "registry:example",
+        "title": "Android Demo 3",
+        "description": "Third example showing a mockup of an Android device.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/android"
+      },
+      {
+        "id": "warp-background-demo",
+        "type": "registry:example",
+        "title": "Warp Background Demo",
+        "description": "Example showing a card with a time warping background effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/warp-background"
+      },
+      {
+        "id": "line-shadow-text-demo",
+        "type": "registry:example",
+        "title": "Line Shadow Text Demo",
+        "description": "Example showing a text component with a moving line shadow.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/line-shadow-text"
+      },
+      {
+        "id": "aurora-text-demo",
+        "type": "registry:example",
+        "title": "Aurora Text Demo",
+        "description": "Example showing a beautiful aurora text effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/aurora-text"
+      },
+      {
+        "id": "morphing-text-demo",
+        "type": "registry:example",
+        "title": "Morphing Text Demo",
+        "description": "Example showing a dynamic text morphing component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/morphing-text"
+      },
+      {
+        "id": "scroll-progress-demo",
+        "type": "registry:example",
+        "title": "Scroll Progress Demo",
+        "description": "Example showing animated scroll progress for your pages.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/scroll-progress"
+      },
+      {
+        "id": "lens-demo",
+        "type": "registry:example",
+        "title": "Lens Demo",
+        "description": "Example showing a lens effect component",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "card",
+          "@magicui/lens"
+        ]
+      },
+      {
+        "id": "lens-demo-2",
+        "type": "registry:example",
+        "title": "Lens Demo 2",
+        "description": "Second example showing a lens effect component",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "card",
+          "@magicui/lens"
+        ]
+      },
+      {
+        "id": "lens-demo-3",
+        "type": "registry:example",
+        "title": "Lens Demo 3",
+        "description": "Third example showing a lens effect component",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "card",
+          "@magicui/lens"
+        ]
+      },
+      {
+        "id": "pointer-demo-1",
+        "type": "registry:example",
+        "title": "Pointer Demo 1",
+        "description": "Example showing a pointer effect component",
+        "dependencies": null,
+        "registryDependencies": "@magicui/pointer"
+      },
+      {
+        "id": "smooth-cursor-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "Basic smooth cursor example",
+        "dependencies": null,
+        "registryDependencies": "@magicui/smooth-cursor"
+      },
+      {
+        "id": "progressive-blur-demo",
+        "type": "registry:example",
+        "title": "Progressive Blur Demo",
+        "description": "Example showing progressive blur effect for scrollable content.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/progressive-blur"
+      },
+      {
+        "id": "neon-gradient-card-demo",
+        "type": "registry:example",
+        "title": "Neon Gradient Card Demo",
+        "description": "Example showing a beautiful neon card effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/neon-gradient-card"
+      },
+      {
+        "id": "noise-texture-demo",
+        "type": "registry:example",
+        "title": "Noise Texture Demo",
+        "description": "Example showing the SVG noise texture in a framed panel with a radial mask.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/noise-texture"
+      },
+      {
+        "id": "noise-texture-demo-2",
+        "type": "registry:example",
+        "title": "Noise Texture Demo (newsletter card)",
+        "description": "Example showing a newsletter signup card with email input over a noise texture.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/noise-texture",
+          "button",
+          "card",
+          "input",
+          "label"
+        ]
+      },
+      {
+        "id": "noise-texture-demo-3",
+        "type": "registry:example",
+        "title": "Noise Texture Demo (button)",
+        "description": "Example showing NoiseTexture behind a button label inside a relative button.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/noise-texture",
+          "button"
+        ]
+      },
+      {
+        "id": "noise-texture-demo-4",
+        "type": "registry:example",
+        "title": "Noise Texture Demo (input)",
+        "description": "Example showing a labeled input field with NoiseTexture filling the input container.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/noise-texture",
+          "input",
+          "label"
+        ]
+      },
+      {
+        "id": "meteors-demo",
+        "type": "registry:example",
+        "title": "Meteors Demo",
+        "description": "Example showing a meteor shower effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/meteors"
+      },
+      {
+        "id": "grid-pattern-demo",
+        "type": "registry:example",
+        "title": "Grid Pattern Demo",
+        "description": "Example showing a background grid pattern made with SVGs.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/grid-pattern"
+      },
+      {
+        "id": "striped-pattern-demo",
+        "type": "registry:example",
+        "title": "Striped Pattern Demo",
+        "description": "Example showing a background striped pattern made with SVGs.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/striped-pattern"
+      },
+      {
+        "id": "striped-pattern-dashed",
+        "type": "registry:example",
+        "title": "Striped Pattern (Dashed)",
+        "description": "Example showing a background striped pattern with a dashed stroke.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/striped-pattern"
+      },
+      {
+        "id": "striped-pattern-right",
+        "type": "registry:example",
+        "title": "Striped Pattern (Right)",
+        "description": "Example showing a background striped pattern slanting to the right using SVG.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/striped-pattern"
+      },
+      {
+        "id": "grid-pattern-linear-gradient",
+        "type": "registry:example",
+        "title": "Grid Pattern Linear Gradient",
+        "description": "Example showing a grid pattern with linear gradient effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/grid-pattern"
+      },
+      {
+        "id": "grid-pattern-dashed",
+        "type": "registry:example",
+        "title": "Grid Pattern Dashed",
+        "description": "Example showing a dashed grid pattern.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/grid-pattern"
+      },
+      {
+        "id": "hexagon-pattern-demo",
+        "type": "registry:example",
+        "title": "Hexagon Pattern Demo",
+        "description": "Example showing a background hexagon pattern made with SVGs.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hexagon-pattern"
+      },
+      {
+        "id": "hexagon-pattern-linear-gradient",
+        "type": "registry:example",
+        "title": "Hexagon Pattern Linear Gradient",
+        "description": "Example showing a hexagon pattern with linear gradient effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hexagon-pattern"
+      },
+      {
+        "id": "hexagon-pattern-dashed",
+        "type": "registry:example",
+        "title": "Hexagon Pattern Dashed",
+        "description": "Example showing a dashed hexagon pattern.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hexagon-pattern"
+      },
+      {
+        "id": "hexagon-pattern-spacing",
+        "type": "registry:example",
+        "title": "Hexagon Pattern Spacing",
+        "description": "Example showing a hexagon pattern with extra spacing between cells.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hexagon-pattern"
+      },
+      {
+        "id": "dot-pattern-demo",
+        "type": "registry:example",
+        "title": "Dot Pattern Demo",
+        "description": "Example showing a background dot pattern made with SVGs.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dot-pattern"
+      },
+      {
+        "id": "dot-pattern-linear-gradient",
+        "type": "registry:example",
+        "title": "Dot Pattern Linear Gradient",
+        "description": "Example showing a dot pattern with linear gradient effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dot-pattern"
+      },
+      {
+        "id": "dot-pattern-with-glow-effect",
+        "type": "registry:example",
+        "title": "Dot Pattern with glow effect",
+        "description": "Example showing a dot pattern with glow effect",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dot-pattern"
+      },
+      {
+        "id": "flickering-grid-demo",
+        "type": "registry:example",
+        "title": "Flickering Grid Demo",
+        "description": "Example showing a flickering grid background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/flickering-grid"
+      },
+      {
+        "id": "flickering-grid-rounded-demo",
+        "type": "registry:example",
+        "title": "Flickering Grid Rounded Demo",
+        "description": "Example showing a flickering grid background with rounded corners.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/flickering-grid"
+      },
+      {
+        "id": "hero-video-dialog-demo",
+        "type": "registry:example",
+        "title": "Hero Video Dialog Demo",
+        "description": "Example showing a hero video dialog component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hero-video-dialog"
+      },
+      {
+        "id": "hero-video-dialog-demo-top-in-bottom-out",
+        "type": "registry:example",
+        "title": "Hero Video Dialog Top In Bottom Out Demo",
+        "description": "Example showing a hero video dialog with top-in bottom-out animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hero-video-dialog"
+      },
+      {
+        "id": "code-comparison-demo",
+        "type": "registry:example",
+        "title": "Code Comparison Demo",
+        "description": "Example showing a component which compares two code snippets.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/code-comparison"
+      },
+      {
+        "id": "marquee-demo",
+        "type": "registry:example",
+        "title": "Marquee Demo",
+        "description": "Example showing an infinite scrolling component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/marquee"
+      },
+      {
+        "id": "marquee-demo-vertical",
+        "type": "registry:example",
+        "title": "Marquee Vertical Demo",
+        "description": "Example showing a vertical infinite scrolling component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/marquee"
+      },
+      {
+        "id": "marquee-logos",
+        "type": "registry:example",
+        "title": "Marquee Logos",
+        "description": "Example showing an infinite scrolling logo carousel.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/marquee"
+      },
+      {
+        "id": "marquee-3d",
+        "type": "registry:example",
+        "title": "Marquee 3D",
+        "description": "Example showing a 3D infinite scrolling component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/marquee"
+      },
+      {
+        "id": "globe-demo",
+        "type": "registry:example",
+        "title": "Globe Demo",
+        "description": "Example showing an autorotating, interactive WebGL globe.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/globe"
+      },
+      {
+        "id": "glyph-matrix-demo",
+        "type": "registry:example",
+        "title": "Glyph Matrix Demo",
+        "description": "Example showing an animated grid of subtly shifting glyphs.",
+        "dependencies": "next-themes",
+        "registryDependencies": "@magicui/glyph-matrix"
+      },
+      {
+        "id": "glare-hover-demo",
+        "type": "registry:example",
+        "title": "Glare Hover Demo",
+        "description": "Pricing card with diagonal hover glare (duration 600ms).",
+        "dependencies": null,
+        "registryDependencies": "@magicui/glare-hover"
+      },
+      {
+        "id": "glare-hover-demo-cta",
+        "type": "registry:example",
+        "title": "Glare Hover Demo — CTA",
+        "description": "CTA card with hover glare (700ms).",
+        "dependencies": null,
+        "registryDependencies": "@magicui/glare-hover"
+      },
+      {
+        "id": "glare-hover-demo-alert",
+        "type": "registry:example",
+        "title": "Glare Hover Demo — Alerts",
+        "description": "Three alerts with custom glare colors and opacity.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/glare-hover"
+      },
+      {
+        "id": "tweet-card-demo",
+        "type": "registry:example",
+        "title": "Tweet Card Demo",
+        "description": "Example showing a tweet card with author info.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/client-tweet-card",
+          "@magicui/tweet-card"
+        ]
+      },
+      {
+        "id": "tweet-card-images",
+        "type": "registry:example",
+        "title": "Tweet Card Images",
+        "description": "Example showing a tweet card with images.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/client-tweet-card",
+          "@magicui/tweet-card"
+        ]
+      },
+      {
+        "id": "tweet-card-meta-preview",
+        "type": "registry:example",
+        "title": "Tweet Card Meta Preview",
+        "description": "Example showing a tweet card with meta preview.",
+        "dependencies": null,
+        "registryDependencies": [
+          "@magicui/client-tweet-card",
+          "@magicui/tweet-card"
+        ]
+      },
+      {
+        "id": "shimmer-button-demo",
+        "type": "registry:example",
+        "title": "Shimmer Button Demo",
+        "description": "Example showing a button with a shimmering light effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/shimmer-button"
+      },
+      {
+        "id": "bento-demo",
+        "type": "registry:example",
+        "title": "Bento Demo",
+        "description": "Example showing a bento grid layout for showcasing features.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": [
+          "button",
+          "calendar",
+          "@magicui/marquee",
+          "@magicui/bento-grid",
+          "@magicui/animated-beam",
+          "@magicui/animated-list",
+          "@magicui/animated-beam-multiple-outputs",
+          "@magicui/animated-list-demo"
+        ]
+      },
+      {
+        "id": "bento-demo-vertical",
+        "type": "registry:example",
+        "title": "Bento Vertical Demo",
+        "description": "Example showing a vertical bento grid layout.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": "@magicui/bento-grid"
+      },
+      {
+        "id": "number-ticker-demo",
+        "type": "registry:example",
+        "title": "Number Ticker Demo",
+        "description": "Example showing animated counting numbers.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/number-ticker"
+      },
+      {
+        "id": "number-ticker-demo-2",
+        "type": "registry:example",
+        "title": "Number Ticker Demo 2",
+        "description": "Example showing animated counting numbers.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/number-ticker"
+      },
+      {
+        "id": "number-ticker-decimal-demo",
+        "type": "registry:example",
+        "title": "Number Ticker Decimal Demo",
+        "description": "Example showing animated counting decimal numbers.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/number-ticker"
+      },
+      {
+        "id": "ripple-demo",
+        "type": "registry:example",
+        "title": "Ripple Demo",
+        "description": "Example showing an animated ripple effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/ripple"
+      },
+      {
+        "id": "retro-grid-demo",
+        "type": "registry:example",
+        "title": "Retro Grid Demo",
+        "description": "Example showing an animated scrolling retro grid effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/retro-grid"
+      },
+      {
+        "id": "animated-list-demo",
+        "type": "registry:example",
+        "title": "Animated List Demo",
+        "description": "Example showing a list with sequenced item animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-list"
+      },
+      {
+        "id": "animated-shiny-text-demo",
+        "type": "registry:example",
+        "title": "Animated Shiny Text Demo",
+        "description": "Example showing text with a shimmering light effect.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": "@magicui/animated-shiny-text"
+      },
+      {
+        "id": "particles-demo",
+        "type": "registry:example",
+        "title": "Particles Demo",
+        "description": "Example showing interactive particle effects.",
+        "dependencies": "next-themes",
+        "registryDependencies": "@magicui/particles"
+      },
+      {
+        "id": "animated-grid-pattern-demo",
+        "type": "registry:example",
+        "title": "Animated Grid Pattern Demo",
+        "description": "Example showing an animated grid pattern background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-grid-pattern"
+      },
+      {
+        "id": "interactive-grid-pattern-demo",
+        "type": "registry:example",
+        "title": "Interactive Grid Pattern Demo",
+        "description": "Example showing an interactive grid pattern background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/interactive-grid-pattern"
+      },
+      {
+        "id": "interactive-grid-pattern-demo-2",
+        "type": "registry:example",
+        "title": "Interactive Grid Pattern Demo 2",
+        "description": "Second example showing an interactive grid pattern background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/interactive-grid-pattern"
+      },
+      {
+        "id": "border-beam-demo",
+        "type": "registry:example",
+        "title": "Border Beam Demo",
+        "description": "Example showing an animated border beam effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/border-beam"
+      },
+      {
+        "id": "border-beam-demo-2",
+        "type": "registry:example",
+        "title": "Border Beam Demo",
+        "description": "Example showing an animated border beam effect.",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "card",
+          "@magicui/border-beam"
+        ]
+      },
+      {
+        "id": "border-beam-demo-3",
+        "type": "registry:example",
+        "title": "Border Beam Demo 3",
+        "description": "Example showing an animated border beam effect.",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "card",
+          "input",
+          "label",
+          "@magicui/border-beam"
+        ]
+      },
+      {
+        "id": "border-beam-demo-4",
+        "type": "registry:example",
+        "title": "Border Beam Demo 4",
+        "description": "Example showing an animated border beam effect.",
+        "dependencies": null,
+        "registryDependencies": [
+          "button",
+          "@magicui/border-beam"
+        ]
+      },
+      {
+        "id": "animated-beam-demo",
+        "type": "registry:example",
+        "title": "Animated Beam Demo",
+        "description": "Example showing an animated beam of light effect.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": "@magicui/animated-beam"
+      },
+      {
+        "id": "animated-beam-unidirectional",
+        "type": "registry:example",
+        "title": "Animated Beam Unidirectional",
+        "description": "Example showing a unidirectional animated beam effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-beam"
+      },
+      {
+        "id": "animated-beam-bidirectional",
+        "type": "registry:example",
+        "title": "Animated Beam Bidirectional",
+        "description": "Example showing a bidirectional animated beam effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-beam"
+      },
+      {
+        "id": "animated-beam-multiple-inputs",
+        "type": "registry:example",
+        "title": "Animated Beam Multiple Inputs",
+        "description": "Example showing animated beams with multiple input points.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-beam"
+      },
+      {
+        "id": "animated-beam-multiple-outputs",
+        "type": "registry:example",
+        "title": "Animated Beam Multiple Outputs",
+        "description": "Example showing animated beams with multiple output points.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-beam"
+      },
+      {
+        "id": "text-reveal-demo",
+        "type": "registry:example",
+        "title": "Text Reveal Demo",
+        "description": "Example showing text that fades in on scroll.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-reveal"
+      },
+      {
+        "id": "dia-text-reveal-demo",
+        "type": "registry:example",
+        "title": "Dia Text Reveal Demo",
+        "description": "Example showing a sweeping color band reveal on headline text.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dia-text-reveal"
+      },
+      {
+        "id": "dia-text-reveal-demo-2",
+        "type": "registry:example",
+        "title": "Dia Text Reveal Demo 2",
+        "description": "Custom gradient colors and settled text color on a light background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dia-text-reveal"
+      },
+      {
+        "id": "dia-text-reveal-demo-3",
+        "type": "registry:example",
+        "title": "Dia Text Reveal Demo 3",
+        "description": "Rotating phrases with repeat and repeat delay.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dia-text-reveal"
+      },
+      {
+        "id": "dia-text-reveal-demo-4",
+        "type": "registry:example",
+        "title": "Dia Text Reveal Demo 4",
+        "description": "Slower sweep with delay — custom duration and timing.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dia-text-reveal"
+      },
+      {
+        "id": "animated-gradient-text-demo",
+        "type": "registry:example",
+        "title": "Animated Gradient Text Demo",
+        "description": "Example showing text with animated gradient backgrounds.",
+        "dependencies": "lucide-react",
+        "registryDependencies": "@magicui/animated-gradient-text"
+      },
+      {
+        "id": "animated-gradient-text-demo-2",
+        "type": "registry:example",
+        "title": "Animated Gradient Text Demo 2",
+        "description": "Second example showing text with animated gradient backgrounds.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-gradient-text"
+      },
+      {
+        "id": "orbiting-circles-demo",
+        "type": "registry:example",
+        "title": "Orbiting Circles Demo",
+        "description": "Example showing circles moving in orbital paths.",
+        "dependencies": "@radix-ui/react-icons",
+        "registryDependencies": "@magicui/orbiting-circles"
+      },
+      {
+        "id": "dock-demo",
+        "type": "registry:example",
+        "title": "Dock Demo",
+        "description": "Example showing a MacOS-style dock implementation.",
+        "dependencies": "next-themes",
+        "registryDependencies": [
+          "button",
+          "@magicui/dock"
+        ]
+      },
+      {
+        "id": "dock-demo-2",
+        "type": "registry:example",
+        "title": "Dock Demo 2",
+        "description": "Second example showing a MacOS-style dock implementation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dock"
+      },
+      {
+        "id": "dock-demo-3",
+        "type": "registry:example",
+        "title": "Dock Demo 3",
+        "description": "Third example showing a MacOS-style dock implementation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dock"
+      },
+      {
+        "id": "word-rotate-demo",
+        "type": "registry:example",
+        "title": "Word Rotate Demo",
+        "description": "Example showing vertical word rotation animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/word-rotate"
+      },
+      {
+        "id": "hyper-text-demo",
+        "type": "registry:example",
+        "title": "Hyper Text Demo",
+        "description": "Example showing text with scrambling letter animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/hyper-text"
+      },
+      {
+        "id": "avatar-circles-demo",
+        "type": "registry:example",
+        "title": "Avatar Circles Demo",
+        "description": "Example showing overlapping avatar circles.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/avatar-circles"
+      },
+      {
+        "id": "typing-animation-demo",
+        "type": "registry:example",
+        "title": "Typing Animation Demo",
+        "description": "Example showing typed character animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-2",
+        "type": "registry:example",
+        "title": "Typing Animation Multiple Words",
+        "description": "Example showing multiple words with looping.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-3",
+        "type": "registry:example",
+        "title": "Typing Animation Custom Speed",
+        "description": "Example showing custom typing and deleting speeds.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-4",
+        "type": "registry:example",
+        "title": "Typing Animation Start on View",
+        "description": "Example showing animation that starts when in viewport.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-5",
+        "type": "registry:example",
+        "title": "Typing Animation Without Cursor",
+        "description": "Example showing typing animation without cursor.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-6",
+        "type": "registry:example",
+        "title": "Typing Animation Single Play",
+        "description": "Example showing single play without looping.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-7",
+        "type": "registry:example",
+        "title": "Typing Animation Cursor Blinking",
+        "description": "Example showing cursor blinking control.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "typing-animation-demo-8",
+        "type": "registry:example",
+        "title": "Typing Animation Cursor Styles",
+        "description": "Example showing different cursor styles (line, block, underscore).",
+        "dependencies": null,
+        "registryDependencies": "@magicui/typing-animation"
+      },
+      {
+        "id": "scroll-based-velocity-demo",
+        "type": "registry:example",
+        "title": "Scroll Based Velocity Demo",
+        "description": "Example showing text speed changes based on scroll velocity.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/scroll-based-velocity"
+      },
+      {
+        "id": "scroll-based-velocity-images-demo",
+        "type": "registry:example",
+        "title": "Scroll Based Velocity Images",
+        "description": "Example showing Unsplash images scrolling with speed reacting to scroll velocity.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/scroll-based-velocity"
+      },
+      {
+        "id": "sparkles-text-demo",
+        "type": "registry:example",
+        "title": "Sparkles Text Demo",
+        "description": "Example showing text with animated sparkle effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/sparkles-text"
+      },
+      {
+        "id": "spinning-text-demo",
+        "type": "registry:example",
+        "title": "Spinning Text Demo",
+        "description": "Example showing spinning text animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/spinning-text"
+      },
+      {
+        "id": "spinning-text-demo-2",
+        "type": "registry:example",
+        "title": "Spinning Text Demo 2",
+        "description": "Example showing spinning text animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/spinning-text"
+      },
+      {
+        "id": "comic-text-demo",
+        "type": "registry:example",
+        "title": "Comic Text Demo",
+        "description": "Example showing comic text animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/comic-text"
+      },
+      {
+        "id": "icon-cloud-demo",
+        "type": "registry:example",
+        "title": "Icon Cloud Demo",
+        "description": "Example showing an interactive 3D icon cloud.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/icon-cloud"
+      },
+      {
+        "id": "icon-cloud-demo-2",
+        "type": "registry:example",
+        "title": "Icon Cloud Demo 2",
+        "description": "Second example showing an interactive 3D icon cloud.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/icon-cloud"
+      },
+      {
+        "id": "icon-cloud-demo-3",
+        "type": "registry:example",
+        "title": "Icon Cloud Demo 3",
+        "description": "Third example showing an interactive 3D icon cloud.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/icon-cloud"
+      },
+      {
+        "id": "text-animate-demo",
+        "type": "registry:example",
+        "title": "Text Animate Demo",
+        "description": "Example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-2",
+        "type": "registry:example",
+        "title": "Text Animate Demo 2",
+        "description": "Second example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-3",
+        "type": "registry:example",
+        "title": "Text Animate Demo 3",
+        "description": "Third example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-4",
+        "type": "registry:example",
+        "title": "Text Animate Demo 4",
+        "description": "Fourth example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-5",
+        "type": "registry:example",
+        "title": "Text Animate Demo 5",
+        "description": "Fifth example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-6",
+        "type": "registry:example",
+        "title": "Text Animate Demo 6",
+        "description": "Sixth example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-7",
+        "type": "registry:example",
+        "title": "Text Animate Demo 7",
+        "description": "Seventh example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-8",
+        "type": "registry:example",
+        "title": "Text Animate Demo 8",
+        "description": "Eighth example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "text-animate-demo-9",
+        "type": "registry:example",
+        "title": "Text Animate Demo 9",
+        "description": "Ninth example showing various text animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-animate"
+      },
+      {
+        "id": "shiny-button-demo",
+        "type": "registry:example",
+        "title": "Shiny Button Demo",
+        "description": "Example showing a shiny button with dynamic styles.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/shiny-button"
+      },
+      {
+        "id": "animated-circular-progress-bar-demo",
+        "type": "registry:example",
+        "title": "Animated Circular Progress Bar Demo",
+        "description": "Example showing an animated circular progress gauge.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-circular-progress-bar"
+      },
+      {
+        "id": "shine-border-demo",
+        "type": "registry:example",
+        "title": "Shine Border Demo",
+        "description": "Example showing an animated shining border effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/shine-border"
+      },
+      {
+        "id": "shine-border-demo-2",
+        "type": "registry:example",
+        "title": "Shine Border Demo 2",
+        "description": "Second example showing an animated shining border effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/shine-border"
+      },
+      {
+        "id": "confetti-demo",
+        "type": "registry:example",
+        "title": "Confetti Demo",
+        "description": "Example showing confetti animations for celebrations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-basic-cannon",
+        "type": "registry:example",
+        "title": "Confetti Basic Cannon",
+        "description": "Example showing basic confetti cannon animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-random-direction",
+        "type": "registry:example",
+        "title": "Confetti Random Direction",
+        "description": "Example showing confetti with random directions.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-fireworks",
+        "type": "registry:example",
+        "title": "Confetti Fireworks",
+        "description": "Example showing fireworks-style confetti animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-stars",
+        "type": "registry:example",
+        "title": "Confetti Stars",
+        "description": "Example showing star-shaped confetti animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-side-cannons",
+        "type": "registry:example",
+        "title": "Confetti Side Cannons",
+        "description": "Example showing side-mounted confetti cannons.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-custom-shapes",
+        "type": "registry:example",
+        "title": "Confetti Custom Shapes",
+        "description": "Example showing confetti with custom shape particles.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "confetti-emoji",
+        "type": "registry:example",
+        "title": "Confetti Emoji",
+        "description": "Example showing confetti with emoji particles.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/confetti"
+      },
+      {
+        "id": "cool-mode-demo",
+        "type": "registry:example",
+        "title": "Cool Mode Demo",
+        "description": "Example showing cool mode effect for buttons and links.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/cool-mode"
+      },
+      {
+        "id": "cool-mode-custom",
+        "type": "registry:example",
+        "title": "Cool Mode Custom",
+        "description": "Example showing customized cool mode effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/cool-mode"
+      },
+      {
+        "id": "pulsating-button-demo",
+        "type": "registry:example",
+        "title": "Pulsating Button Demo",
+        "description": "Example showing an animated pulsating button.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/pulsating-button"
+      },
+      {
+        "id": "pulsating-button-demo-2",
+        "type": "registry:example",
+        "title": "Pulsating Button Demo 2",
+        "description": "Example showing an animated pulsating button with a ripple varaint.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/pulsating-button"
+      },
+      {
+        "id": "ripple-button-demo",
+        "type": "registry:example",
+        "title": "Ripple Button Demo",
+        "description": "Example showing an animated button with ripple effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/ripple-button"
+      },
+      {
+        "id": "file-tree-demo",
+        "type": "registry:example",
+        "title": "File Tree Demo",
+        "description": "Example showing a component that displays folder and file structure.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/file-tree"
+      },
+      {
+        "id": "blur-fade-demo",
+        "type": "registry:example",
+        "title": "Blur Fade Demo",
+        "description": "Example showing blur fade in and out animations.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/blur-fade"
+      },
+      {
+        "id": "blur-fade-text-demo",
+        "type": "registry:example",
+        "title": "Blur Fade Text Demo",
+        "description": "Example showing blur fade animations with text.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/blur-fade"
+      },
+      {
+        "id": "safari-demo",
+        "type": "registry:example",
+        "title": "Safari Demo",
+        "description": "Example showing a Safari browser mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/safari"
+      },
+      {
+        "id": "safari-demo-2",
+        "type": "registry:example",
+        "title": "Safari Demo 2",
+        "description": "Second example showing a Safari browser mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/safari"
+      },
+      {
+        "id": "safari-demo-3",
+        "type": "registry:example",
+        "title": "Safari Demo 3",
+        "description": "Third example showing a Safari browser mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/safari"
+      },
+      {
+        "id": "safari-demo-4",
+        "type": "registry:example",
+        "title": "Safari Demo 4",
+        "description": "Fourth example showing a Safari browser mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/safari"
+      },
+      {
+        "id": "iphone-demo",
+        "type": "registry:example",
+        "title": "iPhone Demo",
+        "description": "Example showing an iPhone mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/iphone"
+      },
+      {
+        "id": "iphone-demo-2",
+        "type": "registry:example",
+        "title": "iPhone Demo 2",
+        "description": "Second example showing an iPhone mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/iphone"
+      },
+      {
+        "id": "iphone-demo-3",
+        "type": "registry:example",
+        "title": "iPhone Demo 3",
+        "description": "Third example showing an iPhone mockup.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/iphone"
+      },
+      {
+        "id": "rainbow-button-demo",
+        "type": "registry:example",
+        "title": "Rainbow Button Demo",
+        "description": "Example showing an animated button with rainbow effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/rainbow-button"
+      },
+      {
+        "id": "rainbow-button-demo-2",
+        "type": "registry:example",
+        "title": "Rainbow Button Demo 2",
+        "description": "Example showing an animated button with rainbow effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/rainbow-button"
+      },
+      {
+        "id": "interactive-hover-button-demo",
+        "type": "registry:example",
+        "title": "Interactive Hover Button Demo",
+        "description": "Example showing an interactive button with hover effects.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/interactive-hover-button"
+      },
+      {
+        "id": "terminal-demo",
+        "type": "registry:example",
+        "title": "Terminal Demo",
+        "description": "Example showing a terminal with animated text.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/terminal"
+      },
+      {
+        "id": "terminal-demo-2",
+        "type": "registry:example",
+        "title": "Terminal Demo",
+        "description": "Example showing a terminal with animated text and custom delays",
+        "dependencies": null,
+        "registryDependencies": "@magicui/terminal"
+      },
+      {
+        "id": "video-text-demo",
+        "type": "registry:example",
+        "title": "Video Text Demo",
+        "description": "Example showing text with a video background.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/video-text"
+      },
+      {
+        "id": "pixel-image-demo",
+        "type": "registry:example",
+        "title": "Pixel Image Demo",
+        "description": "Example showing a pixelated image effect.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/pixel-image"
+      },
+      {
+        "id": "highlighter-demo",
+        "type": "registry:example",
+        "title": "Highlighter Demo",
+        "description": "Example showing the demo of a Highlighter",
+        "dependencies": [
+          "motion",
+          "rough-notation"
+        ],
+        "registryDependencies": "@magicui/highlighter"
+      },
+      {
+        "id": "animated-theme-toggler-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler Demo",
+        "description": "Example showing animation while changing the theme.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-square-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Square",
+        "description": "Theme transition with a square clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-diamond-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Diamond",
+        "description": "Theme transition with a diamond-shaped clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-rectangle-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Rectangle",
+        "description": "Theme transition with a rectangle clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-hexagon-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Hexagon",
+        "description": "Theme transition with a hexagon clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-triangle-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Triangle",
+        "description": "Theme transition with a triangle clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-star-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — Star",
+        "description": "Theme transition with a star-shaped clip reveal.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "animated-theme-toggler-next-themes-demo",
+        "type": "registry:example",
+        "title": "Animated Theme Toggler — next-themes",
+        "description": "Controlled usage with next-themes so useTheme() subscribers stay in sync on toggle.",
+        "dependencies": "next-themes",
+        "registryDependencies": "@magicui/animated-theme-toggler"
+      },
+      {
+        "id": "light-rays-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "Demo of the light-rays component showcasing animated light rays",
+        "dependencies": null,
+        "registryDependencies": "@magicui/light-rays"
+      },
+      {
+        "id": "dotted-map-demo",
+        "type": "registry:example",
+        "title": "Dotted Map Demo",
+        "description": "Example showing a dotted map.",
+        "dependencies": "countries-list",
+        "registryDependencies": "@magicui/dotted-map"
+      },
+      {
+        "id": "dotted-map-demo-2",
+        "type": "registry:example",
+        "title": "Dotted Map Demo 2",
+        "description": "Example showing a dotted map.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dotted-map"
+      },
+      {
+        "id": "dotted-map-demo-3",
+        "type": "registry:example",
+        "title": "Dotted Map Demo 3",
+        "description": "Example showing a dotted map with pulse animation.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/dotted-map"
+      },
+      {
+        "id": "backlight-video-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "An example of the backlight component with a video.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/backlight"
+      },
+      {
+        "id": "backlight-image-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "An example of the backlight component with a image.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/backlight"
+      },
+      {
+        "id": "backlight-svg-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "An example of the backlight component with SVGs.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/backlight"
+      },
+      {
+        "id": "kinetic-text-demo",
+        "type": "registry:example",
+        "title": null,
+        "description": "An example of the kinetic text component.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/kinetic-text"
+      },
+      {
+        "id": "text-3d-flip-demo",
+        "type": "registry:example",
+        "title": "Text 3D Flip Demo",
+        "description": "Example showing a 3D text animation that rotates each letter on hover.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-3d-flip"
+      },
+      {
+        "id": "text-3d-flip-demo-2",
+        "type": "registry:example",
+        "title": "Text 3D Flip Demo 2",
+        "description": "Example showing a 3D text flip with stagger from center.",
+        "dependencies": null,
+        "registryDependencies": "@magicui/text-3d-flip"
+      },
+      {
+        "id": "floating-3d-particles-demo",
+        "type": "registry:example",
+        "title": "Floating 3D Particles Demo",
+        "description": "Example showing a floating 3D particle field behind hero content.",
+        "dependencies": [
+          "lucide-react",
+          "next-themes"
+        ],
+        "registryDependencies": "@magicui/floating-3d-particles"
+      },
+      {
+        "id": "floating-3d-particles-demo-2",
+        "type": "registry:example",
+        "title": "Floating 3D Particles Demo 2",
+        "description": "Example showing the particle field as a standalone background.",
+        "dependencies": "next-themes",
+        "registryDependencies": "@magicui/floating-3d-particles"
+      },
+      {
+        "id": "utils",
+        "type": "registry:lib",
+        "title": null,
+        "description": null,
+        "dependencies": [
+          "clsx",
+          "tailwind-merge"
+        ],
+        "registryDependencies": null
+      }
+    ],
+    "twentyFirstDev": [
+      {
+        "id": "21st-ai",
+        "sourcePath": "upstream/21st-skill/skills/21st-ai",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-cli-use",
+        "sourcePath": "upstream/21st-skill/skills/21st-cli-use",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-design-sync",
+        "sourcePath": "upstream/21st-skill/skills/21st-design-sync",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-registry",
+        "sourcePath": "upstream/21st-skill/skills/21st-registry",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-ui-build",
+        "sourcePath": "upstream/21st-skill/skills/21st-ui-build",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-ui-explore",
+        "sourcePath": "upstream/21st-skill/skills/21st-ui-explore",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      },
+      {
+        "id": "21st-ui-review",
+        "sourcePath": "upstream/21st-skill/skills/21st-ui-review",
+        "contentPolicy": "official-tooling-only; marketplace items require per-item license verification"
+      }
+    ],
+    "reactBits": [
+      {
+        "id": "AnimatedContent",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/AnimatedContent"
+      },
+      {
+        "id": "Antigravity",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Antigravity"
+      },
+      {
+        "id": "BlobCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/BlobCursor"
+      },
+      {
+        "id": "ClickSpark",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ClickSpark"
+      },
+      {
+        "id": "Crosshair",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Crosshair"
+      },
+      {
+        "id": "Cubes",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Cubes"
+      },
+      {
+        "id": "CursorGrid",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/CursorGrid"
+      },
+      {
+        "id": "ElasticMesh",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ElasticMesh"
+      },
+      {
+        "id": "ElectricBorder",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ElectricBorder"
+      },
+      {
+        "id": "FadeContent",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/FadeContent"
+      },
+      {
+        "id": "GhostCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/GhostCursor"
+      },
+      {
+        "id": "GlareHover",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/GlareHover"
+      },
+      {
+        "id": "GlowCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/GlowCursor"
+      },
+      {
+        "id": "GradualBlur",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/GradualBlur"
+      },
+      {
+        "id": "HalftoneReveal",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/HalftoneReveal"
+      },
+      {
+        "id": "ImageTrail",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ImageTrail"
+      },
+      {
+        "id": "LaserFlow",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/LaserFlow"
+      },
+      {
+        "id": "LogoLoop",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/LogoLoop"
+      },
+      {
+        "id": "MagicRings",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/MagicRings"
+      },
+      {
+        "id": "Magnet",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Magnet"
+      },
+      {
+        "id": "MagnetLines",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/MagnetLines"
+      },
+      {
+        "id": "MetaBalls",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/MetaBalls"
+      },
+      {
+        "id": "MetallicPaint",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/MetallicPaint"
+      },
+      {
+        "id": "Noise",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Noise"
+      },
+      {
+        "id": "OrbitImages",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/OrbitImages"
+      },
+      {
+        "id": "PixelSwap",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/PixelSwap"
+      },
+      {
+        "id": "PixelTrail",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/PixelTrail"
+      },
+      {
+        "id": "PixelTransition",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/PixelTransition"
+      },
+      {
+        "id": "Ribbons",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Ribbons"
+      },
+      {
+        "id": "RippleDistortion",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/RippleDistortion"
+      },
+      {
+        "id": "ScrollExpand",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ScrollExpand"
+      },
+      {
+        "id": "ShapeBlur",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/ShapeBlur"
+      },
+      {
+        "id": "SplashCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/SplashCursor"
+      },
+      {
+        "id": "StarBorder",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/StarBorder"
+      },
+      {
+        "id": "StickerPeel",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/StickerPeel"
+      },
+      {
+        "id": "Strands",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/Strands"
+      },
+      {
+        "id": "SwarmCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/SwarmCursor"
+      },
+      {
+        "id": "TargetCursor",
+        "category": "Animations",
+        "sourcePath": "upstream/react-bits/src/content/Animations/TargetCursor"
+      },
+      {
+        "id": "AcidSquares",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/AcidSquares"
+      },
+      {
+        "id": "AeroShards",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/AeroShards"
+      },
+      {
+        "id": "Aurora",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Aurora"
+      },
+      {
+        "id": "Balatro",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Balatro"
+      },
+      {
+        "id": "Ballpit",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Ballpit"
+      },
+      {
+        "id": "Beams",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Beams"
+      },
+      {
+        "id": "ColorBends",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/ColorBends"
+      },
+      {
+        "id": "CRTWarp",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/CRTWarp"
+      },
+      {
+        "id": "DarkVeil",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/DarkVeil"
+      },
+      {
+        "id": "Dither",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Dither"
+      },
+      {
+        "id": "DotField",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/DotField"
+      },
+      {
+        "id": "DotGrid",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/DotGrid"
+      },
+      {
+        "id": "EvilEye",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/EvilEye"
+      },
+      {
+        "id": "FaultyTerminal",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/FaultyTerminal"
+      },
+      {
+        "id": "Ferrofluid",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Ferrofluid"
+      },
+      {
+        "id": "FloatingLines",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/FloatingLines"
+      },
+      {
+        "id": "Galaxy",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Galaxy"
+      },
+      {
+        "id": "GhostFibers",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GhostFibers"
+      },
+      {
+        "id": "GradientBlinds",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GradientBlinds"
+      },
+      {
+        "id": "GradientWaves",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GradientWaves"
+      },
+      {
+        "id": "Grainient",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Grainient"
+      },
+      {
+        "id": "GridDistortion",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GridDistortion"
+      },
+      {
+        "id": "GridMotion",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GridMotion"
+      },
+      {
+        "id": "GridScan",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/GridScan"
+      },
+      {
+        "id": "Hyperspeed",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Hyperspeed"
+      },
+      {
+        "id": "Iridescence",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Iridescence"
+      },
+      {
+        "id": "LetterGlitch",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LetterGlitch"
+      },
+      {
+        "id": "Lightfall",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Lightfall"
+      },
+      {
+        "id": "Lightning",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Lightning"
+      },
+      {
+        "id": "LightPillar",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LightPillar"
+      },
+      {
+        "id": "LightRays",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LightRays"
+      },
+      {
+        "id": "LightTunnel",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LightTunnel"
+      },
+      {
+        "id": "LineWaves",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LineWaves"
+      },
+      {
+        "id": "LiquidChrome",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LiquidChrome"
+      },
+      {
+        "id": "LiquidEther",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/LiquidEther"
+      },
+      {
+        "id": "MoltenMetal",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/MoltenMetal"
+      },
+      {
+        "id": "Orb",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Orb"
+      },
+      {
+        "id": "Particles",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Particles"
+      },
+      {
+        "id": "PixelBlast",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/PixelBlast"
+      },
+      {
+        "id": "PixelSnow",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/PixelSnow"
+      },
+      {
+        "id": "Plasma",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Plasma"
+      },
+      {
+        "id": "PlasmaWave",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/PlasmaWave"
+      },
+      {
+        "id": "Prism",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Prism"
+      },
+      {
+        "id": "PrismaticBurst",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/PrismaticBurst"
+      },
+      {
+        "id": "Radar",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Radar"
+      },
+      {
+        "id": "RippleGrid",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/RippleGrid"
+      },
+      {
+        "id": "Scanner",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Scanner"
+      },
+      {
+        "id": "ShapeGrid",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/ShapeGrid"
+      },
+      {
+        "id": "ShapeWaves",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/ShapeWaves"
+      },
+      {
+        "id": "SideRays",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/SideRays"
+      },
+      {
+        "id": "Silk",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Silk"
+      },
+      {
+        "id": "SlicedWaves",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/SlicedWaves"
+      },
+      {
+        "id": "SoftAurora",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/SoftAurora"
+      },
+      {
+        "id": "Threads",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Threads"
+      },
+      {
+        "id": "Topography",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Topography"
+      },
+      {
+        "id": "Waves",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/Waves"
+      },
+      {
+        "id": "WebThreads",
+        "category": "Backgrounds",
+        "sourcePath": "upstream/react-bits/src/content/Backgrounds/WebThreads"
+      },
+      {
+        "id": "AccordionGallery",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/AccordionGallery"
+      },
+      {
+        "id": "AnimatedList",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/AnimatedList"
+      },
+      {
+        "id": "BorderGlow",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/BorderGlow"
+      },
+      {
+        "id": "BounceCards",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/BounceCards"
+      },
+      {
+        "id": "BubbleMenu",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/BubbleMenu"
+      },
+      {
+        "id": "CardNav",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/CardNav"
+      },
+      {
+        "id": "CardSwap",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/CardSwap"
+      },
+      {
+        "id": "Carousel",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Carousel"
+      },
+      {
+        "id": "ChromaGrid",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ChromaGrid"
+      },
+      {
+        "id": "CircularGallery",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/CircularGallery"
+      },
+      {
+        "id": "Counter",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Counter"
+      },
+      {
+        "id": "CurvedInput",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/CurvedInput"
+      },
+      {
+        "id": "DecayCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/DecayCard"
+      },
+      {
+        "id": "DepthCarousel",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/DepthCarousel"
+      },
+      {
+        "id": "Dock",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Dock"
+      },
+      {
+        "id": "DomeGallery",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/DomeGallery"
+      },
+      {
+        "id": "DriftWall",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/DriftWall"
+      },
+      {
+        "id": "ElasticSlider",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ElasticSlider"
+      },
+      {
+        "id": "FlowingMenu",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/FlowingMenu"
+      },
+      {
+        "id": "FluidGlass",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/FluidGlass"
+      },
+      {
+        "id": "FlyingPosters",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/FlyingPosters"
+      },
+      {
+        "id": "Folder",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Folder"
+      },
+      {
+        "id": "GlassIcons",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/GlassIcons"
+      },
+      {
+        "id": "GlassSurface",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/GlassSurface"
+      },
+      {
+        "id": "GooeyNav",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/GooeyNav"
+      },
+      {
+        "id": "InfiniteMenu",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/InfiniteMenu"
+      },
+      {
+        "id": "InfiniteSpiral",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/InfiniteSpiral"
+      },
+      {
+        "id": "Lanyard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Lanyard"
+      },
+      {
+        "id": "LineSidebar",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/LineSidebar"
+      },
+      {
+        "id": "MagicBento",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/MagicBento"
+      },
+      {
+        "id": "Masonry",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Masonry"
+      },
+      {
+        "id": "ModelViewer",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ModelViewer"
+      },
+      {
+        "id": "MorphSlider",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/MorphSlider"
+      },
+      {
+        "id": "OptionWheel",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/OptionWheel"
+      },
+      {
+        "id": "PillNav",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/PillNav"
+      },
+      {
+        "id": "PixelCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/PixelCard"
+      },
+      {
+        "id": "ProfileCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ProfileCard"
+      },
+      {
+        "id": "ReflectiveCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ReflectiveCard"
+      },
+      {
+        "id": "ScrollStack",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/ScrollStack"
+      },
+      {
+        "id": "SpecularButton",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/SpecularButton"
+      },
+      {
+        "id": "SpotlightCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/SpotlightCard"
+      },
+      {
+        "id": "Stack",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Stack"
+      },
+      {
+        "id": "StaggeredMenu",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/StaggeredMenu"
+      },
+      {
+        "id": "Stepper",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/Stepper"
+      },
+      {
+        "id": "TiltedCard",
+        "category": "Components",
+        "sourcePath": "upstream/react-bits/src/content/Components/TiltedCard"
+      },
+      {
+        "id": "BellToggle",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/BellToggle"
+      },
+      {
+        "id": "BranchedMenu",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/BranchedMenu"
+      },
+      {
+        "id": "CallChip",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/CallChip"
+      },
+      {
+        "id": "CodeSlots",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/CodeSlots"
+      },
+      {
+        "id": "CometDial",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/CometDial"
+      },
+      {
+        "id": "DodgeField",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/DodgeField"
+      },
+      {
+        "id": "FlipCard",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/FlipCard"
+      },
+      {
+        "id": "FolderFloat",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/FolderFloat"
+      },
+      {
+        "id": "FuseButton",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/FuseButton"
+      },
+      {
+        "id": "GlideSelect",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/GlideSelect"
+      },
+      {
+        "id": "HoldButton",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/HoldButton"
+      },
+      {
+        "id": "JellyRadio",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/JellyRadio"
+      },
+      {
+        "id": "LatticeLoader",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/LatticeLoader"
+      },
+      {
+        "id": "PaperCrumple",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/PaperCrumple"
+      },
+      {
+        "id": "PeekRating",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/PeekRating"
+      },
+      {
+        "id": "PromptBar",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/PromptBar"
+      },
+      {
+        "id": "PulseHeart",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/PulseHeart"
+      },
+      {
+        "id": "RefineFrame",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/RefineFrame"
+      },
+      {
+        "id": "RubberSegment",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/RubberSegment"
+      },
+      {
+        "id": "ScrubField",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/ScrubField"
+      },
+      {
+        "id": "SlideCommit",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SlideCommit"
+      },
+      {
+        "id": "SlingButton",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SlingButton"
+      },
+      {
+        "id": "SloshGauge",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SloshGauge"
+      },
+      {
+        "id": "SpringCheck",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SpringCheck"
+      },
+      {
+        "id": "SquishSwitch",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SquishSwitch"
+      },
+      {
+        "id": "StatusMark",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/StatusMark"
+      },
+      {
+        "id": "SwipeRow",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SwipeRow"
+      },
+      {
+        "id": "SwipeToast",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/SwipeToast"
+      },
+      {
+        "id": "TearTicket",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/TearTicket"
+      },
+      {
+        "id": "ThoughtLine",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/ThoughtLine"
+      },
+      {
+        "id": "VoicePill",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/VoicePill"
+      },
+      {
+        "id": "WakeSlider",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/WakeSlider"
+      },
+      {
+        "id": "WarmTooltip",
+        "category": "Micro",
+        "sourcePath": "upstream/react-bits/src/content/Micro/WarmTooltip"
+      },
+      {
+        "id": "ASCIIText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ASCIIText"
+      },
+      {
+        "id": "BlurText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/BlurText"
+      },
+      {
+        "id": "CircularText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/CircularText"
+      },
+      {
+        "id": "CountUp",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/CountUp"
+      },
+      {
+        "id": "CurvedLoop",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/CurvedLoop"
+      },
+      {
+        "id": "DecryptedText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/DecryptedText"
+      },
+      {
+        "id": "DepthText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/DepthText"
+      },
+      {
+        "id": "EchoText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/EchoText"
+      },
+      {
+        "id": "FallingText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/FallingText"
+      },
+      {
+        "id": "FoldText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/FoldText"
+      },
+      {
+        "id": "FuzzyText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/FuzzyText"
+      },
+      {
+        "id": "GlitchText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/GlitchText"
+      },
+      {
+        "id": "GradientText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/GradientText"
+      },
+      {
+        "id": "MaskedHeading",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/MaskedHeading"
+      },
+      {
+        "id": "ParticleText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ParticleText"
+      },
+      {
+        "id": "RotatingText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/RotatingText"
+      },
+      {
+        "id": "ScrambledText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ScrambledText"
+      },
+      {
+        "id": "ScrollFloat",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ScrollFloat"
+      },
+      {
+        "id": "ScrollReveal",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ScrollReveal"
+      },
+      {
+        "id": "ScrollVelocity",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ScrollVelocity"
+      },
+      {
+        "id": "ShinyText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/ShinyText"
+      },
+      {
+        "id": "Shuffle",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/Shuffle"
+      },
+      {
+        "id": "SplitFlapText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/SplitFlapText"
+      },
+      {
+        "id": "SplitText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/SplitText"
+      },
+      {
+        "id": "StrokeText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/StrokeText"
+      },
+      {
+        "id": "TextCursor",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/TextCursor"
+      },
+      {
+        "id": "TextLoop",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/TextLoop"
+      },
+      {
+        "id": "TextPressure",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/TextPressure"
+      },
+      {
+        "id": "TextType",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/TextType"
+      },
+      {
+        "id": "TrueFocus",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/TrueFocus"
+      },
+      {
+        "id": "VariableProximity",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/VariableProximity"
+      },
+      {
+        "id": "WarpText",
+        "category": "TextAnimations",
+        "sourcePath": "upstream/react-bits/src/content/TextAnimations/WarpText"
+      }
+    ]
+  }
+}
