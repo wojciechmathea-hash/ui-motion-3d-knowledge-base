@@ -17,6 +17,7 @@ $requiredFiles = @(
     "src/app/page.tsx",
     "src/app/globals.css",
     "src/components/features/decision-loop.tsx",
+    "src/components/features/scrolly-story.tsx",
     "src/components/ui/blur-fade.tsx",
     "src/components/ui/animated-grid-pattern.tsx",
     "licenses/MAGIC_UI_MIT.txt",
@@ -58,11 +59,15 @@ if ($page -notmatch 'skip-link' -or $styles -notmatch ':focus-visible' -or $styl
 
 $header = Get-Content -Raw -LiteralPath (Join-Path $ProjectRoot "src/components/layout/site-header.tsx")
 $decisionLoop = Get-Content -Raw -LiteralPath (Join-Path $ProjectRoot "src/components/features/decision-loop.tsx")
+$scrollyStory = Get-Content -Raw -LiteralPath (Join-Path $ProjectRoot "src/components/features/scrolly-story.tsx")
 if ($header -notmatch 'aria-current' -or $header -notmatch 'reading-progress') {
     throw "ALLinTraders navigation must retain active-section and reading-progress feedback."
 }
 if ($decisionLoop -notmatch 'role="tablist"' -or $decisionLoop -notmatch 'ArrowLeft' -or $decisionLoop -notmatch 'ArrowRight') {
     throw "ALLinTraders decision loop must retain its accessible keyboard interaction."
+}
+if ($page -notmatch 'ScrollyStory' -or $scrollyStory -notmatch 'id="story"' -or $scrollyStory -notmatch 'IntersectionObserver' -or $scrollyStory -notmatch '<svg') {
+    throw "ALLinTraders must retain its scroll-tracked SVG storytelling sequence."
 }
 
 foreach ($componentPath in @("src/components/ui/blur-fade.tsx", "src/components/ui/animated-grid-pattern.tsx")) {
@@ -82,11 +87,16 @@ foreach ($provenanceFile in $provenanceFiles) {
 
 $sourceFiles = Get-ChildItem -LiteralPath (Join-Path $ProjectRoot "src") -Recurse -File -Include "*.ts", "*.tsx", "*.css"
 $placeholderPattern = '(?i)lorem\s+ipsum|\bTODO\b|\bTBD\b|coming\s+soon|href=["'']#["'']|placeholder\s*='
+$forbiddenRenderPattern = '(?i)<canvas|WebGLRenderingContext|getContext\s*\(\s*["'']webgl|from\s+["'']three["'']|@react-three|babylon'
 foreach ($sourceFile in $sourceFiles) {
     $matches = Select-String -LiteralPath $sourceFile.FullName -Pattern $placeholderPattern
     if ($matches) {
         throw "Final project source contains a forbidden placeholder in $($sourceFile.FullName)."
     }
+    $forbiddenRenderMatches = Select-String -LiteralPath $sourceFile.FullName -Pattern $forbiddenRenderPattern
+    if ($forbiddenRenderMatches) {
+        throw "ALLinTraders source must remain free of WebGL, canvas and 3D renderers: $($sourceFile.FullName)."
+    }
 }
 
-Write-Host "Project validation passed: ALLinTraders is non-3D, placeholder-free, interactive, accessible, provenance-tracked and license-complete."
+Write-Host "Project validation passed: ALLinTraders is scroll-tracked, non-3D, WebGL-free, placeholder-free, interactive, accessible, provenance-tracked and license-complete."
