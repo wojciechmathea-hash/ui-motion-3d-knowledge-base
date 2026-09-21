@@ -16,6 +16,7 @@ $requiredFiles = @(
     "src/app/layout.tsx",
     "src/app/page.tsx",
     "src/app/globals.css",
+    "src/components/features/decision-loop.tsx",
     "src/components/ui/blur-fade.tsx",
     "src/components/ui/animated-grid-pattern.tsx",
     "licenses/MAGIC_UI_MIT.txt",
@@ -53,6 +54,15 @@ if ($page -notmatch '<main' -or $page -notmatch '<h1') {
 }
 if ($page -notmatch 'skip-link' -or $styles -notmatch ':focus-visible' -or $styles -notmatch 'prefers-reduced-motion') {
     throw "ALLinTraders page must retain skip navigation, focus visibility and reduced-motion support."
+}
+
+$header = Get-Content -Raw -LiteralPath (Join-Path $ProjectRoot "src/components/layout/site-header.tsx")
+$decisionLoop = Get-Content -Raw -LiteralPath (Join-Path $ProjectRoot "src/components/features/decision-loop.tsx")
+if ($header -notmatch 'aria-current' -or $header -notmatch 'reading-progress') {
+    throw "ALLinTraders navigation must retain active-section and reading-progress feedback."
+}
+if ($decisionLoop -notmatch 'role="tablist"' -or $decisionLoop -notmatch 'ArrowLeft' -or $decisionLoop -notmatch 'ArrowRight') {
+    throw "ALLinTraders decision loop must retain its accessible keyboard interaction."
 }
 
 foreach ($componentPath in @("src/components/ui/blur-fade.tsx", "src/components/ui/animated-grid-pattern.tsx")) {

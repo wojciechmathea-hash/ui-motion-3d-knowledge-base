@@ -5,6 +5,7 @@ Thumbs.db
 node_modules/
 .next/
 out/
+deliverables/
 .env
 .env.*
 !.env.example
