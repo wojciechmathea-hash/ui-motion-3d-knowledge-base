@@ -51,7 +51,7 @@ git submodule update --init --recursive --depth 1
 | Komponenty marketingowe React + Tailwind | Magic UI |
 | Efektowne tła, tekst i mikrointerakcje React | React Bits |
 | Szerokie wyszukiwanie społecznościowe | 21st.dev, z obowiązkową kontrolą licencji |
-| Gotowe sekcje lub szablony premium | Magic UI Pro, tylko z własnym uprawnionym dostępem i bez kopiowania do tej bazy |
+| Darmowy template widoczny przy Magic UI Pro | Publiczny `magicuidesign/portfolio` na licencji MIT; cała warstwa Pro pozostaje wyłączona |
 
 Pełne drzewo decyzji znajduje się w [docs/selection-guide.md](docs/selection-guide.md).
 
