@@ -1,0 +1,76 @@
+{
+  "id": "nasa-media--cosmic-scale",
+  "name": "NASA space imagery used in Cosmic Scale",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "nasa-media",
+    "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "repository": "not-applicable",
+    "author": "NASA and credited mission partners",
+    "commitOrVersion": "downloaded 2026-09-22",
+    "verifiedAt": "2026-09-22"
+  },
+  "access": {
+    "tier": "free-informational-use",
+    "license": "NASA Media Usage Guidelines; third-party credits and restrictions must be checked per asset",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "assetLicensesVerified": true,
+    "redistribution": "bundled in this private educational website with source acknowledgement and no implied endorsement"
+  },
+  "generation": {
+    "toolRegistryId": "not-applicable",
+    "toolVersion": "not-applicable",
+    "modelOrCheckpoint": "not-applicable",
+    "promptOrParameters": "Lossless source downloads; large PNG files converted locally to WebP at quality 84 for delivery performance.",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "2026-09-22"
+  },
+  "classification": {
+    "categories": ["photography", "scientific-visualization", "fallback-background"],
+    "technologyTags": ["jpg", "webp"],
+    "qualityTags": ["official-source", "local-assets", "credited"],
+    "motionIntensity": "not-applicable"
+  },
+  "integration": {
+    "dependencies": [],
+    "clientOnly": false,
+    "fallback": "The Pillars of Creation image is the static fallback for the Galaxy background.",
+    "reducedMotion": "Static media does not animate.",
+    "modifications": ["Responsive cropping by CSS.", "Two large source PNG files converted to WebP for delivery size."]
+  },
+  "visualDepth": {
+    "mode": "flat",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md",
+    "depthRole": "subject|background",
+    "scrollMapping": "Source-defined Kage media-frame placement.",
+    "pointerMapping": "not-applicable",
+    "reducedMotion": "unchanged static images",
+    "mobileFallback": "CSS object-fit cropping."
+  },
+  "assets": [
+    {
+      "file": "assets/nasa/earthrise.jpg",
+      "title": "Earthrise",
+      "credit": "NASA / Apollo 8; photograph by William Anders",
+      "source": "https://science.nasa.gov/resource/image-earthrise/"
+    },
+    {
+      "file": "assets/nasa/solar-system.jpg",
+      "title": "Solar System banner",
+      "credit": "NASA",
+      "source": "https://science.nasa.gov/solar-system/"
+    },
+    {
+      "file": "assets/nasa/milky-way.webp",
+      "title": "Our Galaxy",
+      "credit": "NASA/JPL-Caltech/R. Hurt (SSC/Caltech)",
+      "source": "https://science.nasa.gov/asset/webb/our-galaxy/"
+    },
+    {
+      "file": "assets/nasa/pillars-miri.webp",
+      "title": "Pillars of Creation, MIRI image",
+      "credit": "NASA, ESA, CSA, STScI",
+      "source": "https://science.nasa.gov/asset/webb/pillars-of-creation-miri-image/"
+    }
+  ]
+}

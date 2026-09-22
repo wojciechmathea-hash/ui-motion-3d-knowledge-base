@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T14:04:37.5021029Z",
-  "sourceCount": 43,
+  "generatedAt": "2026-09-22T08:35:13.5054499Z",
+  "sourceCount": 45,
   "generatorCount": 44,
   "learningRepositoryCount": 37,
   "fontSourceCount": 9,
@@ -9,7 +9,7 @@
   "colorPalettePackageCount": 7,
   "colorPaletteStandardCount": 7,
   "localUpstreamCount": 17,
-  "catalogOnlyCount": 26,
+  "catalogOnlyCount": 28,
   "generatorModes": [
     {
       "name": "free-software-external-model-required",

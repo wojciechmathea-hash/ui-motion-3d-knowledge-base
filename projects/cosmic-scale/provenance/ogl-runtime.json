@@ -1,0 +1,51 @@
+{
+  "id": "ogl--1.0.11-cosmic-scale",
+  "name": "OGL runtime bundled by the React Bits Galaxy build",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "ogl",
+    "url": "https://github.com/oframe/ogl",
+    "repository": "https://github.com/oframe/ogl",
+    "author": "OGL contributors",
+    "commitOrVersion": "1.0.11",
+    "verifiedAt": "2026-09-22"
+  },
+  "access": {
+    "tier": "free",
+    "license": "Unlicense",
+    "licenseUrl": "https://github.com/oframe/ogl/blob/master/LICENSE",
+    "assetLicensesVerified": true,
+    "redistribution": "bundled in application"
+  },
+  "generation": {
+    "toolRegistryId": "not-applicable",
+    "toolVersion": "not-applicable",
+    "modelOrCheckpoint": "not-applicable",
+    "promptOrParameters": "not-applicable",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "2026-09-22"
+  },
+  "classification": {
+    "categories": ["runtime", "webgl"],
+    "technologyTags": ["javascript", "webgl"],
+    "qualityTags": ["small-runtime", "local-bundle"],
+    "motionIntensity": "not-applicable"
+  },
+  "integration": {
+    "dependencies": [],
+    "clientOnly": true,
+    "fallback": "The DOM experience and local NASA background remain readable if WebGL is unavailable.",
+    "reducedMotion": "Controlled by the Galaxy integration.",
+    "modifications": ["Bundled by the local Galaxy build; no OGL source modifications."]
+  },
+  "visualDepth": {
+    "mode": "webgl",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md",
+    "depthRole": "background",
+    "scrollMapping": "not-applicable",
+    "pointerMapping": "not-applicable",
+    "reducedMotion": "not-applicable",
+    "mobileFallback": "not-applicable"
+  },
+  "assets": ["assets/galaxy.js"]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "threeui--kage-cosmic-scale",
+  "name": "ThreeUI Kage adapted as the Cosmic Scale editorial system",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "threeui",
+    "url": "https://threeui.com/browse",
+    "repository": "https://github.com/MengTo/threeui",
+    "author": "ThreeUI / Meng To",
+    "commitOrVersion": "68802d5428071ada5c20db8094b1649e6bb770ed",
+    "verifiedAt": "2026-09-22"
+  },
+  "access": {
+    "tier": "free-community",
+    "license": "MIT; bundled fonts OFL-1.1",
+    "licenseUrl": "https://github.com/MengTo/threeui/blob/main/LICENSE",
+    "assetLicensesVerified": true,
+    "redistribution": "private-use-only"
+  },
+  "generation": {
+    "toolRegistryId": "not-applicable",
+    "toolVersion": "not-applicable",
+    "modelOrCheckpoint": "not-applicable",
+    "promptOrParameters": "not-applicable",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "2026-09-22"
+  },
+  "classification": {
+    "categories": ["full-page", "editorial", "scrollytelling", "layered-interface"],
+    "technologyTags": ["html", "css", "javascript"],
+    "qualityTags": ["responsive", "reduced-motion", "semantic-dom", "local-assets"],
+    "motionIntensity": "4-immersive"
+  },
+  "integration": {
+    "dependencies": ["assets/fonts.css", "assets/page-wiring.js"],
+    "clientOnly": true,
+    "fallback": "The complete semantic DOM, navigation, editorial layout and local media remain available without WebGL.",
+    "reducedMotion": "Source-derived reduced-motion rules flatten reveals and nonessential motion.",
+    "modifications": [
+      "Changed language, metadata, navigation and editorial copy to Polish space-science content.",
+      "Replaced Kage media frames with locally bundled, credited NASA media.",
+      "Removed all source foreground PNG cut-outs and disabled the original temple renderer.",
+      "Retained the Kage typography, spacing, cards, chapter navigation, responsive rules and interaction grammar.",
+      "Adapted source navigation, reveal, cursor, grain and hero-exit wiring into a local integration bundle."
+    ]
+  },
+  "visualDepth": {
+    "mode": "layered-2.5d",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md",
+    "depthRole": "ui|subject|background|atmosphere",
+    "scrollMapping": "Source-derived chapter navigation and reveal mapping documented in page-wiring.js.",
+    "pointerMapping": "Source-derived cursor interaction plus the separately sourced Galaxy pointer field.",
+    "reducedMotion": "Reveals become immediate and the WebGL time/pointer response is disabled.",
+    "mobileFallback": "Source-defined responsive layout and a local NASA image behind the optional WebGL layer."
+  },
+  "assets": [
+    "index.html",
+    "assets/fonts.css",
+    "assets/page-wiring.js"
+  ]
+}

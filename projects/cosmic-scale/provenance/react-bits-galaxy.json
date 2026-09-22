@@ -1,0 +1,61 @@
+{
+  "id": "react-bits--galaxy-cosmic-scale",
+  "name": "React Bits Galaxy background",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "react-bits",
+    "url": "https://reactbits.dev/backgrounds/galaxy",
+    "repository": "https://github.com/DavidHDev/react-bits",
+    "author": "David Haz / React Bits",
+    "commitOrVersion": "9481af758aae6cfb34c3652ec40a1c099360331f",
+    "verifiedAt": "2026-09-22"
+  },
+  "access": {
+    "tier": "free",
+    "license": "MIT + Commons Clause License Condition v1.0",
+    "licenseUrl": "https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md",
+    "assetLicensesVerified": true,
+    "redistribution": "bundled only as part of this application; component resale or standalone redistribution prohibited"
+  },
+  "generation": {
+    "toolRegistryId": "not-applicable",
+    "toolVersion": "not-applicable",
+    "modelOrCheckpoint": "not-applicable",
+    "promptOrParameters": "not-applicable",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "2026-09-22"
+  },
+  "classification": {
+    "categories": ["background", "interactive", "webgl", "particle-field"],
+    "technologyTags": ["react", "ogl", "webgl", "glsl"],
+    "qualityTags": ["pointer-reactive", "procedural", "local-bundle", "reduced-motion"],
+    "motionIntensity": "3-hero"
+  },
+  "integration": {
+    "dependencies": ["React 19.1.1", "React DOM 19.1.1", "OGL 1.0.11"],
+    "clientOnly": true,
+    "fallback": "assets/nasa/pillars-miri.webp is declared as the #cosmos CSS background.",
+    "reducedMotion": "disableAnimation=true and pointer interaction/repulsion=false when prefers-reduced-motion is active.",
+    "modifications": [
+      "Galaxy.jsx and Galaxy.css are preserved from the recorded upstream commit.",
+      "Only documented component properties are configured in galaxy-entry.jsx.",
+      "The component is compiled as a self-contained classic script for direct file opening."
+    ]
+  },
+  "visualDepth": {
+    "mode": "webgl",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md",
+    "depthRole": "background",
+    "scrollMapping": "not-applicable",
+    "pointerMapping": "Source-defined mouse repulsion and easing.",
+    "reducedMotion": "Static first rendered field without pointer response.",
+    "mobileFallback": "The same source component at the layout viewport; local image remains beneath it."
+  },
+  "assets": [
+    "src/Galaxy.jsx",
+    "src/Galaxy.css",
+    "src/galaxy-entry.jsx",
+    "assets/galaxy.js",
+    "assets/galaxy.css"
+  ]
+}

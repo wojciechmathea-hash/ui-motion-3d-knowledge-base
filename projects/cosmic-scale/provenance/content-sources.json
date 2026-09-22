@@ -1,0 +1,37 @@
+{
+  "verifiedAt": "2026-09-22",
+  "language": "pl",
+  "method": "Concise original Polish paraphrase of facts from official NASA pages; no source prose copied.",
+  "sources": [
+    {
+      "publisher": "NASA Science",
+      "title": "Solar System Exploration",
+      "url": "https://science.nasa.gov/solar-system/",
+      "usedFor": ["8 planets", "5 recognized dwarf planets", "Orion Spur location", "about 230 million years per galactic orbit"]
+    },
+    {
+      "publisher": "NASA Science",
+      "title": "Planets",
+      "url": "https://science.nasa.gov/solar-system/planets/",
+      "usedFor": ["planet count and solar-system context"]
+    },
+    {
+      "publisher": "NASA Science",
+      "title": "Galaxies",
+      "url": "https://science.nasa.gov/universe/galaxies/",
+      "usedFor": ["Milky Way disk diameter greater than 100,000 light-years"]
+    },
+    {
+      "publisher": "NASA Science",
+      "title": "Image Earthrise",
+      "url": "https://science.nasa.gov/resource/image-earthrise/",
+      "usedFor": ["Apollo 8 Earthrise date, context and credit"]
+    },
+    {
+      "publisher": "NASA",
+      "title": "NASA Image and Media Usage Guidelines",
+      "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "usedFor": ["media use policy", "acknowledgement and no-endorsement requirements", "third-party content caution"]
+    }
+  ]
+}

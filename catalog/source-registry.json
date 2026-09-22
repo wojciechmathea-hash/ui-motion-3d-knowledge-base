@@ -628,6 +628,36 @@
       "domains": ["icons", "svg", "multiple-weights", "design-system"]
     },
     {
+      "id": "ogl",
+      "name": "OGL",
+      "requestedUrl": "https://github.com/oframe/ogl",
+      "canonicalRepository": "https://github.com/oframe/ogl",
+      "accessTier": "free-open-source",
+      "license": "Unlicense",
+      "inclusion": "application-runtime-dependency",
+      "redistribution": "private-use-only-in-this-repository",
+      "excluded": ["standalone library redistribution"],
+      "domains": ["webgl", "rendering", "shaders", "javascript"]
+    },
+    {
+      "id": "nasa-media",
+      "name": "NASA Images and Media",
+      "requestedUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "canonicalDocumentation": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "accessTier": "free-public-media",
+      "license": "NASA Media Usage Guidelines; generally not subject to copyright in the United States",
+      "inclusion": "per-asset-official-download-and-credit-required",
+      "redistribution": "educational-or-informational-use-with-source-acknowledgement",
+      "excluded": [
+        "NASA insignia, logotype and identifiers",
+        "third-party copyrighted media marked on NASA pages",
+        "media with identifiable persons for promotional or commercial use without clearance",
+        "uses implying NASA endorsement",
+        "NFT use"
+      ],
+      "domains": ["space", "astronomy", "science-images", "mission-media", "educational-media"]
+    },
+    {
       "id": "poly-haven",
       "name": "Poly Haven",
       "requestedUrl": "https://polyhaven.com",
