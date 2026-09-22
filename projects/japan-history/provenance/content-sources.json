@@ -1,0 +1,49 @@
+{
+  "verifiedAt": "2026-09-22",
+  "language": "pl",
+  "method": "Concise original paraphrase of factual information; no source prose or media copied.",
+  "sources": [
+    {
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Jomon Prehistoric Sites in Northern Japan",
+      "url": "https://whc.unesco.org/en/list/1632",
+      "usedFor": ["Jomon chronology", "sedentary hunter-fisher-gatherer communities", "ritual and settlement evidence"]
+    },
+    {
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Historic Monuments of Ancient Nara",
+      "url": "https://whc.unesco.org/en/list/870",
+      "usedFor": ["Nara capital dates", "state consolidation", "Chinese and Korean cultural links"]
+    },
+    {
+      "publisher": "UNESCO World Heritage Centre",
+      "title": "Historic Monuments of Ancient Kyoto",
+      "url": "https://whc.unesco.org/document/154031",
+      "usedFor": ["Heian-kyo founded in 794", "Kyoto as imperial city"]
+    },
+    {
+      "publisher": "The Metropolitan Museum of Art",
+      "title": "Kamakura and Nanbokucho Periods (1185–1392)",
+      "url": "https://www.metmuseum.org/essays/kamakura-and-nanbokucho-periods-1185-1392",
+      "usedFor": ["shift from court aristocracy to military government", "Kamakura chronology"]
+    },
+    {
+      "publisher": "The Metropolitan Museum of Art",
+      "title": "Art of the Edo Period (1615–1868)",
+      "url": "https://www.metmuseum.org/essays/art-of-the-edo-period-1615-1868",
+      "usedFor": ["Tokugawa rule", "urban culture of Edo and Kyoto"]
+    },
+    {
+      "publisher": "National Diet Library, Japan",
+      "title": "Chronological Table — Modern Japan in archives",
+      "url": "https://www.ndl.go.jp/modern/e/utility/chronology.html",
+      "usedFor": ["Meiji government and restoration chronology"]
+    },
+    {
+      "publisher": "National Diet Library, Japan",
+      "title": "Chronological Table — Birth of the Constitution of Japan",
+      "url": "https://www.ndl.go.jp/constitution/e/etc/history.html",
+      "usedFor": ["1947 entry into force of the Constitution of Japan"]
+    }
+  ]
+}

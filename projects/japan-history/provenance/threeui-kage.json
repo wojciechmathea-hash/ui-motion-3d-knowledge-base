@@ -1,0 +1,75 @@
+{
+  "id": "threeui--kage-japan-history",
+  "name": "ThreeUI Kage adapted with Japan history content",
+  "originType": "approved-source",
+  "source": {
+    "registryId": "threeui",
+    "url": "https://threeui.com/browse",
+    "repository": "https://github.com/MengTo/threeui",
+    "author": "ThreeUI / Meng To",
+    "commitOrVersion": "68802d5428071ada5c20db8094b1649e6bb770ed",
+    "verifiedAt": "2026-09-22"
+  },
+  "access": {
+    "tier": "free-community",
+    "license": "MIT; bundled fonts OFL-1.1; bundled Three.js MIT",
+    "licenseUrl": "https://github.com/MengTo/threeui/blob/main/LICENSE",
+    "assetLicensesVerified": true,
+    "redistribution": "private-use-only"
+  },
+  "generation": {
+    "toolRegistryId": "not-applicable",
+    "toolVersion": "not-applicable",
+    "modelOrCheckpoint": "not-applicable",
+    "promptOrParameters": "not-applicable",
+    "inputSources": [],
+    "outputRightsVerifiedAt": "2026-09-22"
+  },
+  "classification": {
+    "categories": ["full-page", "scrollytelling", "webgl", "layered-2.5d"],
+    "technologyTags": ["html", "css", "javascript", "threejs", "webgl"],
+    "qualityTags": ["responsive", "reduced-motion", "no-webgl-fallback", "local-assets"],
+    "motionIntensity": "4-immersive"
+  },
+  "integration": {
+    "dependencies": ["bundled three.min.js", "bundled fonts.css", "14 local WebP assets"],
+    "clientOnly": true,
+    "fallback": "Source-defined no-webgl HTML/CSS composition with four local scene images and complete DOM content.",
+    "reducedMotion": "Source-defined prefers-reduced-motion rules stop nonessential reveal and foreground motion.",
+    "modifications": [
+      "Changed document language, title and description to Polish.",
+      "Replaced editorial copy and navigation labels with sourced history of Japan.",
+      "Changed the source wordmark text from KAGE to JPN without modifying its renderer.",
+      "Localized the source rail button accessible names.",
+      "Replaced footer destinations with working primary-source links.",
+      "Did not change source layout, CSS tokens, SVG geometry, WebGL scene, camera, post-processing, responsive rules or motion system."
+    ]
+  },
+  "visualDepth": {
+    "mode": "webgl",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md",
+    "depthRole": "ui|foreground|subject|midground|background|atmosphere",
+    "scrollMapping": "Unmodified Kage data-cam chapter mapping and source scroll handler.",
+    "pointerMapping": "Unmodified Kage cursor and camera response.",
+    "reducedMotion": "Unmodified Kage reduced-motion state.",
+    "mobileFallback": "Unmodified Kage responsive layout, LOW renderer mode and no-webgl fallback."
+  },
+  "assets": [
+    "secret-pathways-assets/fonts.css",
+    "secret-pathways-assets/three.min.js",
+    "secret-pathways-assets/foreground/png/basalt-stones.webp",
+    "secret-pathways-assets/foreground/png/garden-bush.webp",
+    "secret-pathways-assets/foreground/png/hill.webp",
+    "secret-pathways-assets/foreground/png/maple-leaves.webp",
+    "secret-pathways-assets/foreground/png/pine-tree.webp",
+    "secret-pathways-assets/foreground/png/sakura-branch.webp",
+    "secret-pathways-assets/foreground/png/shrine-ruins.webp",
+    "secret-pathways-assets/foreground/png/stone-lantern.webp",
+    "secret-pathways-assets/foreground/png/tall-grass.webp",
+    "secret-pathways-assets/foreground/png/temple-wall.webp",
+    "secret-pathways-assets/generated/kage-approach.webp",
+    "secret-pathways-assets/generated/kage-lantern-court.webp",
+    "secret-pathways-assets/generated/kage-moonwater.webp",
+    "secret-pathways-assets/generated/kage-sanmon-preview.webp"
+  ]
+}
