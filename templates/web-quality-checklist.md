@@ -60,6 +60,21 @@ Skopiuj checklistę do katalogu projektu jako `QUALITY.md` i wypełnij przed uzn
 - [ ] Elementy nie znikają i nie pojawiają się nagle, jeżeli zmiana wymaga ciągłości przestrzennej lub narracyjnej.
 - [ ] Sticky/pinned scena ujawnia relację lub zmianę, a nie tylko zamienia slajdy generycznym fade.
 
+## Głębia wizualna, 2.5D i 3D
+
+- [ ] Wybrano najlżejszą wystarczającą technikę; użycie CSS 3D lub WebGL ma zapisane uzasadnienie.
+- [ ] Projekt zawiera `VISUAL_LAYER_STACK.md`, jeżeli wykorzystuje 2.5D, CSS 3D albo WebGL.
+- [ ] Warstwa interfejsu pozostaje semantycznym DOM i nie wymaga sceny 3D do odczytania treści lub wykonania podstawowej akcji.
+- [ ] Każda warstwa ma funkcję przestrzenną, źródło, licencję, zakres ruchu, okluzję, breakpoint i reduced-motion fallback.
+- [ ] Warstwy dalsze i bliższe zachowują jedną zrozumiałą logikę głębi; różnice ruchu, blur, kontrastu i skali nie przeczą sobie.
+- [ ] Rozmyta kopia obrazu nie tworzy podwójnych krawędzi, poświaty tekstu, widocznych granic ani przypadkowego halo.
+- [ ] Tekst i kontrolki nie są rozmywane, deformowane perspektywą ani zasłaniane przez foreground.
+- [ ] Ruch wszystkich warstw wynika z jednego znormalizowanego postępu i pozostaje poprawny przy przewijaniu wstecz.
+- [ ] Żadna warstwa nie odsłania pustych krawędzi w całym zakresie ruchu i na wszystkich testowanych proporcjach ekranu.
+- [ ] Mobile i reduced motion mają spłaszczony, kompletny kadr bez utraty treści oraz funkcji.
+- [ ] WebGL ma jeden uzasadniony canvas, limit DPR, pauzę poza viewportem, cleanup GPU i statyczny fallback.
+- [ ] Zmierzono transfer, zdekodowaną pamięć obrazów/tekstur, FPS lub frame time oraz zachowanie na słabszym urządzeniu.
+
 ## Audyt wizualny
 
 - [ ] Statyczny pierwszy viewport i reprezentatywny moduł zostały ocenione i poprawione przed dodaniem motion.

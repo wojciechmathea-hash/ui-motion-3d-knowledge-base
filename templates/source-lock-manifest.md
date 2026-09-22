@@ -30,6 +30,15 @@ Wymień wyłącznie semantyczne wrappery, routing, wiązanie danych, stan, obsł
 |---|---|---|
 | | | |
 
+## Warstwy głębi i 3D
+
+Jeżeli projekt używa 2.5D, CSS 3D albo WebGL, utwórz dodatkowo `VISUAL_LAYER_STACK.md` z `templates/visual-layer-stack.md`. Każda warstwa z tego dokumentu musi odpowiadać pozycji w mapie elementów powyżej.
+
+- [ ] Zapisano stabilną warstwę semantycznego UI niezależną od sceny immersyjnej.
+- [ ] Każdy plan obrazu, kopia blur, maska, mapa głębi, cień, refleks, particle pass i post-processing ma rekord źródłowy.
+- [ ] Mapowanie scrolla, kursora, okluzji i reduced motion pochodzi z zatwierdzonego komponentu lub wzorca źródłowego.
+- [ ] Warstwy mobilne i fallback nie wprowadzają niezarejestrowanych elementów wizualnych.
+
 ## Kontrola przed implementacją
 
 - [ ] 100% elementów widocznych i interaktywnych ma rekord źródłowy.

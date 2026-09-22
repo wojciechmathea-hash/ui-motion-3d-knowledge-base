@@ -13,6 +13,7 @@ $ScrollytellingRegistryPath = Join-Path $RepoRoot "catalog/scrollytelling-inspir
 $ColorPaletteRegistryPath = Join-Path $RepoRoot "catalog/color-palette-registry.json"
 $CreationStandardPath = Join-Path $RepoRoot "CREATION_STANDARD.md"
 $SourceLockManifestTemplatePath = Join-Path $RepoRoot "templates/source-lock-manifest.md"
+$VisualLayerStackTemplatePath = Join-Path $RepoRoot "templates/visual-layer-stack.md"
 $AssetsPath = Join-Path $RepoRoot "catalog/generated-assets.json"
 $SummaryPath = Join-Path $RepoRoot "catalog/generated-summary.json"
 
@@ -27,7 +28,7 @@ if (-not (Test-Path -LiteralPath $CreationStandardPath -PathType Leaf)) {
     throw "Missing the single authoritative creation instruction: CREATION_STANDARD.md"
 }
 $creationStandard = Get-Content -Raw -LiteralPath $CreationStandardPath
-foreach ($requiredMarker in @("TRYB SOURCE-LOCKED", "BRAK ŹRÓDŁA = BRAK ELEMENTU", "SOURCE_LOCK_MANIFEST.md", "local-original")) {
+foreach ($requiredMarker in @("TRYB SOURCE-LOCKED", "BRAK ŹRÓDŁA = BRAK ELEMENTU", "SOURCE_LOCK_MANIFEST.md", "VISUAL_LAYER_STACK.md", "2.5D", "local-original")) {
     if ($creationStandard -notmatch [regex]::Escape($requiredMarker)) {
         throw "CREATION_STANDARD.md is missing the source-lock marker: $requiredMarker"
     }
@@ -35,8 +36,11 @@ foreach ($requiredMarker in @("TRYB SOURCE-LOCKED", "BRAK ŹRÓDŁA = BRAK ELEME
 if (-not (Test-Path -LiteralPath $SourceLockManifestTemplatePath -PathType Leaf)) {
     throw "Missing required source-lock template: templates/source-lock-manifest.md"
 }
+if (-not (Test-Path -LiteralPath $VisualLayerStackTemplatePath -PathType Leaf)) {
+    throw "Missing required visual depth template: templates/visual-layer-stack.md"
+}
 $agentInstructions = Get-Content -Raw -LiteralPath (Join-Path $RepoRoot "AGENTS.md")
-if ($agentInstructions -notmatch [regex]::Escape("CREATION_STANDARD.md") -or $agentInstructions -notmatch "jedyną nadrzędną instrukcją" -or $agentInstructions -notmatch "source-locked" -or $agentInstructions -notmatch [regex]::Escape("templates/source-lock-manifest.md")) {
+if ($agentInstructions -notmatch [regex]::Escape("CREATION_STANDARD.md") -or $agentInstructions -notmatch "jedyną nadrzędną instrukcją" -or $agentInstructions -notmatch "source-locked" -or $agentInstructions -notmatch [regex]::Escape("templates/source-lock-manifest.md") -or $agentInstructions -notmatch [regex]::Escape("templates/visual-layer-stack.md")) {
     throw "AGENTS.md must route every creation task through the single authoritative CREATION_STANDARD.md file."
 }
 

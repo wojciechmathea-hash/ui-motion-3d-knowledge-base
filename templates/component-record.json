@@ -38,5 +38,14 @@
     "reducedMotion": "",
     "modifications": []
   },
+  "visualDepth": {
+    "mode": "flat|layered-2.5d|css-3d|canvas-2d|webgl",
+    "layerStackDocument": "VISUAL_LAYER_STACK.md-or-not-applicable",
+    "depthRole": "ui|foreground|subject|midground|background|atmosphere|not-applicable",
+    "scrollMapping": "source-defined-mapping-or-not-applicable",
+    "pointerMapping": "source-defined-mapping-or-not-applicable",
+    "reducedMotion": "flattened-state-or-not-applicable",
+    "mobileFallback": "asset-or-layout-record-or-not-applicable"
+  },
   "assets": []
 }

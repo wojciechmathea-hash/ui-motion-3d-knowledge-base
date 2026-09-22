@@ -165,11 +165,26 @@ Komponenty dobiera się do zatwierdzonej kompozycji, nigdy odwrotnie. Liczba wyk
 ## 9. 3D i WebGL
 
 - 3D stosuj tylko wtedy, gdy przekazuje informację, której prostsza forma nie pokazuje równie dobrze.
+- Wybieraj najlżejszą wystarczającą technikę w kolejności: statyczna kompozycja obrazów → warstwowe 2.5D w DOM/CSS → Canvas 2D → CSS 3D → WebGL. Nie uruchamiaj Three.js tylko po to, aby przesunąć kilka płaskich obrazów.
+- Warstwa immersyjna nigdy nie zastępuje warstwy interfejsu. Nawigacja, tekst, ceny, specyfikacje, formularze, CTA i fokus pozostają w semantycznym DOM oraz są zrozumiałe bez sceny 3D.
+- Każda realizacja używająca 2.5D, CSS 3D lub WebGL tworzy przed implementacją `VISUAL_LAYER_STACK.md` na podstawie `templates/visual-layer-stack.md`. Dokument mapuje cel, kolejność głębi, okluzję, ruch, blur, fallback, breakpointy, źródło i licencję każdej warstwy.
+- Każda warstwa wizualna — również kopia obrazu użyta jako rozmyte tło, maska, mapa głębi, cień, mgła, refleks, particle pass i post-processing — jest osobnym elementem objętym `SOURCE_LOCK_MANIFEST.md`. Duplikacja legalnego assetu nie tworzy prawa do wymyślenia nowej kompozycji lub efektu.
+- Dla efektu 2.5D używaj jednej spójnej osi głębi. Warstwa dalsza porusza się słabiej, ma niższy kontrast lub większe rozproszenie; warstwa bliższa może poruszać się mocniej i zasłaniać dalsze. Odwrócenie tej logiki wymaga konkretnej funkcji narracyjnej zapisanej w planie.
+- Typowy stack obrazu składa się z: atmosferycznego tła, kontekstu w głębi, głównego obiektu, opcjonalnego pierwszoplanowego occludera oraz niezależnej warstwy UI. Nie dodawaj kolejnej warstwy, jeśli nie wnosi nowej relacji przestrzennej.
+- Rozmyta kopia obrazu pod ostrym planem może budować głębię wyłącznie jako część zatwierdzonego wzorca źródłowego. Musi mieć kontrolowany kadr, skalę i kolor, nie może tworzyć podwójnych krawędzi, poświaty wokół tekstu ani maskować niskiej jakości wycięcia.
+- Nie rozmywaj tekstu, kontrolek ani całego kontenera 3D. Filtr, opacity, maskowanie i clipping mogą tworzyć nowe konteksty kompozycji lub spłaszczać `preserve-3d`; efekt nakładaj na konkretną warstwę po sprawdzeniu renderingu we wszystkich wspieranych przeglądarkach.
+- Scroll steruje jednym znormalizowanym postępem sceny, z którego wynikają ruchy warstw. Nie twórz niezależnych listenerów i przypadkowych easingów dla każdego obrazu. Zachowaj natywny scroll, odwracalność oraz stabilny kadr po zatrzymaniu.
+- Obszar aktywny sceny ma początek, koniec i bezpieczny margines. Warstwy są nadmiarowo skadrowane lub maskowane tak, aby ruch nie odsłaniał pustych krawędzi; nie zwiększaj ich jednak arbitralnie do rozmiarów marnujących pamięć.
+- Na telefonie ogranicz liczbę warstw, amplitudę ruchu, DPR i tracking kursora. Dla reduced motion spłaszcz kompozycję do jednego stabilnego kadru lub krótkiego przejścia opacity bez utraty treści.
+- Płaskie warstwy obrazowe muszą mieć responsywne warianty i rzeczywiste wymiary odpowiadające obszarowi wyświetlania. DPI pliku nie jest budżetem; kontroluj piksele, transfer, zdekodowaną pamięć i przezroczystość.
+- Dla WebGL preferuj jeden canvas i jedną pętlę renderowania na doświadczenie. Wstrzymuj render poza viewportem i w ukrytej karcie, ogranicz DPR, liczbę draw calls, overdraw, post-processing i przezroczyste pełnoekranowe płaszczyzny.
+- Duże tekstury WebGL przygotuj w formatach i rozdzielczościach odpowiednich dla GPU; rozważ KTX2 i preload/dekodowanie przed wejściem sceny, aby uniknąć przycięcia przy pierwszym pokazaniu warstwy.
 - Finalne modele buduj lub generuj lokalnie w narzędziach open source wskazanych w rejestrze generatorów.
 - Poly Haven jest dozwolone wyłącznie dla zweryfikowanych tekstur i HDRI CC0; modele z biblioteki są wyłączone.
 - Zapisuj narzędzie, wersję, prompt lub parametry, seed, checkpoint, wejścia, licencje i zakres ręcznej obróbki.
 - Ustal limit DPR, zatrzymuj render loop poza viewportem, zwalniaj zasoby GPU i zapewnij statyczny fallback.
 - Nie używaj generycznych brył jako substytutu art direction.
+- Szczegółowe wzorce, budżety i badanie źródłowe znajdują się w `knowledge/visual-depth-layering.md` oraz `docs/3d-layering-forum-research.md`; rozwijają one tę sekcję, ale jej nie zastępują.
 
 ## 10. Prezentacje
 
@@ -214,17 +229,18 @@ Brak pełnego provenance oznacza `reference-only` i zakaz integracji.
 2. Zapisz w `BRIEF.md` kontrakt jakości: tezę wizualną, zasady, antycele, gramatykę layoutu i gramatykę ruchu.
 3. Wybierz treść oraz strukturę wyłącznie spośród zarejestrowanych układów i wzorców źródłowych.
 4. Utwórz `SOURCE_LOCK_MANIFEST.md` i przypisz każdy widoczny oraz interaktywny element do konkretnego rekordu i pliku upstream.
-5. Zweryfikuj 100% pokrycia manifestu. Przy braku źródła zatrzymaj budowę i najpierw uzupełnij bazę.
-6. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
-7. Zbuduj statyczny, semantyczny i responsywny wariant bazowy, ograniczając kod lokalny do niewizualnej integracji.
-8. Wykonaj pierwszy audyt wizualny bez motion. Popraw hierarchię, rytm, siatkę, typografię i ciągłość sekcji, zanim dodasz efekty.
-9. Zaimplementuj jedną reprezentatywną sekwencję wejścia, stanu aktywnego i wyjścia. Zatwierdź jej jakość oraz zachowanie przy przewijaniu wstecz, zanim powielisz ją na całą stronę.
-10. Dodaj tylko interakcje i ruch wskazane przez użyte komponenty źródłowe, manifest i gramatykę ruchu.
-11. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
-12. Wykonaj końcowy audyt wizualny na co najmniej 390×844, 768×1024 i 1440×900 CSS px oraz w co najmniej jednym stanie interaktywnym każdej kluczowej sekcji.
-13. W audycie nazwij trzy najbardziej widoczne słabości realizacji i popraw je przed ukończeniem. Brak znalezionych problemów bez dowodów oznacza audyt niewykonany, nie projekt idealny.
-14. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
-15. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
+5. Jeżeli rezultat używa 2.5D, CSS 3D albo WebGL, utwórz `VISUAL_LAYER_STACK.md` i zapisz warstwę UI, wszystkie plany głębi, relacje okluzji, mapowanie ruchu, budżet oraz fallback.
+6. Zweryfikuj 100% pokrycia manifestu. Przy braku źródła zatrzymaj budowę i najpierw uzupełnij bazę.
+7. Sprawdź licencję każdego komponentu i assetu; zapisz provenance.
+8. Zbuduj statyczny, semantyczny i responsywny wariant bazowy, ograniczając kod lokalny do niewizualnej integracji.
+9. Wykonaj pierwszy audyt wizualny bez motion. Popraw hierarchię, rytm, siatkę, typografię i ciągłość sekcji, zanim dodasz efekty.
+10. Zaimplementuj jedną reprezentatywną sekwencję wejścia, stanu aktywnego i wyjścia. Zatwierdź jej jakość oraz zachowanie przy przewijaniu wstecz, zanim powielisz ją na całą stronę.
+11. Dodaj tylko interakcje i ruch wskazane przez użyte komponenty źródłowe, manifest i gramatykę ruchu.
+12. Przetestuj klawiaturę, zoom, reduced motion, telefon, błędy i wydajność.
+13. Wykonaj końcowy audyt wizualny na co najmniej 390×844, 768×1024 i 1440×900 CSS px oraz w co najmniej jednym stanie interaktywnym każdej kluczowej sekcji.
+14. W audycie nazwij trzy najbardziej widoczne słabości realizacji i popraw je przed ukończeniem. Brak znalezionych problemów bez dowodów oznacza audyt niewykonany, nie projekt idealny.
+15. Przejdź `templates/web-quality-checklist.md` dla stron lub równoważną kontrolę dla prezentacji i treści.
+16. Uruchom właściwy build, typecheck, testy i `pwsh ./tools/validate.ps1`.
 
 ## 14A. Warunki natychmiastowego odrzucenia
 
@@ -258,6 +274,7 @@ Rezultat jest gotowy dopiero wtedy, gdy:
 - nie przypomina katalogu komponentów, nie używa `zoom`/`scale()` jako protezy layoutu i nie zawiera „zupy kart”;
 - przechodzi udokumentowany audyt statycznej kompozycji, reprezentatywnej sekwencji motion oraz trzech wymaganych viewportów;
 - ma nazwane i poprawione co najmniej trzy realne słabości wizualne wykryte przed ukończeniem;
-- nie spełnia żadnego warunku natychmiastowego odrzucenia z sekcji 14A.
+- nie spełnia żadnego warunku natychmiastowego odrzucenia z sekcji 14A;
+- dla 2.5D, CSS 3D lub WebGL ma kompletny `VISUAL_LAYER_STACK.md`, stabilną warstwę semantycznego UI, sprawdzony fallback i zmierzony budżet tekstur, pamięci oraz renderowania.
 
 Materiały normatywne: [WCAG 2.2](https://www.w3.org/TR/WCAG22/), [WAI Understanding WCAG](https://www.w3.org/WAI/WCAG22/understanding/), [ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/) oraz [Core Web Vitals](https://web.dev/articles/defining-core-web-vitals-thresholds).

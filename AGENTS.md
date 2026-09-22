@@ -16,6 +16,7 @@ Domyślnie obowiązuje tryb `source-locked`: brak kompletnego rekordu oznacza za
 - `docs/` i `knowledge/` — wyjaśnienia pomocnicze;
 - `templates/component-record.json` — wymagany zapis provenance;
 - `templates/source-lock-manifest.md` — obowiązkowa mapa wszystkich elementów widocznych i interaktywnych do rekordów źródłowych;
+- `templates/visual-layer-stack.md` — obowiązkowy plan warstw dla 2.5D, CSS 3D i WebGL;
 - `templates/web-quality-checklist.md` — checklista wykonawcza dla witryn.
 
 Po zmianie rejestrów uruchom `pwsh ./tools/build-catalog.ps1`, a przed zakończeniem `pwsh ./tools/validate.ps1`.
